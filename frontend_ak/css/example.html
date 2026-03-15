@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid element</title>
+
+    <style>
+      body {
+        display: grid;
+
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: repeat(4, 100px);
+        gap: 20px;
+        grid-template-areas:
+          "h h h "
+          "ad art art"
+          "nav art art"
+          "nav foot foot";
+      }
+
+      header {
+        grid-area: h;
+        background-color: #333;
+        color: white;
+      }
+
+      aside {
+        grid-area: ad;
+        background-color: blue;
+      }
+
+      nav {
+        grid-area: nav;
+        background-color: aqua;
+      }
+      article {
+        grid-area: art;
+        background-color: purple;
+      }
+
+      footer {
+        grid-area: foot;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+
+    
+    <header>Header</header>
+
+    <aside>aside</aside>
+    <article>article</article>
+
+    <nav>nav</nav>
+
+    <footer>footer</footer>
+  </body>
+</html>

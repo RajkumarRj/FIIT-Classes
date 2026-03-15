@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML API</title>
+    <style>
+
+    </style>
+
+    <link rel="stylesheet" href="./htmlapi.css">
+  </head>
+  <body>
+    <!-- <canvas id="mycanva"  width="200" height="200"> 
+        
+    </canvas> -->
+
+    <button id="button">Get location</button>
+
+    <!-- <p>Paragraph</p> -->
+
+    <p id="output"></p>
+
+    <input type="file" id="fileTag">
+    <p id="preview"></p>
+
+    <p style="color: greenyellow;">Paragraph</p>
+
+    <script>
+
+        document.getElementById("fileTag").onchange = function(){
+            const file = this.files[0];
+
+            document.getElementById("preview").innerText = "File name " + file.name;   
+        }
+
+        localStorage.setItem("HTML","HTML API")
+
+    //    document.write(localStorage.getItem("HTML"));
+
+       localStorage.clear();
+
+    //    sessionStorage.setItem("HTML","Data");
+
+
+
+
+      document.getElementById("button").onclick = function () {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            document.getElementById("output").innerText =
+              `Latitude ${pos.coords.latitude} and longitude ${pos.coords.longitude}`;
+          },
+          (err) => alert("Permission denied"),
+        );
+      };
+
+
+
+      // const canva = document.getElementById("mycanva").getContext("2d");
+
+      // canva.strokeRect(50, 50 , 150 , 50);
+      // canva.fillStyle = "yellow"
+      // canva.fillRect(50, 50, 150, 50);
+      // canva.fillText("Hello" , 10, 50)
+    </script>
+    <script src="./htmlapi.js"></script>
+  </body>
+</html>

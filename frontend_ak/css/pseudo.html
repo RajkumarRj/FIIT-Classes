@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo</title>
+
+    <style>
+      /* : colon => psuedo class  */
+
+      h1:hover {
+        background-color: yellow;
+        border: 20px solid black;
+        font-size: 50px;
+      }
+
+      a:link {
+        color: aqua;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:active {
+        color: black;
+      }
+      input:focus {
+        outline-color: red;
+      }
+
+      /* .ul li:first-child {
+        color: blue;
+      }
+
+      li:last-child {
+        color: yellow;
+      }
+
+      li:nth-child(odd) {
+        color: red;
+      } */
+
+      li::after {
+        content: "😊";
+      }
+
+      li::before {
+        content: "😍";
+      }
+
+      p::first-letter {
+        text-transform: capitalize;
+        font-size: 50px;
+      }
+
+      p::first-line {
+        text-transform: capitalize;
+      }
+
+      ::selection {
+        background-color: brown;
+        color: white;
+      }
+
+      ::marker {
+        color: green;
+        font-size: 100px;
+      }
+       
+      .container > div {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        margin-right: 10px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <p>
+      lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsa,
+      deleniti quae delectus doloremque nisi quidem in aperiam iusto, tenetur
+      provident optio, exercitationem sequi! Aspernatur iure doloremque
+      dignissimos eaque culpa!
+    </p>
+    <ul class="ul">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+      <li>item 6</li>
+      <li>item 7</li>
+      <li>item 8</li>
+      <li>item 9</li>
+      <li>item 10</li>
+    </ul>
+
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+      <li>item 6</li>
+      <li>item 7</li>
+      <li>item 8</li>
+      <li>item 9</li>
+      <li>item 10</li>
+    </ul>
+    <a href="#">Google</a>
+    <a href="#data">Atlassian</a>
+    <input type="text" />
+
+    <h1>Pseudo</h1>
+  </body>
+</html>

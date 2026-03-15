@@ -1,0 +1,14 @@
+package com.example.restapiwithjpa;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RestapiwithjpaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(RestapiwithjpaApplication.class, args);
+		System.out.println("Hello there");
+	}
+
+}
