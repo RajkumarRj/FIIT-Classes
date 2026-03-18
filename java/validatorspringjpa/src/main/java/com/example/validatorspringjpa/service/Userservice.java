@@ -35,8 +35,8 @@ public class Userservice {
     }
 
     public String deleteUserById(int id){
-    users.remove(id);
-    return "Deleted Successfully";
+     userRepository.deleteById(id);
+     return "user deleted successfully";
     }
 
     public User updateUserById(int id, User updatedUser){
@@ -45,4 +45,15 @@ public class Userservice {
     return updatedUser;
     }
 
+    public List<User> getUserByName(String name){
+        return userRepository.findByName(name);
+    }
+
+   public List<User> getUserByEmail(String email){
+        return userRepository.findByEmail(email);
+    }
+
+     public List<User> getUserByNameNative(String name){
+        return userRepository.findByNameNative(name);
+    }
 }
