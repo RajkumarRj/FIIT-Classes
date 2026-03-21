@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+
+    <style>
+      .translate {
+        /* transform: translate(50px,50px); */
+        /* transform: rotate(45deg); */
+        /* transform: skew(160deg); */
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        /* transition-delay: 2s; */
+      }
+      .translate:hover {
+        /* transform: translate(30px,40px); */
+        transform: translateX(50px) rotate(90deg) scale(1.2);
+        color: green;
+        /* background-color: yellow; */
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+
+      .card {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      .card > button {
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 5px;
+      }
+
+      @media screen and (min-width: 768px) {
+        .container {
+          flex-direction: row;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .container {
+          background: yellow;
+        }
+        .card > button {
+          display: none;
+        }
+      }
+      @media (min-width: 601px) and (max-width: 768px) {
+        .container {
+          background: green;
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .container {
+          background-color: red;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        .container {
+          background-color: purple;
+        }
+      }
+      button{
+        display: none;
+      }
+      h2:hover button{
+       display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>Transform</h2>
+    <button>Click</button>
+    <br />
+    <br /><br /><br /><br /><br />
+
+    <h3 class="translate">Transform-translate</h3>
+
+
+    <div class="container">
+      <div class="card">
+        <img src="./ocean.jpg" alt="" />
+
+        <h2>ocean</h2>
+        <p>Description about ocean</p>
+        <button>Visit us</button>
+      </div>
+
+      <div class="card">
+        <img src="./ocean.jpg" alt="" />
+        <h2>ocean</h2>
+        <p>Description about ocean</p>
+        <button>Visit us</button>
+      </div>
+      <div class="card">
+        <img src="./ocean.jpg" alt="" />
+        <h2>ocean</h2>
+        <p>Description about ocean</p>
+        <button>Visit us</button>
+      </div>
+      <div class="card">
+        <img src="./ocean.jpg" alt="" />
+        <h2>ocean</h2>
+        <p>Description about ocean</p>
+        <button>Visit us</button>
+      </div>
+
+      <div class="card">
+        <img src="./ocean.jpg" alt="" />
+        <h2>ocean</h2>
+        <p>Description about ocean</p>
+        <button>Visit us</button>
+      </div>
+    </div>
+  </body>
+</html>

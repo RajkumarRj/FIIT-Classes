@@ -1,6 +1,5 @@
 package com.example.validatorspringjpa.service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,7 +19,7 @@ public class Userservice {
         this.userRepository = userRepository;
     }
 
-    private int currentId =1;
+    // private int currentId =1;
 
     public List<User> getUser(){
     return userRepository.findAll();

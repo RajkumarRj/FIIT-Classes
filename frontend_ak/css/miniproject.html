@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>minipojrect</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      img {
+        width: 400px;
+        height: 400px;
+
+        animation: bounce 3s infinite;
+      }
+
+      @keyframes bounce {
+        from {
+          transform: rotate(-10deg) translateY(0);
+        }
+        to {
+          transform: rotate(-10deg) translateY(15px);
+        }
+      }
+      .circle {
+        border: 2px none black;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background-color: #f76e16;
+        color: white;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        animation: opac 2s infinite ease-in-out;
+      }
+
+      .circle p {
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: bolder;
+        text-align: center;
+      }
+      .circle span {
+        font-size: 14px;
+      }
+
+      .container {
+        position: relative;
+        width: fit-content;
+      }
+      .left p,
+      .left,
+      .right,
+      .right p {
+        display: inline-block;
+      }
+      .right span {
+        display: block;
+        margin-top: -10px;
+      }
+      .free-shipping {
+        border: 1px none whitesmoke;
+        border-radius: 20px;
+        font-size: 12px;
+        color: white;
+        background-color: #d32034;
+        width: fit-content;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        padding: 10px;
+      }
+      @keyframes opac {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0.6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=600&fit=crop"
+        alt="red-shoe"
+      />
+      <div class="circle">
+        <p>
+          up to <br />
+          <span>40%</span> <br />
+          off
+        </p>
+      </div>
+
+      <div class="free-shipping">
+        <div class="left">
+          <p>&#10003;</p>
+        </div>
+
+        <div class="right">
+          <p>Free Shipping</p>
+          <span>Orders over $75</span>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </body>
+</html>
