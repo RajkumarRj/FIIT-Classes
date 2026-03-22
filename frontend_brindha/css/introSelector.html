@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction</title>
+    <link rel="stylesheet" href="./introSelector.css" />
+    <style>
+      h2 {
+        color: red;
+      }
+
+      p {
+        /* color: brown; */
+        /* background-color: yellowgreen; */
+        /* text-align: center; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1 -> inline css -> style attribute -->
+
+    <h1
+      style="color: blue; padding: 10px; margin: 10px; border: 5px solid black"
+    >
+      Inline css
+    </h1>
+
+    <!-- 2-> internal css -> style tag  -->
+
+    <h2>internal css</h2>
+
+    <!-- 3-> external css -> separate file + link -->
+    <p>above h3 element</p>
+    <h3>External css</h3>
+
+    <p style="color: blue; background-color: bisque">
+      inline-internal-external
+    </p>
+
+    <p>Brindha</p>
+    <p id="fiit">FIIT</p>
+
+    <section>
+      <h1>Section h1 tag</h1>
+    </section>
+
+    <section class="sec">
+      <h1>Section h1 tag</h1>
+    </section>
+
+    <section class="sec">
+      <h1>Section h1 tag</h1>
+    </section>
+
+    <div>
+      <h1>Div h1 tag</h1>
+    </div>
+
+    <div>
+      <h1 class="sec">div h1 tag</h1>
+
+      <div>
+        <h1>Div h1 tag</h1>
+        <div>
+          <h1>Div h1 tag</h1>
+        </div>
+
+        <div>
+          <h1>Div h1 tag</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="child-selector">
+      <h1>Child element</h1>
+      <div>
+        <h1>Grand child element</h1>
+      </div>
+
+      <h1>Child element</h1>
+    </div>
+
+    <h3>H3 element</h3>
+    <span>in between adjacent</span>
+    <p>Adjacent sibling element</p>
+    <p>sibling element</p>
+
+    <input type="text">
+    <input type="password">
+  </body>
+</html>

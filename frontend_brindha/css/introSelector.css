@@ -1,0 +1,43 @@
+h3 {
+  color: yellow;
+}
+
+/* p {
+  color: white;
+  background-color: #333;
+} */
+
+#fiit {
+  color: orange;
+}
+
+.sec {
+  color: aqua;
+  background-color: brown;
+}
+
+* {
+  /* background-color: yellowgreen; */
+  /* text-align: center; */
+}
+/* 
+div h1 {
+  color: yellow;
+} */
+
+.child-selector > h1 {
+  color: purple;
+}
+
+h3 + p {
+  background-color: aqua;
+}
+
+h3 ~ p {
+  background-color: gold;
+}
+
+
+input[type="text"]{
+    border: 10px solid black;
+}
