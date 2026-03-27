@@ -1,4 +1,4 @@
-class Car{
+ class Car{
 
     // blueprint  
      String color = "blue";
@@ -51,7 +51,6 @@ public class App {
         //using literal
         String s1 = "hello"; // string constant pool
         String s3 = "hello";
-
         //using new keyword
         String s2 = new String("hello");
         String s4 = new String("hello");

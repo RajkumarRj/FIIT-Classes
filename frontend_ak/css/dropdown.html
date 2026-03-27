@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <style>
+      .drop-content span {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .drop-content span:hover {
+        background-color: #333;
+        color: white;
+      }
+
+      .drop-content {
+        border: 2px solid black;
+        width: fit-content;
+        padding: 10px;
+        margin-top: 5px;
+        display: none;
+      }
+
+      button:hover+.drop-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Drop down menu</h1>
+    <div class="drop-down">
+      <button>Course</button>
+
+      <div class="drop-content">
+        <span>Python </span>
+        <span>Java</span>
+        <span>MERN</span><span>Typescript</span>
+      </div>
+    </div>
+
+    <script src="./demo.js"></script>
+    <script>
+        alert("Hello there")
+    </script>
+  </body>
+</html>
