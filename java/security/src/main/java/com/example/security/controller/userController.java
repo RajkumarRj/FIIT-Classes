@@ -19,7 +19,7 @@ public class userController {
         return "Hello User";
     }
 
-    @GetMapping("/admin")
+                                                                                                                                                  @GetMapping("/admin")
     public String sayAdmin(){
         return "Hello Admin";
     }
