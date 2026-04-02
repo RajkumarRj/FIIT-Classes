@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+    
+    <script>
+      // implicit coersion
+      console.log("2" + 2);
+      console.log("2" - "1");
+      console.log("3" * 3);
+      //explicit coersion
+      console.log(Number("123"));
+      console.log(parseInt("123px"));
+
+      console.log(String(123));
+      console.log((123).toString());
+
+      console.log(Boolean(0));
+      //   var fiit = "Academy";
+      //   fiit = 100;
+      //   fiit = true;
+      //   fiit = "a";
+      //   fiit = [1, 2, 3];
+      //   fiit = { name: "Ganesh" };
+      //   fiit = 100n;
+      //   console.log(typeof fiit);
+      //   var a = null ;
+      //   console.log(typeof a);
+
+      let arun = "developer";
+      // var -> allows redeclaration , reinitialization
+      //   scope => function scope, global scope
+
+      function redmi() {
+        var model = "redmi 9 ";
+        console.log(arun);
+      }
+
+      //   console.log(model);
+      redmi();
+
+      //   var arun = "consulting";
+      //   re-initilization
+      //   let => block scope
+      {
+        const block = "blocked scope";
+      }
+      // console.log(block);
+      arun = "singer";
+      console.log(arun);
+
+      let kumari = "developer";
+      // let => don't allow declaration
+      kumari = "consulting";
+      console.log(kumari);
+
+      const PI = 3.14;
+      //   const => doesn't allow redeclare and reinitiLie
+      console.log(PI);
+
+      // javascript -> dynamic typed language
+      // data types -> let, var, const
+
+      // Number
+      // String
+      // Boolean
+      // Object
+
+      // 1995 -> brenden eich
+      // livescript -> javascript
+
+      // java -> programming language
+      // javscript -> scripting language
+
+      // runs in broswer
+      // chrome -> v8
+      // firefox -> spidermonkey
+      //   console.log("Javascript");
+      //   document.write("Hello browser");
+      // cd => change directory
+    </script>
+  </body>
+</html>

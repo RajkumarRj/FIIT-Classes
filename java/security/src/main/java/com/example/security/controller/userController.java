@@ -17,9 +17,14 @@ public class userController {
     @GetMapping("/users")
     public String sayUser(){
         return "Hello User";
-    }
-
-                                                                                                                                                  @GetMapping("/admin")
+    }    
+    
+    @GetMapping("/users/hello")
+    public String sayHelloUser(){
+        return "Hello users/hello";
+    }          
+    
+    @GetMapping("/admin")
     public String sayAdmin(){
         return "Hello Admin";
     }
