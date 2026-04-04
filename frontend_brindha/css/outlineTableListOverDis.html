@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      input {
+        /* outline-width: 10px;
+            outline-style: solid;
+            outline-color: brown; */
+        /* outline: 10px solid brown ; */
+        margin-top: 20px;
+      }
+
+      /* div {
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        color: white;
+        overflow-y: scroll;
+      } */
+      table, td, th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        /* border-spacing: 30px; */
+      }
+      ul{
+
+        /* list-style-type: circle; */
+        /* list-style-position: inside; */
+        /* list-style-image: url("https://lh3.googleusercontent.com/-4GxJOlrZu60/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfklJPNSk3uYOkO5E44OUgCm080GZPA/photo.jpg?sz=46"); */
+        list-style: url("https://lh3.googleusercontent.com/-4GxJOlrZu60/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfklJPNSk3uYOkO5E44OUgCm080GZPA/photo.jpg?sz=46") inside;
+      }
+      ul>li{
+        text-transform: uppercase;
+        border: 2px solid black;
+      }
+
+      ol{
+        list-style-type: lower-greek;
+        /* upper-alpha,
+        lower-alpha,
+        upper-roman,
+        lower-roman, */
+        /* list-style-image: url("https://lh3.googleusercontent.com/-4GxJOlrZu60/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfklJPNSk3uYOkO5E44OUgCm080GZPA/photo.jpg?sz=46"); */
+
+      }
+      p,span{
+        display: inline-block; 
+        width: 100px;
+        height: 100px;
+        /* inline -> width & height ignore */  
+      }
+      /* span{
+        width: 200px;
+        height: 200px;
+      } */
+      
+      .parent{
+        height: 700px;
+        border: 2px solid black ;
+        display: flex; 
+
+        /* flex-direction: column; */
+        gap: 20px;
+        justify-content: center; 
+        align-items: center; 
+        /* flex-wrap: wrap; */
+      }
+      .child{
+        width: 100px;
+        height: 150px;
+        background-color: brown;
+        color: white;
+        /* margin-left: 20px; */
+      }
+    </style>
+  </head>
+  <body>
+    <section class="parent">
+        <div class="child">Box 1</div>
+        <div class="child">Box 2</div>
+        <div class="child">Box 3</div>
+
+    </section>
+
+
+
+    <p>block element</p>
+    <span>inline element</span>
+    <span>inline element</span>
+    <p>block element</p>
+
+    <ol>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ol>
+    <ul >
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ul>
+
+    <table >
+       <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Degree</th>
+       </tr>
+
+       <tr>
+        <td>Ganesh</td>
+        <td>24</td>
+        <td>LLB</td>
+       </tr>
+
+    </table>
+
+
+    <h1>Outline</h1>
+    <div>
+      voluptate minus quibusdam eos. Repudiandae, libero? Facilis ducimus
+      eveniet ipsum omnis dicta, eum eius possimus alias, explicabo cumque
+      praesentium inventore, consequuntur dolor. Voluptas corporis obcaecati
+    </div>
+
+    <input type="text" placeholder="Enter your name " />
+  <!-- </body> -->
+</html>
