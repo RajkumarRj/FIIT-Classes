@@ -120,17 +120,17 @@ public class Array {
         // string => non- primitive , java=> class 
 
         // string literal => stores in string constant pool
-        String name ="Priyanka";
-        String userName ="Priyanka";
+        // String name ="Priyanka";
+        // String userName ="Priyanka";
 
-        System.out.println(name.equals(userName));
-        System.out.println(name == userName);
+        // System.out.println(name.equals(userName));
+        // System.out.println(name == userName);
 
-        String difName = new String("Priyanka");
+        // // String difName = new String("Priyanka");
 
 
-        System.out.println(name.equals(difName)); // check only value 
-        System.out.println(name == difName); //check for reference 
+        // System.out.println(name.equals(difName)); // check only value 
+        // System.out.println(name == difName); //check for reference 
 
         // two dimensional
         // jagged array 
