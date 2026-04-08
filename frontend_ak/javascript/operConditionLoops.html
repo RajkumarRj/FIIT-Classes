@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operators</title>
+  </head>
+  <body>
+    <h1>Operators</h1>
+
+    <script>
+      // opeators => unary, binary, terinary
+      //   unary => one operand
+
+      // increment ++
+      // decrement --
+
+      let add = 10;
+
+      // console.log(add);
+      // console.log(add++);
+      // console.log(++add);
+
+      // console.log(add);
+
+      // console.log(add--);
+      // console.log(add);
+      // console.log(--add);
+
+      // binary operators => arithmetic,
+      // relational, logical,
+      //  assignment, bitwise
+
+      let a = 3;
+      let b = 4;
+      //   arithmetic
+
+      console.log(a + b);
+      console.log(a - b);
+      console.log(a * b);
+      console.log(a / b);
+      console.log(a % b);
+
+      //relational => > < >= <= == === != !===
+
+      console.log(a > b);
+      console.log(a < b);
+      console.log(a >= b);
+      console.log(a <= b);
+      console.log(a == b);
+      console.log(a != b);
+
+      console.log(a === b); // strict check
+      console.log(a !== b);
+
+      //logical operator => && || !
+
+      //   and => true when all condition is true
+
+      console.log(true && false);
+      console.log(true && true);
+
+      // OR => need atleast one condition to be true
+
+      console.log(true || true);
+
+      console.log(!true);
+
+      // bitwise => & | ^ >> <<  ~
+
+      console.log(a & b);
+
+      console.log(a | b);
+
+      console.log(a ^ b);
+
+      console.log(a >> 2);
+
+      console.log(a << 1);
+
+      console.log(~a);
+
+      // assignment operator
+
+      let data = 10;
+
+      data += 10;
+      console.log(data);
+
+      // terinay
+
+      console.log(false ? console.log("true") : console.log("false"));
+
+      // conditional statement
+
+      // if , if else, if else if , nestedif , switch
+
+      if (true && true) {
+        console.log("dflkaj");
+      }
+
+      let age = 20;
+
+      if (age >= 18) {
+        console.log("You are eligible for vote ");
+      } else {
+        console.log("you are not eligible for vote ");
+      }
+
+      let voterId = false;
+      if (age >= 18) {
+        if(voterId){
+
+            console.log("You are eligible for vote ");
+        }
+      } 
+
+    //   if else if 
+    let mark = 90;
+    if(mark >= 90){
+        console.log("Grade A+");
+        
+    }else if(mark >= 80){
+        console.log("Grade B");
+        
+    }else if (mark >= 70){
+        console.log("Grade C");
+        
+    }
+
+    // swtich statement 
+
+    switch(mark){
+        case 90: console.log("Grade A");
+        break;
+        case 80 : console.log("Grade B");
+    }
+
+
+
+
+
+
+
+
+      // a + b => operand , operators
+    </script>
+  </body>
+</html>

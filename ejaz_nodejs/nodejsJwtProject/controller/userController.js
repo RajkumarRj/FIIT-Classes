@@ -25,7 +25,7 @@ export const signupController = async (req, res) => {
       name,
       email,
       password,
-      role: role || "user",
+      role:  "user",
     });
 
     res.status(201).json({
