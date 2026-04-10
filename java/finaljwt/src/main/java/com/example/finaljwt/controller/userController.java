@@ -1,6 +1,7 @@
 package com.example.finaljwt.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,14 +19,19 @@ public class userController {
     @Autowired
     private JwtUtil jwtUtil;
 
+    // @Value("${my_password}")
+    @Value("${username}")
+    private String password;
+
   
 
     @GetMapping("/hello")
     public String sayHello(){
-       
+
+        
         System.out.println( SecurityContextHolder.getContext().getAuthentication());
 
-        return "Hello Spring boot";
+        return password;
     }
 
     @GetMapping("/data")

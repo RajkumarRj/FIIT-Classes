@@ -23,7 +23,7 @@ public class securityConfig {
 
         http.
         csrf(csrf-> csrf.disable())
-        .authorizeHttpRequests(auth -> auth.requestMatchers("/login").permitAll().anyRequest().authenticated())
+        .authorizeHttpRequests(auth -> auth.requestMatchers("/hello","/login").permitAll().anyRequest().authenticated())
         .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         http.addFilterBefore(jwtFilter , UsernamePasswordAuthenticationFilter.class);
