@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo</title>
+    <style>
+      h1 {
+        color: purple;
+        text-transform: capitalize;
+      }
+
+      h1:hover {
+        color: blue;
+      }
+
+      /* ul li:first-child{
+            color: red;
+        }
+
+        ul li:last-child{
+            color: peru ;
+        } */
+
+      ul li:nth-child(even) {
+        color: aqua;
+      }
+      a:link {
+        color: yellowgreen;
+      }
+
+      a:visited {
+        color: red;
+      }
+
+      a:active {
+        color: blue;
+      }
+
+      /* psuedo element  -> specific part of the element */
+      ul li::before {
+        content: "😍";
+      }
+
+      ul li::after {
+        content: "🙆‍♂️";
+      }
+
+      p::first-letter {
+        font-size: 60px;
+      }
+
+      p::first-line{
+        color: blue;
+      }
+
+      ::selection{
+        background-color: orange;
+        color: white;
+      }
+
+      ::marker{
+        font-size: 40px;
+        color: rgb(23, 169, 108);
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi qui
+      molestiae ea exercitationem similique, dolore corporis delectus quas quis
+      doloremque hic dolorum ut repudiandae placeat ipsam excepturi, quae
+      officiis non?
+    </p>
+    <h1>pseudo class</h1>
+    <a href="#">Google</a>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>React js</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>React js</li>
+    </ul>
+  </body>
+</html>

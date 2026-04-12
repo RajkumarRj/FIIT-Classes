@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+            grid-template-rows:1fr 2fr 2fr 1fr;
+            height: 96vh;
+            grid-template-areas: 
+            "header header header "
+            "side cont1 cont1"
+            "side cont2 cont3"
+            "footer footer footer";
+            width: 100%;
+            text-align: center;
+            row-gap: 20px;
+            column-gap: 10px;
+        }
+        .box1{
+            grid-area:header ;
+            background-color: aqua;
+        }
+        .box2{
+            grid-area: side;
+            background-color: yellow;
+        }
+        .box3{
+            grid-area:cont1;
+            background-color: red;
+        }
+
+        .box4{
+            grid-area:cont2;
+            background-color: green;
+        }
+        .box5{
+            grid-area:cont3;
+            background-color: pink;
+        }
+        .box6{
+            grid-area:footer;
+            background-color: purple;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <h1>Header</h1>
+      </div>
+      <div class="box2">
+        <h1>Side Bar</h1>
+      </div>
+      <div class="box3">
+        <h1>Content 1</h1>
+      </div>
+      <div class="box4">
+        <h1>Content 2</h1>
+      </div>
+      <div class="box5">
+        <h1>content 3</h1>
+      </div>
+      <div class="box6">
+        <h1>Footer</h1>
+      </div>
+    </div>
+  </body>
+</html>

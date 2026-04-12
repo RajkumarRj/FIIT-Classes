@@ -124,7 +124,6 @@ public class Main
         // class  => blueprint  => doesn't create memory
         // object => instance of class => create memory for that object 
         
-        
         App obj = new App();
         
         System.out.println(obj.data);

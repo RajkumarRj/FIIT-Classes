@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+
+    <style>
+      .container {
+        display: grid;
+        /* width: 500px;
+         */
+        height: 600px;
+        border: 2px solid black;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        /* row-gap: 40px; */
+        /* column-gap: 40px; */
+        /* gap: 50px; */
+        justify-items: center;
+        align-items: center;
+        place-content: center;
+        /* align-content: center; */
+        /* justify-content:center; */
+        /* align-content: center; */
+      }
+
+      .box1{
+       
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      .box2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <table border="2">
+      <tr>
+        <th rowspan="2">name</th>
+        <th>age</th>
+        <th>email</th>
+      </tr>
+
+      <tr>
+       
+        <td>20</td>
+        <td>fiit@gmail.com</td>
+      </tr>
+
+      <tr>
+        <td colspan="3">ganesh</td>
+      </tr>
+    </table> -->
+    <h1>Grid element</h1>
+
+    <div class="container">
+      <div class="box1">Box1</div>
+      <div class="box2">Box2</div>
+      <div>Box3</div>
+      <div>Box4</div>
+      
+    </div>
+  </body>
+</html>

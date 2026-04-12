@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+
+    <style>
+      /* h1 {
+        opacity: 0.7;
+      } */
+      /* .container{
+        position: relative;
+        border: 2px solid black ;
+       } */
+      div h1 {
+        position: absolute;
+        background-color: yellow;
+        z-index: -100;
+        /* top , right, left, bottom  */
+        top: 50px;
+        /* left: 100px; */
+        /* width: 100%; */
+      }
+      h3 {
+        background-color: red;
+      }
+
+      h2 {
+        position: fixed;
+      }
+      header {
+        text-align: center;
+        background-color: burlywood;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+      }
+      .prod-container{
+        position: relative;
+      }
+      .prod-container span{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 100px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="prod-container">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/zenith_pro_LR.png?v=1751544158&width=200"
+        alt=""
+      />
+      <span>100 OFF</span>
+    </div>
+
+<!--     
+    <h1>Opacity</h1>
+    <h3>top</h3>
+    <div class="container">
+      <h1>absolute</h1>
+    </div>
+
+    <h2>Fixed</h2>
+
+    <header>BOAT</header> -->
+    
+  </body>
+</html>

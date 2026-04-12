@@ -47,14 +47,5 @@ public class App {
                 // ram => volatile memory -> 
                 // rom => non-volatile memory -> 
                 // data types 
-
-
-
-                
-
-                
-
-
-
     }
 }
