@@ -20,20 +20,16 @@ public class App extends Thread{
 
         obj.start();
         
-        
         loop obj2 = new loop();
         
         Thread runnableThread = new Thread(obj2);
 
-        
-        
         runnableThread.start();
 
         obj.join();
 
         runnableThread.join();
 
-        
         System.out.println("After thread ");
 
     }

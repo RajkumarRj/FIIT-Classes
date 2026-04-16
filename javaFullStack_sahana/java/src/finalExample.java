@@ -1,7 +1,7 @@
 
 
-final class Parent {
-    final  void show(){
+ class Parent {
+     void show(){
           System.out.println("Parent show method");
      }
 }
