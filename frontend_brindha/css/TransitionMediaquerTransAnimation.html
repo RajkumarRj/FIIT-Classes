@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      section {
+        border: 2px solid black;
+        /* height: 80vh; */
+        /* position: relative; */
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        /* transition-property: background-color, color, transform; */
+        /* transition-property: all; */
+        /* transition-duration: 2s; */
+        /* transition-delay: 2s; */
+        /* transition-timing-function:ease-in ; */
+        transition: all 2s ease-in 2s;
+
+        /* transform: translateX(-100px); move elements */
+        /* transform: translateY(100px); */
+        /* position: absolute;
+            top: 50%;
+            left: 50%; */
+        /* transform: translate(-50%, -50%); */
+
+        /* transform: rotateX(45deg); */
+        /* transform: rotateY(45deg); */
+        /* transform: rotate(45deg); */
+        /* transform: scaleX(1.5); */
+        /* transform: scaleY(1.5); */
+        /* transform: scale(1.5); */
+        /* transform: skewX(50deg); */
+        /* transform: skewY(50deg); */
+        /* transform: skew(50deg); */
+      }
+      div:hover {
+        transform: scale(1.2) rotate(45deg);
+        background-color: aqua;
+        color: white;
+      }
+
+      /* transform => allows to move, scale, or rotate elements */
+      header {
+        /* animation-name: rotateElement;
+        animation-duration: 5s;
+        animation-iteration-count: infinite; */
+        display: inline-block;
+        /* animation-timing-function: ease-in;
+        animation-direction: alternate-reverse; */
+        animation: rotateElement 5s ease-in 2s infinite ;
+      }
+      header:hover{
+        animation-play-state: paused;
+      }
+      @keyframes rotateElement {
+        /* 0% {
+          background-color: green;
+        }
+        25%{
+            background-color: blue;
+        }
+        50%{
+            background-color: red;
+        }
+        75%{
+            background-color: orange;
+            transform: translateX(100px);
+        }
+        100% {
+          background-color: yellow;
+        } */
+
+        /* from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(200px);
+        } */
+        0% {
+            transform: translateY(0);
+        }
+        /* 50%{
+            transform: translateY(-50px);
+        } */
+        100%{
+            transform: translateY(200px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Animation</h1>
+    </header>
+
+    <h1>Transform</h1>
+
+    <section>
+      <div>Hello there</div>
+    </section>
+  </body>
+</html>

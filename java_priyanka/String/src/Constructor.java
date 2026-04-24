@@ -13,7 +13,6 @@ public class Constructor {
     }
 
     Constructor(Constructor obj){
-
         this.name = obj.name;
         this.age = obj.age;
     }

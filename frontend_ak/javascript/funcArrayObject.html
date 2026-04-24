@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+
+    <script>
+       let a =10;
+       let b = 10;
+
+       function add(a, b){ // parameter
+            console.log("add function ");
+            console.log(a+b);
+            return a+b;      
+        }
+        add(30, 40); // argument 
+       console.log(a+b);
+       let c = 10;
+       let d = 10;
+
+       let e=10;
+       let r=10;
+
+       let res = add(e, r);
+       console.log(res);
+    
+    //    ES6  arrow function 
+     let sub =(a, b)=>{
+        console.log("Sub function" , a-b);   
+     };
+     sub(10, 40);
+
+    //  Anonymouse function   IIFE (immediate invoked function)
+    
+    (function iife(){
+        console.log("Immediate invoked function");
+        
+    })()
+
+    // function expression 
+
+    let express = function exp(){
+        console.log("Function expression");   
+    }
+    express();
+
+
+    function user(name="Academy", age=10){
+        console.log(name, age);
+    }
+    user();
+
+
+    function rest(...restparameter){
+        console.log(restparameter.includes("admin"));
+        
+    }
+
+    rest("admin", "user");
+
+    
+    // int arr[] =new int[5]; in java
+    
+    let arr =[1,2,3,4,2,5]; // continguous memory, also accept non-similar types 
+
+    console.log(arr);
+    
+    for(let i=0; i<arr.length; i++){
+        console.log(arr[i])
+    }
+
+
+    console.log(arr[0]);
+    console.log(arr[1]);
+    console.log(arr[3]);
+    console.log(arr[4]);
+    // console.log(arr[5]);
+    // console.log(arr[6][1]);
+    arr[2] = 20;
+    
+    console.log(arr[2]);
+
+    // array methods => push, pop, shift, unshift, slice
+
+    console.log(arr.push(6));
+    console.log(arr.push(7));
+    console.log(arr.pop());
+
+    console.log(arr.unshift(10));
+    console.log(arr.shift());
+
+
+    console.log(arr.slice(2,5));  // n-1 -> 3-1 = 2
+    
+    console.log(arr);
+
+    console.log(arr.length);
+
+    console.log(arr.lastIndexOf(2));
+    console.log(arr.indexOf(2));
+
+    console.log(arr.splice(3,4));
+    console.log(arr);
+
+    console.log(arr.includes(2));
+
+    </script>
+  </body>
+</html>
