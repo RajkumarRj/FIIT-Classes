@@ -35,7 +35,6 @@ class Elephant {
         System.out.println("Elephant display method");
     }
 }
-
 public class Interface {
     // interface => we can achieve full abstraction 
     public static void main(String[] args) {
@@ -46,7 +45,6 @@ public class Interface {
         obj.soap();
         obj.eat();
         obj.sound();
-        obj.display();
-        
+        obj.display();        
     }
 }

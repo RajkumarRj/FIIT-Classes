@@ -35,7 +35,6 @@ class COD extends payment{
 
 }
 
-
 public class Polymorphism {
 
     public static void main(String[] args) {
@@ -66,12 +65,6 @@ public class Polymorphism {
 
         // compile -time => overloading
         // runtime => overriding
-
-
-
-
-
-
     }
     
 }

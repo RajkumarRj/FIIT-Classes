@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media queries</title>
+    <style>
+        .container{
+            border: 2px solid black ;
+            display: flex;
+            gap: 100px;
+        }
+
+        /* min-width -> start point 768px */
+        /* max-width -> end print 567px */
+        /* @media (max-width:480px) {
+            body{
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width:481px) {
+            body{
+                background-color: skyblue;
+            }
+        }
+
+        @media (min-width:500px)  and (max-width:600px) {
+            body{
+                font-size: 100px;
+            }
+        } */
+
+        @media (max-width:480px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+
+        header{
+            background-color: #333;
+            color: white;
+        }
+
+        ul li{
+            display:inline-block;
+            margin-left: 20px;
+            padding: 10px;
+            transition: all 0.5s ease;
+        }
+        ul li:hover{
+            color: #333;
+            background-color: whitesmoke;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact us </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <h1>Media query</h1>
+
+    <div class="container">
+      <div class="left">
+        <img
+          src="https://img.freepik.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?semt=ais_hybrid&w=740&q=80"
+          alt=""
+        />
+      </div>
+
+      <div class="right">
+        <h1>Butterfly</h1>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>React</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

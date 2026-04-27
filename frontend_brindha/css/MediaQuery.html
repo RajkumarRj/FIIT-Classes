@@ -3,46 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Media-query</title>
+    <title>Media queries</title>
     <style>
-        header{
-            background-color: #333;
-            color: white;
-            text-align: center;
-            
-            padding: 5px;
+      body{
+        background-color: aqua;
+      }
 
-        }
-        header ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header  li{
-            display: inline-block;
-            padding: 10px;
-            background-color: #656161; 
-            margin-left: 20px;
-            transition: background-color 1s ;      
-        }
-        li:hover{
-            background-color: blue;
+      .container div{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      .container{
+        display: flex;
+        gap: 20px;
+        /* flex-wrap: wrap; */
+      }
 
+      @media (max-width:478px) {
+        body{
+          background-color: yellow;
         }
+
+        .container{
+          flex-direction: column;
+        }
+      }
+
+      @media (min-width:479px) and (max-width:1024px) {
+        body{
+          background-color: blueviolet;
+        }
+      }
+      @media print{
+        body{
+          background-color: black;
+        }
+      }
     </style>
+
   </head>
   <body>
-    <!-- <h1>Media</h1> -->
-    <header>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Login</li>
-          <li>Sign up</li>
-        </ul>
-      </nav>
-    </header>
+    <h1>Media query</h1>
+
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
   </body>
 </html>
