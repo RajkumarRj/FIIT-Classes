@@ -1,14 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Object</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>Object</h1>
-
 
     <!-- class Car{
         int speed;
@@ -21,97 +19,93 @@
 
     Car obj = new Car(); -->
     <script>
-        
-        let car = {}; // object literal 
+      let car = {}; // object literal
 
-        let bike = new Object(); //using new keyword
+      let bike = new Object(); //using new keyword
 
-        console.log(typeof car);
-        console.log(typeof bike);
+      console.log(typeof car);
+      console.log(typeof bike);
 
-        function emp(id, name, salary){
-            this.id = id;
-            this.name = name;
-            this.salary = salary;
+      function emp(id, name, salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+      }
+
+      let e = new emp(103, "Ganesh", 40000);
+
+      console.log(e);
+      // constructor
+
+      console.log(typeof e);
+
+      let person = {
+        name: "Arun",
+        age: 19,
+        college: "karan",
+        "bsc department": "BSC",
+        address: {
+          street: "South street",
+          doorNo: 85,
+        },
+        greet(){
+            console.log(this.name);   
         }
-
-        let e = new emp(103, "Ganesh", 40000);
-        
-        console.log(e);
-        // constructor
-
-
-        console.log(typeof e);
-
-
-        let person ={
-            name:"Arun",
-            age:19,
-            college:"karan",
-           "bsc department" :"BSC"
-        }
-        
-        let sports ={
-            sport_name:"kabadi",
-        }
-
-        let mergedObject = Object.assign(person, sports);
-
-        let spreadOperator = {...person, ...sports};
-
-        console.log(spreadOperator);
-        
-
-        console.log(mergedObject);
-        
+      };
+      
 
 
 
-        Object.freeze(person)
+      console.log(person.greet());
+      
+
+    //   let greet = ()=>{
+    //     console.log("hello block code ");  
+    //   };
 
 
-        console.log(person);
-        console.log(person.age);
-        console.log(person["college"]);
-        console.log(person["bsc department"]);
-        
-        
-        person.name ="Kumari"
-        
-        
-        console.log(person.name);
-
-        console.log(Object.keys(person));
-
-        let objectKeys = Object.keys(person);
-    
-        console.log(objectKeys[0]);
-        
-        console.log(Object.values(person));
-
-        console.log(Object.entries(person));
-
-        let twoDArray = Object.entries(person);
-
-        console.log(twoDArray[0][0]);
+      
 
 
+      console.log(person.address.street);
+      
 
+      let sports = {
+        sport_name: "kabadi",
+      };
 
+      let mergedObject = Object.assign(person, sports);
 
-        
+      let spreadOperator = { ...person, ...sports };
 
-        
-        
-        
-        
-        
-        
-        
+      console.log(spreadOperator);
+
+      console.log(mergedObject);
+
+      Object.freeze(person);
+
+      console.log(person);
+      console.log(person.age);
+      console.log(person["college"]);
+      console.log(person["bsc department"]);
+
+      person.name = "Kumari";
+
+      console.log(person.name);
+
+      console.log(Object.keys(person));
+
+      let objectKeys = Object.keys(person);
+
+      console.log(objectKeys[0]);
+
+      console.log(Object.values(person));
+
+      console.log(Object.entries(person));
+
+      let twoDArray = Object.entries(person);
+
+      console.log(twoDArray[0][0]);
     </script>
-
-
-
-    
-</body>
+  </body>
 </html>
