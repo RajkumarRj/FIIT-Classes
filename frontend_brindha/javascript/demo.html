@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- <script></script> -->
+  </head>
+  <body>
+    <h1>Javascript</h1>
+
+    <!-- javascript -> scripting language  -->
+
+    <!-- programming langugae vs scripting language  -->
+
+    <!-- dynamic typed language vs statically typed language  -->
+
+    <!-- 1995 -> Brendan Eich  -> livescript -> javascript -->
+
+    <script>
+      // how does the javascript runs ->browser has javascript engine
+      //  ( intrepreter language)
+
+      // chrome javascript engine - v8
+      // firefox  -> spider monkey
+      console.log("Hello there");
+
+      // data types and variables
+
+      console.log(typeof 10);
+
+      console.log(typeof "Fiit");
+
+      console.log(typeof true);
+
+      console.log(typeof []);
+
+      console.log(typeof {});
+
+      console.log(typeof undefined);
+
+      console.log(typeof null);
+
+      // data types -> primitve and non-primitive
+
+      // primitive data types -> fixed value
+
+      // non-primitive data types -> dynamic value or non fixed value
+
+      // array , object
+
+      // javascript keyword -> var let , const
+
+      var a = 10;
+
+      //declaration
+      var b;
+      var b; // var keyword allows re-declare
+
+      //definition
+      b = 20;
+      b = 30; // allows re-inizliation
+      console.log(b);
+      console.log(a);
+
+      let fiit;
+      // let fiit; // let keyword don't allow re-declare
+
+      fiit = 10;
+
+      fiit = 100; // allow re-initilization
+
+      console.log(fiit);
+
+      const PI = 3.14;
+
+      // const PI = 3.15; // don't allow re-declare
+
+      // PI = 350; // don't allow re-initializaiton
+
+      //    var -> redelcare, reinitizaion
+      //    let -> no re-declare, re-initlization
+      //    const -> don't allow both
+
+      // scope -> global scope, function scope, blocked scope
+      var data = 60; // global scope 
+
+
+      function add() {
+        var scope = 30; // function scope or global scope
+        console.log(scope);
+        console.log(data);
+      }
+
+      add();
+
+    //   console.log(scope)
+
+      let scoped = 50;
+      function sub(){
+        let fscoped = 60;
+        console.log(fscoped);
+        
+        console.log(scoped);
+        
+      }
+
+      sub();
+    //   console.log(fscoped);
+
+    {
+        let y = 10;
+        const z= 20;
+        var x = 30;
+    }
+    // console.log(y);
+    // console.log(z);
+    console.log(x);
+    
+
+    // operators -> unary, binary, terninary 
+    // unary operator -> ++, --
+
+    let operand = 10;
+
+    console.log(operand++);
+    console.log(++operand);
+
+
+    console.log(operand--);
+    console.log(--operand);
+    console.log(operand);
+
+    // binary operators -> arithmetic
+
+    // +, -, * ,/,%
+
+    let one = 10;
+    let two = 20;
+
+
+    console.log(one + two);
+
+    console.log(one - two);
+
+    console.log(one * two);
+
+    console.log(two / one );
+
+    console.log(7 % 4);
+    
+    
+    
+    
+    
+
+    </script>
+  </body>
+</html>
