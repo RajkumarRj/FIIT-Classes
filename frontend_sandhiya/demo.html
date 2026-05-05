@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+        /* universal selector  */
+        *{
+            background-color: yellowgreen;
+        }
+      h1 {
+        background-color: yellow;
+      }
+
+      /* element(type) selector  */
+      /* div{
+        background-color: #333;
+        width: 200px;
+        height: 200px;
+      } */
+
+      /* #id selector  */
+      #idselector{
+        font-size: 60px;
+      }
+
+      
+      /* .class selector (group of elements) */
+      .item1{
+        background-color: blueviolet;
+      }
+      /* group selector  */
+    h3,h4,h5,.item1,#idselector{
+        color: purple;
+        background-color: antiquewhite;
+      }
+      /* attribute selector  */
+
+      [title]{
+        width: 200px;
+        height: 200px;
+      }
+      [target="_blank"]{
+        color: red;
+      }
+
+      /* descendent selector  */
+      ol li{
+        color: purple;
+      }
+
+      /*  child selector  */
+
+      
+
+      nav ol li{
+
+      }
+/* 
+      div p{
+        color: aqua;
+      } */
+       div>p{
+        color: aqua;
+       }
+
+       /* +  adjacent sibling selector */
+       /* h2 + p{
+        color:red;
+       } */
+       /* general sibling selector  ~ */
+
+       h2 ~ p{
+        color: orangered;
+       }
+
+
+    </style>
+    <link rel="stylesheet" href="./demo.css">
+  </head>
+  <body>
+    <p>Sibling below selector</p>
+    <h2>Sibling selector</h2>
+    <p>Sibling below selector</p>
+    <p>Sibling below selector</p>
+
+
+    <div>
+        <p>child element</p>
+        <section>
+            <p>grand child element</p>
+        </section>
+
+        <p>child element</p>
+    </div>
+
+    
+    <ol id="ol">
+        <li>item 1 <li>item 1a</li> </li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ol>
+    <ul>
+        <!-- <li class="item1">item 1</li> -->
+         <li>item 1</li>
+        <li>item 2</li>
+        <!-- <li class="item1">item 3</li> -->
+         <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+
+
+    <nav>
+        <ol>
+            <li>
+
+            </li>
+        </ol>
+    </nav>
+
+    <section>
+        <ol>
+            <li>
+                
+            </li>
+        </ol>
+    </section>
+
+
+
+
+
+
+
+    <img 
+    src="https://thumbs.dreamstime.com/b/sea-water-ocean-wave-surfing-surface-colorful-vibrant-sunset-barrel-shape-124362369.jpg"
+     title="ocean"
+      alt="">
+
+      <a href="#" target="_blank" >Blank</a>
+      <a href="#" target="_self" >Self</a>
+
+
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+
+    <!-- list -> ordered list, unordered list, description list -->
+
+    
+
+
+
+    <h1 id="idselector">CSS</h1>
+    <h1 ">CSS</h1>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <!-- css -> 1994 -> hakon wium lie -->
+
+    
+    <!-- html 5 -->
+    <!-- css -> css3 -->
+
+    <!-- include css -> inline(attribute), internal(tag), external  -->
+
+    <h2 style="color: blue; background-color: #333">Hello there</h2>
+
+    <!-- 
+    selector {
+        property : value:
+    } -->
+  </body>
+</html>

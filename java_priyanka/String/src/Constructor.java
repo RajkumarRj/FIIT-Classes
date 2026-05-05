@@ -17,7 +17,6 @@ public class Constructor {
         this.age = obj.age;
     }
 
-
     
 
     public static void main(String[] args) {

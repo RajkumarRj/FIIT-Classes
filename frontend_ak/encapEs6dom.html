@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encapsulation</title>
+  </head>
+  <body>
+    <script>
+      // encapsulation => bind data with method
+
+      //   class Employee {
+      //     #salary = 10000;
+
+      //     constructor(name, salary) {
+      //       this.name = name;
+      //       this.#salary = salary;
+      //     }
+      //     display() {
+      //       console.log(this.#salary);
+      //     }
+
+      //     withdraw(amount) {
+      //       if (this.#salary >= amount) {
+      //         this.#salary -= amount;
+
+      //         console.log("Balance amount", this.#salary);
+      //       } else {
+      //         console.log("Insufficient balance");
+      //       }
+      //     }
+      //   }
+
+      //   let obj = new Employee("Arun", 30000);
+      //   console.log(obj.salary);
+
+      //   obj.withdraw(50000);
+
+      //   obj.display();
+
+      //   Es6+
+
+      //   // spread operator  , rest parameter
+      //   const arr = [1, 2];
+
+      //   const arr2 = [...arr, 3, 4];
+      //   console.log(arr2);
+
+      //   const objj2 = { academy: "IT insittue", branch: "TVM" };
+
+      //   const objj3 = { ...objj, ...objj2 };
+
+      //   function insittue(...objj2) {
+      //     console.log(...objj2);
+      //   }
+
+      //   insittue("Arun", 23, "iit");
+
+      //   console.log(objj);
+
+      //   destructing
+      const objj = { name: "FIIT", course: "Python full stack" };
+
+      console.log(objj.name);
+      console.log(objj.course);
+
+      const { name, course } = objj;
+
+      console.log(name);
+      console.log(course);
+
+      //template literal
+
+    
+    </script>
+    <script src="./export.js"></script>
+  </body>
+</html>
