@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <form id="myform" action="./funcArrayObject.html">
+      <input id="input" type="text" placeholder="Enter your name" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="inner">Innterhtml</p>
+    <h1>DOM -> Document object Model</h1>
+
+    <h2>H2 Tag</h2>
+    <h2>H2 Tag</h2>
+
+    <h3 id="one">Id tag</h3>
+
+    <p class="item"></p>
+    <p class="item"></p>
+    <p class="item"></p>
+
+    <p class="item"></p>
+    <p class="item"></p>
+    <p class="item"></p>
+
+    <p class="item"></p>
+    <p class="item"></p>
+    <p class="item"></p>
+
+    <ul>
+      <li>item 1</li>
+      <li class="active">item 2</li>
+      <li class="active">item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+      <p>Hello there</p>
+    </ul>
+
+    <script>
+
+        document.getElementById("myform").onsubmit = function (){
+            alert("Form submitted");
+        }
+
+        document.getElementById("input").oninput = function(){
+            console.log("input value" , this.value); 
+        }
+
+        
+       
+
+      // document.getElementById("inner").textContent = '<b>hello</b>';
+      document.getElementById("inner").innerHTML = "<b>hello</b>";
+
+      document.getElementById("inner").style.backgroundColor = "blue";
+      document.getElementById("inner").style.fontSize = "30px";
+
+      const button = document.createElement("button");
+      button.textContent = "Submit";
+      button.classList.add("clickme");
+
+      button.addEventListener("click", function () {
+        alert("You clicked button");
+      });
+
+      button.addEventListener("mouseover", function () {
+        button.style.background = "blue";
+      });
+      button.addEventListener("mouseout", function () {
+        button.style.background = "";
+      });
+
+    //   document.addEventListener("keydown", function (event) {
+    //     console.log(event.key);
+    //   });
+
+    //   document.addEventListener("keyup", function (event) {
+    //     console.log(event.key);
+    //   });
+
+      console.log(button);
+
+      document.body.appendChild(button);
+
+      //   button.remove();
+
+      let tagName = document.getElementsByTagName("h2");
+
+      let idName = document.getElementById("one");
+
+      let className = document.getElementsByClassName("item");
+
+      let queryAll = document.querySelectorAll("ul > p");
+      let query = document.querySelector("ul > p");
+
+      //   console.log(queryAll);
+      //   console.log(query.tagName);
+
+      //    console.log(typeof className);
+
+      //    className[0].innerText ="Paragraph 1";
+
+      for (let i = 0; i < className.length; i++) {
+        className[i].innerText = `Paragraph ${i + 1}`;
+        console.log(className[i].innerText);
+      }
+
+      //    console.log(className[0].innerText);
+
+      console.log(idName);
+
+      console.log(tagName[0].innerText);
+      console.log(tagName[1]);
+    </script>
+  </body>
+</html>
