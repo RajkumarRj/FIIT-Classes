@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operators</title>
+  </head>
+  <body>
+    <h1>Operators</h1>
+
+    <!-- binary operators -> arithmetic, relational, logical, bitwise, assignment -->
+
+    <!-- relational operator -> > , <, >=, <=, ==, ===, !=, !== -->
+
+    <script>
+      let a = 10;
+      let b = 10;
+
+      //   10 > 20
+
+      console.log(b > a);
+
+      console.log(a < b);
+
+      console.log(a >= b);
+
+      console.log(a <= b);
+
+      console.log(a == b); // check only value
+
+      console.log(a === b); // check for value and check for data type
+
+      console.log(a != b);
+
+      console.log(a !== b);
+
+      // logical operator  && , || , !
+
+      console.log(true && true);
+      console.log(false && true);
+      console.log(true && false);
+      console.log(false && false);
+
+      //   true, true -> true
+      //   false, true -> false
+      //   true , false -> false
+      //   false, false -> false
+
+      //OR
+
+      //   true, true -> true
+      //   false, true -> true
+      //   true , false -> true
+      //   false, false -> false
+      console.log(true || true);
+      console.log(false || true);
+      console.log(true || false);
+      console.log(false || false);
+
+      // !
+      //   true -> false
+      //   false -> true
+
+      console.log(!true);
+      console.log(!false);
+
+      // assignment operator
+      // +=, -=, *=, /=, %=
+
+      let salary = 50000;
+
+      salary += 10000;
+
+      console.log(salary);
+
+      // bitwise operator
+      // & | ^ >> << ~
+
+      let first = 5;
+      let second = 3;
+
+      console.log(first & second);
+
+      console.log(first | second);
+      console.log(first ^ second);
+      console.log(first >> 1);
+
+      console.log(first << 1);
+
+      // ternary operator
+
+      var marks = 7;
+      //  (condition) ? expression1 : expression2;
+
+      var result1 = marks > 35 ? "Pass" : "Fail";
+      console.log(result1);
+
+      // type coersion
+
+      // implicit and explicit
+
+      let result = 1 + "3";
+
+      console.log(typeof result);
+
+      console.log(1 - "2");
+
+      console.log(2 * "3");
+
+      var data = String(123);
+      var data1 = Number("123");
+
+      var data2 = parseInt("123px");
+
+      console.log(typeof data);
+      console.log(typeof data1);
+      console.log(data1);
+      console.log(data2);
+
+      // conditional statements
+      // if, if-else, nested if, if-else-ladder, switch
+
+      let age = 18;
+      let voterId = false;
+
+      if (false) {
+        console.log("Statement is true");
+      }
+
+      if (age >= 18) {
+        console.log("You are eligible to vote");
+      } else {
+        console.log("You are not eligible for vote");
+      }
+
+      if (age >= 18) {
+        if (voterId) {
+          console.log("you are eligible for vote");
+        } else {
+          console.log("You don't have voter id ");
+        }
+      } else {
+        console.log("You are under 18");
+      }
+
+      // else if ladder
+
+      var markss = 2000;
+
+      if (markss >= 90) {
+        console.log("O");
+      } else if (markss >= 80) {
+        console.log("A");
+      } else if (markss >= 70) {
+        console.log("B");
+      } else if (marks < 30) {
+        console.log("Fail");
+      } else {
+        console.log("Condition does not meet");
+      }
+
+      // check for even number
+      let num = 9;
+
+      if (num % 2 == 0) {
+        console.log("Even number");
+      } else {
+        console.log("odd number");
+      }
+
+      // switch
+
+      switch (markss) {
+        case 90:
+          console.log("O");
+          break;
+
+        case 80:
+          console.log("A");
+          break;
+
+        default:
+          console.log("no mark matches");
+          break;
+      }
+
+    //   loops 
+    // for, while, do-while loop
+
+    for(let i=1 ; i<=10;  i+=2){
+        console.log(i);
+    }
+    </script>
+  </body>
+</html>

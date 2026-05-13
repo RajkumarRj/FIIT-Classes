@@ -7,7 +7,6 @@ class myThread extends Thread{
 }
 
 // 2. runnable interafce 
-
 class myTask implements Runnable{
     public void run(){
         System.out.println("Runnable running");

@@ -8,7 +8,6 @@ class Counter{
 
 class Bank{
     int balance = 1000;
-
    synchronized void withdraw(int amount){
         if(balance >= amount){
             balance -=  amount;
@@ -60,12 +59,7 @@ public class multiSynchornized {
         t2.join();
         t3.join();
 
-
         System.out.println(c.count);
-
-
-        
-
     }
     
 }
