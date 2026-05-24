@@ -122,27 +122,7 @@ public class Interface {
 // boolean 
 
 // boolean isEligible = true;
-// boolean isAvailabe = false;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// boolean isAvailabe = false
 
 
 

@@ -3,105 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      h1 {
-        /* border-width: 5px;
-            border-color: red;
-            border-style:solid; */
-
-        /* shorthand  */
-        border: 5px blue groove;
-        padding: 10px 20px;
-        /* margin-bottom: 50px;
-        margin-top: 20px; */
-        margin: 20px 0;
-        /* width: 100px;
-
-            height: 100px; */
-
-        /* border-radius: 50%; */
-        /* box-shadow: 0 0 5px #333; */
-        /* border-top-left-radius: 30px; */
-      }
-
-      /* div { */
-        /* border: 2px solid black; */
-        /* height: 600px; */
-        /* padding: 40px; */
-        /* background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPW60kAp9NvjLao-oL2N_Z65Ch1TczKKeT8g&s"); */
-        /* background-image: url("https://media.istockphoto.com/id/467367026/photo/perfect-sky-and-ocean.jpg?s=612x612&w=0&k=20&c=LZYFRxIhuKQom3l-kR3TLN7GikSJYJz9NRglQ3nngBw="); */
-        /* background-repeat: no-repeat; */
-        /* background-size: contain; */
-        /* background-position: center; */
-        /* background-attachment: fixed; */
-      /* } */
-      p,span{
-        border: 2px solid black;
-        margin-left: 20px;
-      }
-
-      p{
-        display: inline-block;  /* inline element ignores width and height*/
-        width: 100px;
-        height: 100px;
-      }
-      section{
-        border: 2px solid red;
-        height: 350px;
-        display:flex; /* initially column element goes to row*/
-        gap: 20px;
-        /* justify-content: flex-start; row */
-        /* justify-content: flex-end; */
-        /* justify-content: center; */
-        /* justify-content: space-between; */
-        /* justify-content: space-around; */
-        /* justify-content: space-evenly; */
-
-        /* align-items: flex-start; */
-        /* align-items: flex-end; */
-        /* align-items: center; */
-
-        /* justify-content: flex-end; */
-        /* align-items: center; */
-
-        flex-direction: column ;
-        justify-content:center ;
-        align-items: center;
-
-      }
-      section div{
-        width: 70px;
-        height: 70px;
-        background-color: aqua;
-        /* margin: 20px; */
-      }
-      
-    </style>
+    <title>Beginner Practice Template</title>
   </head>
   <body>
-    <p style="text-shadow: 10px 10px  red;">
-        Lorem
-    </p>
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
+    <!-- Headings -->
+    <h1>Main Heading (H1)</h1>
+    <h2>Sub Heading (H2)</h2>
+    <h3>Smaller Heading (H3)</h3>
+    <h4>Heading H4</h4>
+    <h5>Heading H5</h5>
+    <h6>Heading H6</h6>
 
+    <hr /> <!-- horizontal line to separate sections -->
+
+    <!-- Paragraph -->
     <p>
-        block-element
+      This is a sample paragraph. Students can edit this text to practice
+      writing content inside the <code>&lt;p&gt;</code> tag.
     </p>
-    <span>inline-element</span>
-    <span>inline-block element</span>
 
-    <h1>Border</h1>
-    
+    <br /> <!-- line break -->
 
+    <!-- Links -->
+    <a href="https://www.flipkart.com/" target="_blank">Visit Flipkart</a>
+    <br />
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
 
-    <div>
-      <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPW60kAp9NvjLao-oL2N_Z65Ch1TczKKeT8g&s" alt=""> -->
-    </div>
-    
+    <hr />
+
+    <!-- Images -->
+    <img
+      src="https://via.placeholder.com/200"
+      alt="Placeholder Image"
+    />
+    <br />
+    <img src="./localimage.jpg" alt="Local Image Example" />
+
+    <hr />
+
+    <!-- Lists -->
+    <h2>Ordered List</h2>
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ol>
+
+    <h2>Unordered List</h2>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+
+    <hr />
+
+    <!-- Table -->
+    <h2>Student Marks Table</h2>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Math</th>
+        <th>Science</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>90</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>78</td>
+        <td>88</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <!-- Form -->
+    <h2>Simple Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" /><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>

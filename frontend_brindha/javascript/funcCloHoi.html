@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Function</h1>
+
+    <script>
+      // function declaration
+
+      // function expression
+      let func = function display() {
+        console.log("Display function ");
+      };
+
+      // display();
+      console.log(func);
+      func();
+
+      //arrow function
+      // Es6+
+      let arrow = (a, b) => {
+        console.log("Fiit function", a, b);
+      };
+      console.log(arrow);
+      arrow(10, 20);
+
+      // IIFE => immediate invoked function
+      //anonymous function
+      function data() {}
+
+      data();
+
+      (function (a, b) {
+        console.log("Immediate invovked function ", a, b);
+      })(10, 20);
+
+      // closure => (lexical scope)
+      // inner function remember outer function variable
+
+      function outer() {
+        let count = 10;
+
+        return function inner() {
+          count++;
+          console.log(count);
+        };
+      }
+
+      let result = outer();
+
+      console.log(result);
+
+      result();
+      result();
+      result();
+
+      // callback function
+
+      function greet(name, sayHello) {
+        console.log(name);
+        sayHello(thirdFunc);
+      }
+
+      function sayHello(callback2) {
+        console.log("Welcome");
+        callback2();
+      }
+
+      function thirdFunc() {
+        console.log("third callback function ");
+      }
+
+      greet("Fiit", sayHello);
+
+      // hoisting
+
+      hoist();
+
+      function hoist() {
+        console.log("hoisting");
+      }
+
+      console.log(hoistVar);
+
+      var hoistVar = 10;
+
+      // console.log(hoistLet);
+
+      let hoistLet = 20;
+
+      // top of the scope
+      // var hoistvar ;
+      // let hoistLet; => tdz
+      // function hoist(){
+      //     console.log("hoisting");
+
+      // }
+
+      // hoist();
+
+      // function hoist(){
+      //     console.log("hoisting");
+
+      // }
+
+      // console.log(hoistVar);
+
+      // var hoistVar = 10;
+
+      // console.log(hoistLet);
+
+      // let hoistLet = 20;
+
+      // objects => key:value pairs
+
+      let person = {
+        name: "Fiit",
+        course: "Python full stack",
+        address: {
+          street: "vijayaragavapuram",
+          landmark: {
+            location: "Aavin milk factory",
+          },
+        },
+        "roll no": 12,
+        greet() {
+          console.log("Greet message from person");
+        },
+    };
+
+
+
+      let obj2 = {
+        duration: 6,
+      };
+
+      console.log(Object.keys(person));
+
+      console.log(Object.values(person));
+
+      console.log(Object.entries(person));
+
+      let merged = Object.assign(person, obj2);
+
+      console.log(merged);
+
+
+      console.log(typeof person);
+      person.greet();
+
+      person["roll no"] = 50;
+      console.log(person["roll no"]);
+
+      console.log(person);
+
+      person.name = "Harini";
+      console.log(person.name);
+
+      console.log(person.course);
+
+      console.log(person.address.street);
+
+      person.address.landmark.location = "Vellore";
+      console.log(person.address.landmark.location);
+    </script>
+  </body>
+</html>

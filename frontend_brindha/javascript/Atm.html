@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Mini Task</title>
+</head>
+<body>
+
+    <h1>ATM</h1>
+
+    <script>
+
+        function ATM(){
+            let pin = prompt("Enter your ATM PIN");
+            let balance = 10000;
+
+            console.log(typeof pin);
+
+            if(pin == "1234"){
+                let choice;
+
+                choice = prompt("Enter your choice\n1.Withdraw \n2.Deposit \n3.Balance ");
+
+                switch(choice){
+                    case "1":
+                        let amount = Number(prompt("Enter your withdraw amount"));
+                        if(amount <= balance){
+                            balance -= amount;
+                            alert(`Payment withdraw successfully \n Remaining Balance ${balance} \n Amount withdrawn ${amount}`);
+                        }else{
+                            alert("Insufficient balance");
+                        }
+                    break;
+
+                    case "2":
+                        let depAmount = Number(prompt("Enter your deposit amount"));
+
+                        balance += depAmount;
+
+                        alert(`Deposit successfully ${balance}`);
+                    break;
+
+                    default:
+                        alert("Invalid choice number");
+                }
+
+
+            }
+            
+
+        }
+
+
+    ATM();
+
+
+    </script>
+    
+</body>
+</html>

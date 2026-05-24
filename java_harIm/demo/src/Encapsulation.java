@@ -6,7 +6,13 @@ class Encap{
     }
 
     public int   getData(){
+        
+        display();
         return data;
+    }
+
+    private void display(){
+        System.out.println("Private method");
     }
 
 }
@@ -29,6 +35,8 @@ public class Encapsulation {
 
 
         Encap obj1 = new Encap();
+
+        obj1.display();
         
         obj1.setData(60);
         int result = obj1.getData();

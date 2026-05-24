@@ -8,12 +8,230 @@
   <body>
     <h2>Hoisting</h2>
 
-    
-
     <script>
+      // console.log(data);
+      // var data = 10; //compilation phase  , it's create memory
 
-      var  data = 10 ; //compilation phase  , it's create memory
+      // // browser => javascript engine
+      // // chrome => v8
+
+      // console.log(hoist);
+
+      // let hoist = 30;
+
+      // display();
+
+      // function display(){
+      //   console.log("display function");
+
+      // }
+
+      // var data ;
+      // let hoist;
+      // function display(){
+      //   console.log("display function ");
+
+      // }
+
+      // console.log(data);
+
+      // var data = 10;
+
+      // console.log(hoist);
+
+      // let hoist = 10 ;
+
+      //  display();
+
+      // function display(){
+      //   console.log("display function");
+      // }
+
+      // func();
+      // console.log(func());
+
+      // try {
+      //   arrow();
+      // } catch (error) {
+      //   console.log(error.message);
+      // } finally {
+      //   console.log("finally block ");
+      // }
+
+      // let age = 10;
+
+      // if (age >= 18) {
+      //   console.log("You are eligible to vote");
+      // } else {
+      //   throw new Error("You are eligible to vote ");
+      // }
+
+      // var func = function fiit() {
+      //   console.log("fiit");
+      // };
+
+      // let arrow = () => {
+      //   console.log("arrow function ");
+      // };
+
+      // console.log("End of the program ");
+
+      // callback
+
+      function greet(name, callback) {
+        console.log(name);
+        callback();
+      }
+
+      function sayhello() {
+        console.log("Welcome");
+      }
+      greet("Sancia", sayhello);
+
+      // closure
+
+      function outer() {
+        let count = 0;
+
+        return function inner() {
+          count++; // lexical scope (closure)
+          console.log(count);
+        };
+      }
+
+      let result1 = outer();
+
+      result1();
+
+      function add(a, b) {
+        return a + b;
+      }
+
+      let result = add(10, 20);
+
+      console.log(result);
+
+      class Student {
+        static count = 1;
+      }
+
+      let obj = new Student();
+
+      obj.count++;
+      // console.log(obj.count);
+      Student.count++;
+      Student.count++;
+      console.log(Student.count);
+      console.log(Student.count);
+
+      let obj2 = new Student();
+
+      obj2.count++;
+
+      // console.log(obj2.count);
+
+      // window events
+
+      window.onload = function () {
+        console.log("webpage loaded successfully");
+      };
+
+      window.onresize = function () {
+        console.log("Resized");
+      };
+
+      window.onscroll = function () {
+        console.log("Scrolled");
+      };
+
+      console.log(window.innerHeight);
+
+      console.log(window.innerWidth);
+
+      console.log(screen.width);
+      console.log(screen.height);
+
+      console.log(3 & 4);
+      
+      
     </script>
-    
   </body>
 </html>
+
+
+
+
+<script>
+
+  // operators
+  // unary , binary, ternary
+  // unary operator => ++, --
+
+  // int a = 10;
+
+  // a++;
+  // a--;
+
+  // binary operator => 
+  // arithmetic => +, -, /, * , % 
+  // relational, =>  >, <, >=, <=, == , !=
+  // logical,  => &&, || , ! 
+  // assignment, => +=, -=, *=, /=, %=
+  // bitwise , => & , |, >>, <<, ^, ~
+
+  // 3 & 4 =>    
+
+  // int a =10;
+  // int b = 10;
+
+  // int assign = 10;
+
+  // assign = assign + 10;
+
+  // assign += 10; 
+
+
+  // a+b => 20;
+  // a-b=> 0
+  // a*b => 100
+  // a/b => 1
+
+  // a % b => reminder value
+
+  // a > b => true
+  // a < b => false
+
+  // a >= b => true 
+  // a <= b => true
+  // a == b => true
+  // a != b => false 
+
+  // // control structures 
+
+  // // conditional statements, loops 
+
+  // boolean isEligible = true;
+
+  // if(isEligible){
+  //   print(you are eligible to vote )
+  // }else{
+  //   printf("you are not eligible to vote")
+  // }
+
+  // loops => 
+
+  // for
+  // while
+  // do while 
+
+  
+
+
+
+
+
+
+
+
+
+</script>
