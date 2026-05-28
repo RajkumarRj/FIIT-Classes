@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings</title>
+  </head>
+  <body>
+    <h2>Strings</h2>
+    <script>
+      let str = "Hello World fiit academy";
+
+      console.log(str.length);
+
+      console.log(str.charAt(7));
+
+      console.log(str.charCodeAt(0));
+
+      console.log(str.indexOf("o"));
+
+      console.log(str.lastIndexOf("o"));
+
+      console.log(str.substring(0, 5));
+
+      console.log(str.slice(-5)); //supports negative index
+
+      console.log(str.replace("H", "A"));
+
+      console.log(str.split(" ")); // important
+
+      console.log(str.toUpperCase());
+
+      console.log(str.toLowerCase());
+
+      console.log(str.trim()); // trims space in start and end
+
+      console.log(str.startsWith("dello"));
+
+      console.log(str.endsWith("y"));
+
+      console.log(str.includes("e"));
+
+      let name = "Hema";
+      let age = 20;
+
+      let word = `${name} is ${age} years old`;
+
+      console.log(word);
+
+      console.log([...str]);
+
+      // number to string
+
+      let num = String(100);
+
+      console.log(typeof num);
+
+
+      console.log(String(true));
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array task</title>
+  </head>
+  <body>
+    <h1>Task</h1>
+
+    <script>
+      //         Problem: Student Management System
+      // Requirements:
+      // • Create an array of student objects with properties: name, age, marks.
+      // • Write functions to:
+      // o Add a new student.
+      // o Find a student by name.
+      // o Filter students with marks above 50.
+      // o Calculate average marks using reduce().
+      // • Use Object.freeze() to prevent modification of student details once
+      // added.
+
+      let students = [
+        { name: "Brindha", age: 20, marks: 80 },
+        { name: "Niha", age: 19, marks: 85 },
+        { name: "Harini", age: 22, marks: 55 },
+      ];
+
+
+      for(let stud of students){
+        console.log(stud);
+        
+      }
+      students.forEach((x, index) => {
+        console.log(x.name, index);
+      });
+
+      function addStudent(obj) {
+        Object.freeze(obj);
+        students.push(obj);
+      }
+
+      function findbyName(name) {
+        return students.find((stud) => stud.name == name);
+      }
+
+      let obj = { name: "Fiit", age: 25, marks: 90 };
+
+      addStudent(obj);
+
+      console.log(findbyName("Niha"));
+
+      console.log(students);
+      console.log(students[0]);
+      console.log(students[0].name);
+      console.log(students[1].name);
+    </script>
+  </body>
+</html>

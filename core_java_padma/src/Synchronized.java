@@ -1,7 +1,7 @@
 class Counter{
     int count =0;
 
-   synchronized void increment(){
+    synchronized void increment(){
         count++;
     }
 }

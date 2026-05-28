@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises</title>
+  </head>
+  <body>
+    <h1>Promise</h1>
+    <script>
+      function fetchDatta() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve(1);
+          }, 2000);
+        });
+      }
+
+      fetchDatta()
+        .then((result) => {
+          console.log(result); //1
+          return result * 2;
+        })
+        .then((result) => {
+          console.log(result); // 2
+          return result * 3;
+        })
+        .then((result) => {
+          console.log(result); // 6
+        }); 
+
+      //   setTimeout(() => {
+      //     console.log("timeout");
+      //   }, 5000);
+
+      //   const id = setInterval(() => {
+      //     console.log("Interval");
+      //   }, 2000);
+
+      //   setTimeout(() => {
+      //     clearInterval(id);
+      //   }, 15000);
+
+      console.log("hello");
+
+      let classExpression = class Bank {
+        static greet(name) {
+          console.log("hello there", name);
+        }
+      };
+
+      let obj = new classExpression();
+
+      //   obj.greet(); // belongs to object
+
+      classExpression.greet("FIIT");
+
+      // callback
+
+      function sayHello(name, cb) {
+        console.log("Hello ", name);
+        cb(secondCallback);
+      }
+
+      function nameCallback(cb) {
+        console.log("Name callback is executed");
+        cb();
+      }
+
+      function secondCallback() {
+        console.log("second callback is executed successfully");
+      }
+
+      sayHello("Arun", nameCallback);
+
+      const promise = new Promise((resolve, reject) => {
+        let success = false;
+
+        if (success) {
+          resolve("Promise is fulfilled");
+        } else {
+          reject("promise is rejected");
+        }
+      });
+
+      promise
+        .then((result) => console.log(result))
+        .catch((result) => console.log(result));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <h2>Audio</h2>
+
+    <audio src="./demo.mp3" controls></audio>
+
+    <video src="./cricket.mp4" controls width="500" height="500"></video>
+
+    <h2>Forms</h2>
+
+    <fieldset>
+      <legend>Personal details</legend>
+      <form action="./Demo.html">
+        <label for="">Name:</label>
+        <input type="text" placeholder="Enter your name" required />
+
+        <br />
+        <br />
+
+        <label for="">Password:</label>
+        <input type="password" placeholder="Enter your password" />
+
+        <br /><br />
+
+        <label for="">Age</label>
+        <input type="number" placeholder="Enter your age" min="10" max="30" />
+
+        <br />
+        <br />
+
+        <input type="date" />
+        <br /><br />
+
+        <input type="file" />
+        <br />
+        <br />
+
+        <input type="color" />
+        <br /><br />
+        Email : <input type="email" required />
+
+        <br /><br />
+
+        <br />
+        <br />
+        <label for="">Gender</label> <br />
+        Male<input type="Radio" name="gender" /> Female
+        <input type="radio" name="gender" /> others
+        <input type="radio" name="gender" />
+
+        <br /><br />
+
+        <label for="">Hobby</label>
+        <select name="" id="">
+          <option value="">Dancing</option>
+          <option value="">Singing</option>
+          <option value="">Swimming</option>
+          <option value="">Reading books</option>
+        </select>
+
+        <br /><br />
+
+        Software developer<input type="checkbox" />
+        <br />
+        data analytic <input type="checkbox" />
+
+        <br /><br />
+
+        <textarea name="" id="">Default value </textarea>
+
+        <br /><br />
+
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </fieldset>
+
+    <fieldset>
+      <legend>Academic details</legend>
+      <input type="text" placeholder="Enter your degree" />
+    </fieldset>
+
+    <h2>Tables</h2>
+
+    <table border style="border-collapse: collapse">
+      <tr>
+        <th>Subject</th>
+        <th>int</th>
+        <th>Theory</th>
+        <th>Pra</th>
+        <th>Total</th>
+        <th>Pass</th>
+      </tr>
+      <tr>
+        <td>French</td>
+        <td>10</td>
+        <td>60</td>
+        <td>mil</td>
+        <td>70</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td>10</td>
+        <td>68</td>
+        <td>nil</td>
+        <td>78</td>
+        <td>P</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+    <table border style="border-collapse: collapse">
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th rowspan="3">MVM school</th>
+      </tr>
+
+      <tr>
+        <td>Adam</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>11</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <table border style="border-collapse: collapse">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Class</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>Brown</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>Brown</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>Brown</td>
+        <td>1</td>
+      </tr>
+    </table>
+  </body>
+</html>
