@@ -103,6 +103,17 @@ public class Demo{
         
         System.out.println(one & second);
 
+        System.out.println(one | second);
+
+        System.out.println(one ^ second);
+
+        System.out.println( "hello " +(one << 1));
+        
+        System.out.println( "hello " +(one >> 1));
+
+
+
+
         
 
     }

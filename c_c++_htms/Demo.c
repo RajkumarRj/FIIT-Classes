@@ -70,25 +70,6 @@ int main(){
 
   
 
-    int result1;
-
-
-    result1 = a+b;
-    printf("%d", result1);
-
-    result1 = a-b;
-    printf("%d", result1);
-
-
-    result1= a*b;
-    printf("%d", result1);
-
-
-    result1 = b/a;
-    printf("%d", result1);
-
-    result1 = b%a;
-    printf("%d", result1);
 
     return 0;
 }

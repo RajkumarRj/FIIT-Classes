@@ -40,10 +40,7 @@ public class Multithreading {
         runnable.setName("MyRunnable");
         System.out.println("MyRunnable class thread name :"+runnable.getName());
 
-
-
-
-
+        
         obj.start();
 
         System.out.println(obj.isAlive());
