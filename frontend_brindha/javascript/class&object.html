@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class & Object</title>
+  </head>
+  <body>
+    <h2>Class and object</h2>
+
+    <script>
+      // class => blueprint for Object (maximum 1 bytes)
+
+      // object => instance of class
+
+      class Student {
+
+        name;
+        fees;
+
+        constructor(name, fees){
+            this.name  = name;  
+            this.fees = fees;
+            console.log("constructor is called");   
+        }
+
+        greet(){
+            console.log("greet method");
+            
+        }
+
+        display() {
+          console.log("Display method");
+          this.greet();
+        }
+      }
+
+      let obj = new Student("Redmi", 30000);
+
+      obj.display();
+
+      console.log(obj.name , obj.fees);
+
+
+      let obj1 = new Student("FIIT", 40000);
+
+      console.log(obj1.name , obj1.fees);
+      
+
+    //   constructor => it's a special method 
+    // that's 
+    // called by itself when we create 
+    // object for that class
+
+    // argument => we pass value when function is called
+    // parameter => we receive value in the function definition
+
+      
+    // inheritance => we can access parent
+    //  properties in child class
+
+    class Parent{
+
+        age = 20;
+        greet(){
+            console.log("Greet method from parent class"); 
+        }
+    }
+
+    class Child extends Parent{
+        display(){
+            console.log("display method from child class");
+            
+        }
+    }
+
+    let child = new Child();
+    child.display();
+
+    console.log(child.age);
+    child.greet();
+    
+
+    // method overriding 
+    // same method name with different implementation 
+    // in different subclass 
+
+
+    class Animal{
+        sound(){
+            console.log("sound.....");
+        }
+    }
+
+
+    class Dog extends Animal{
+        sound(){
+            super.sound();
+            console.log("Barking...");  
+        }
+    }
+
+    let dog = new Dog();
+
+    dog.sound();
+
+
+
+
+
+
+
+
+      // 1gb => 1024 MB
+
+      // 1 mb => 1024 kb(kilo bytes)
+
+      // 1 byte => 8 bit
+
+      // 1 bit => 0 or 1
+    </script>
+  </body>
+</html>
