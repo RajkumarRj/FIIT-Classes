@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo</title>
+    <style>
+      h1 {
+        color: greenyellow;
+      }
+
+      h1:hover {
+        color: blue;
+        /* font-size: 60px; */
+      }
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: aquamarine;
+      }
+      a:active {
+        color: yellow;
+      }
+
+      input:focus {
+        outline: 2px solid orange;
+      }
+
+      ul li:first-child {
+        color: violet;
+        font-size: 20px;
+      }
+
+      ul li:last-child {
+        color: tomato;
+      }
+      /* ul li:nth-child(6){
+        color:aqua;
+      } */
+
+      ul li:nth-child(even) {
+        color: aqua;
+      }
+
+      /* pseudo elements  */
+      /* p::first-letter{
+        font-size: 60px;
+        color: red;
+      } */
+
+      p::first-line{
+        color: red;
+      }
+
+      ul li::before{
+        content: "😍";
+        /* content: "irctc "; */
+      }
+      ::selection{
+        background-color: chartreuse;
+        color: blue;
+      }
+
+      li::marker{
+        content: "✔️";
+      }
+
+
+      ul li::after{
+        content: "😁";
+      }
+      input::placeholder{
+        color: rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aliquam
+      delectus optio autem, voluptate blanditiis, eos asperiores quo magni
+      maxime eius molestias obcaecati aspernatur! Dignissimos culpa reiciendis
+      vero laborum omnis?
+    </p>
+
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+      <li>item 6</li>
+      <li>item 7</li>
+      <li>item 8</li>
+      <li>item 9</li>
+      <li>item 10</li>
+    </ul>
+
+    <input type="text" placeholder="Enter your name"/>
+    <a href="#">Google</a>
+    <h1>Pseudo</h1>
+  </body>
+</html>

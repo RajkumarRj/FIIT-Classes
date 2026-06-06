@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro</title>
+    <link rel="stylesheet" href="./intro.css" />
+
+    <style>
+      /* selector {
+            property : value;
+        } */
+
+      /* selector => select a html elements  */
+
+      /* universal selector  */
+
+      /* * {
+            color: red;
+        } */
+
+      /* type or element selector  */
+
+      /* h2 {
+        background-color: palevioletred;
+        color: gold;
+      } */
+
+      /* group selector  */
+      /* div , p {
+        background-color: azure;
+      } */
+
+      /* id selector  */
+      /* #css {
+        background-color: yellow;
+      } */
+
+      /* class selector  */
+      /* .frontend{
+        background-color: burlywood;
+      } */
+
+      /* combinator  */
+      /* child selector  */
+      #parent>p{
+        background-color: orchid;
+      }
+
+
+      /* descendent selector  */
+      /* div p {
+        background-color: red;
+        color: white;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <p>child element</p>
+
+      <div>
+        <p>Grand child element</p>
+
+        <div>
+          <p>Grand grand child element</p>
+        </div>
+      </div>
+
+      <p>child element</p>
+    </div>
+
+    <h2>CSS</h2>
+    <h2>Selector</h2>
+
+    <!-- three ways  -->
+
+    <!-- inline CSS => attribute (style)
+    internal CSS  => tag (style)
+    external css  => separate file  -->
+
+    <p style="color: blue; font-size: 30px">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dicta
+      nobis vitae, sit reiciendis, laborum dolor ipsa non inventore porro
+      perferendis unde aliquam fugit culpa impedit aut. Aperiam, eligendi
+      soluta!
+    </p>
+
+    <p id="css">css => cascading style sheet</p>
+
+    <p class="frontend">1994 , official released in 1996</p>
+
+    <p class="frontend">HTML - Hyper text markup language</p>
+
+    <p class="frontend">javascript</p>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi
+      laboriosam doloribus dignissimos aliquam! Distinctio sit laboriosam
+      quidem, in ullam, pariatur nihil repellat eius eos est quas incidunt
+      tempora veritatis.
+    </div>
+  </body>
+</html>

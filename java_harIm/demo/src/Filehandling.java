@@ -67,14 +67,6 @@ public class Filehandling {
 
         // file.delete();
 
-        
-
-
-
-
-
-
-
 
     }
     

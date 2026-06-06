@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session</title>
+  </head>
+  <body>
+    <h2>Session storage</h2>
+
+    <form onsubmit="return validateForm();">
+      <input type="text" id="name" placeholder="Enter your name" />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="content"></p>
+
+    <button id="joke">Next joke</button>
+
+    <script>
+      const content = document.getElementById("content");
+      const button = document.getElementById("joke");
+      function validateForm() {
+        const nameField = document.getElementById("name").value;
+
+        if (nameField === "") {
+          alert("Name field is required");
+          return false;
+        }
+
+        alert("Form submitted");
+        return true;
+      }
+
+      sessionStorage.setItem("name", "Fiit");
+
+      console.log(sessionStorage.getItem("name"));
+
+      sessionStorage.removeItem("name");
+
+      sessionStorage.clear();
+
+      document.cookie = "username = Raj";
+
+      console.log(document.cookie);
+
+      console.log(Math.ceil(5.3));
+
+      console.log(Math.floor(5.6));
+
+      console.log(Math.max(10, 20));
+
+      console.log(Math.min(20, 40, 10));
+
+      console.log(Math.abs(-20));
+
+      console.log(Math.pow(3, 3));
+
+      console.log(Math.random(10, 20, 40));
+
+      async function fetchData() {
+        try {
+          const result = await fetch("https://icanhazdadjoke.com/slack");
+
+          console.log(result);
+
+          const data = await result.json();
+          console.log(data);
+
+          console.log(data.attachments[0].text);
+          content.textContent = data.attachments[0].text;
+        } catch (error) {
+          console.log(error.message);
+        }
+      }
+
+      button.addEventListener("click", () => {
+        fetchData();
+      });
+    </script>
+  </body>
+</html>

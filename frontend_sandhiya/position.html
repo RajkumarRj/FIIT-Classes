@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      div {
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+      }
+      .relative-box {
+        /* position: relative; */
+        /* top , bottom, left ,right  */
+        /* top: 100px; */
+        /* left: 100px; */
+        background-color: blueviolet;
+      }
+
+      .absolute-box {
+        position: absolute;
+        background-color: gray;
+        color: white;
+        left: 200px;
+        top: 20px;
+      }
+      .fixed-header {
+        position: fixed;
+        /* left: 200px; */
+       
+        background-color: yellow;
+      }
+      .sticky-nav{
+        position: sticky;
+        top: 0;
+        z-index: -10;
+        background-color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative-box">Relative box</div>
+
+    <div class="fixed-header">Fixed header</div>
+    <div class="absolute-box">Absolute box</div>
+    <div class="sticky-nav">sticky nav</div>
+
+    <p>
+      s labore tempora a incidunt dolorum. Dicta consequatur
+      minus odit sunt rerum quaerat autem ipsa voluptatem perferendis id.
+      Quisquam necessitatibus velit facilis eaque aut amet dignissimos sint
+      assumenda porro cumque quod magnam, consequatur ipsa provident qui debitis
+      reprehenderit modi repudiandae voluptates animi. Eum sapiente unde illum
+      aut inventore?
+    </p>
+  </body>
+</html>

@@ -164,8 +164,27 @@ int main(){
     subhiksha %= 5;  //
 
 
+    // bitwise => & , |,  ^,  >>, <<
 
-    // bitwise 
+
+    int r = 3;
+    int m = 4;
+
+    int bitwise_result = r & m;
+
+
+    bitwise_result = r | m;
+
+    bitwise_result = r>> 2;
+
+    bitwise_result = r<<2;
+
+    printf("Bitwise result: %d", bitwise_result);
+
+
+
+
+
 
 
 }
