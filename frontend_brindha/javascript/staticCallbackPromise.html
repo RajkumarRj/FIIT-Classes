@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static-Callback</title>
+  </head>
+  <body>
+    <h2>Static</h2>
+
+    <script>
+      class Student {
+        #salary = 50000;
+
+        display() {
+          console.log(this.#salary);
+          console.log("Hello there");
+        }
+
+        salaryy(data) {
+          this.#salary = data;
+        }
+      }
+
+      // Student.display();
+      // console.log(Student.salary);
+
+      //   let obj = new Student();
+
+      //   console.log(obj.salary);
+
+      //   obj.salaryy(60000);
+      //   obj.display();
+
+      //   let result = class Mark {
+      //     display() {
+      //       console.log("helo class expression");
+      //     }
+      //   };
+
+      //   let obj1 = new result();
+
+      //   obj1.display();
+
+      // callback => function receives
+      // another function as argument
+
+      function greet(name, cb) {
+        console.log(name);
+        cb(logi);
+      }
+
+      function welcomeMsg(cb1) {
+        console.log("Welcome to our page");
+        cb1();
+      }
+
+      function logi() {
+        console.log("login successfully");
+      }
+
+      greet("Ganesh", welcomeMsg);
+
+      let myPromise = new Promise((resolve, reject) => {
+        let success = false;
+
+        if (success) {
+          resolve("Successfully");
+        } else {
+          reject("Not successfully");
+        }
+      });
+
+      myPromise
+        .then((res) => console.log(res))
+        .catch((res) => console.log(res));
+
+      // promise chaining
+
+      function fetchData() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve(1);
+          }, 2000);
+        });
+      }
+
+      fetchData()
+        .then((res) => {
+          console.log(res);
+          return res * 2;
+        })
+        .then((res) => {
+          console.log(res);
+          return res * 2;
+        })
+        .then((res) => {
+          console.log(res);
+        });
+
+      let resultedValue = fetchData();
+
+      console.log(resultedValue);
+
+      setTimeout(() => {
+        console.log("Set timeout");
+      }, 5000);
+
+      function orderItems(items) {
+        return new Promise((resolve) => {
+          resolve(`Items ordred ${items}`);
+        });
+      }
+
+      //   resolve => then
+      orderItems("Pizza")
+        .then((res) => {
+          console.log(res);
+          return orderItems("Burger");
+        })
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((res) => console.log(res));
+
+      //   reject => catch
+    </script>
+  </body>
+</html>

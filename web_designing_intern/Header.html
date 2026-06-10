@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* selector {
+        property: value;
+      } */
+
+      /* type or element selector  */
+
+      h2 {
+        background-color: yellow;
+      }
+
+      span {
+        background-color: blue;
+      }
+
+      h3 {
+        border: 2px solid black;
+        padding: 10px 20px 30px 40px;
+      }
+
+      #container {
+        background-color: #333;
+        /* color: white; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        height: 300px;
+      }
+      #container div {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        /* margin: 10px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+      <div>item 4</div>
+    </div>
+
+    <h1 style="background-color: purple">Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>heading 6</h6>
+    <span> Inline element </span>
+
+    <span>Inline element</span>
+
+    <form action="./Demo1.html">
+      <input type="text" placeholder="Name" required />
+
+      <br />
+      <br />
+      <input type="password" placeholder="Password" required />
+
+      <br /><br />
+      <input type="email" placeholder="Email" />
+
+      <br /><br />
+
+      <textarea name="" id="" cols="10" rows="10">
+        Enter your feedback 
+      </textarea>
+
+      <input type="number" placeholder="enter your age" min="10" max="20" />
+
+      <br /><br />
+
+      Male <input type="radio" name="gender" /> Female
+      <input type="radio" name="gender" /> Other
+      <input type="radio" name="gender" />
+
+      <br /><br />
+
+      <input type="file" />
+
+      <br /><br />
+
+      Football<input type="checkbox" />
+      <br />
+      Badminton<input type="checkbox" />
+      <br />
+      Chess <input type="checkbox" />
+      <br />
+
+      Choose HTML :
+      <select name="" id="">
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+      </select>
+
+      <br />
+      <br />
+
+      <input type="date" />
+
+      <br /><br />
+
+      <input type="submit" value="Say hello" />
+    </form>
+  </body>
+</html>

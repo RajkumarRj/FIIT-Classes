@@ -46,6 +46,3 @@ console.log(buffer1.toString());
 
 
 
-
-
-

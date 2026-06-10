@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <style>
+      /* div{
+            border: 2px solid black;
+            height: 400px;
+            float: right;
+        }
+
+        div img {
+            float: right;
+        } */
+      /* 
+      div {
+        background-color: yellow;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+      } */
+
+      /* from  0 to 540px  */
+      /* @media (max-width: 540px) {
+        div {
+          background-color: purple;
+        }
+      } */
+
+      /* from 541 px to .... */
+      /* @media (min-width: 541px) {
+        div {
+          background-color: orange;
+        }
+      } */
+
+      /* @media (min-width: 720px) and (max-width: 800px) {
+        div {
+          font-size: 60px;
+        }
+      } */
+
+      #container {
+        display: flex;
+        border: 2px solid black;
+        gap: 20px;
+        height: 300px;
+        padding: 10px;
+      }
+
+      #container div {
+        border: 2px solid black;
+        width: 45%;
+        /* transition-property: background-color , font-size; */
+        /* transition-property: all; */
+        /* transition-duration: 4s; */
+        /* transition-delay: 5s; */
+        /* transition-timing-function:ease-in-out; */
+        /* shorthand property  */
+        transition: all 2s ease-in ;
+       
+
+        /* border: 20px solid yellow; */
+      }
+
+      #container div:hover {
+        background-color: aqua;
+        font-size: 10px;
+      }
+
+      @media (max-width: 576px) {
+        #container {
+          flex-direction: column;
+        }
+        #container div {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/049/857/665/small/a-beautiful-blue-and-orange-peacock-stands-on-a-sandy-beach-the-bird-s-feathers-are-vibrant-and-eye-catching-and-it-seems-to-be-enjoying-the-warm-sun-and-the-peaceful-surroundings-photo.jpg"
+        alt=""
+      />
+    </div>
+
+    <div>
+         <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/049/857/665/small/a-beautiful-blue-and-orange-peacock-stands-on-a-sandy-beach-the-bird-s-feathers-are-vibrant-and-eye-catching-and-it-seems-to-be-enjoying-the-warm-sun-and-the-peaceful-surroundings-photo.jpg"
+        alt=""
+      />
+    </div> -->
+
+    <div id="container">
+      <div class="left"><h1>left</h1></div>
+      <div class="right"><h1>Right</h1></div>
+    </div>
+  </body>
+</html>
