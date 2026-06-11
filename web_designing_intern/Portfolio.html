@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: #000000;
+        color: white;
+        scroll-behavior: smooth;
+      }
+
+      #header {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+
+      #header img {
+        width: 50px;
+        height: 50px;
+      }
+      #header span {
+        margin: 30px;
+        transition: all 0.5s;
+        font-size: 20px;
+      }
+      #header span a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #header span:hover {
+        color: green;
+      }
+      #intro,
+      #About {
+        text-align: justify;
+        width: 50%;
+        margin: 100px auto 0 auto;
+      }
+
+      #name {
+        font-size: 40px;
+      }
+      #intro button {
+        color: white;
+        background-color: blue;
+        border-radius: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div id="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxggIt5CPQqUxKi3eW4QhNIKv5eH5LdhRwMA&s"
+          alt=""
+        />
+      </div>
+
+      <div id="nav-link">
+        <span><a href="#intro">Home</a></span>
+        <span><a href="#About">About</a></span>
+        <span><a href="">Project</a></span>
+        <span><a href="">Content</a></span>
+      </div>
+    </header>
+
+    <main>
+      <section id="intro">
+        <p>My name is</p>
+        <p id="name">FIIT</p>
+        <p>Building the web, better.</p>
+        <br />
+
+        <p>
+          Innovating the web with purpose and precision. As a full-stack
+          engineer, I create accessible, user-friendly digital experiences that
+          leave a lasting impact
+        </p>
+
+        <button>Get in Touch</button>
+      </section>
+
+      <section id="About">
+        <h2>About me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+          veritatis error nihil doloremque accusantium dolore fugiat quam quia
+          soluta qui blanditiis voluptas fuga aperiam suscipit ad sequi omnis
+       
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
