@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <style>
+      #container {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Javascript</h2>
+
+    <div id="container"></div>
+
+    <script>
+      let cont = document.getElementById("container");
+
+      let h1Element = document.createElement("h1");
+
+      h1Element.textContent = "Fetch ";
+
+      document.body.appendChild(h1Element);
+
+      let data = {
+        name: "fiit",
+        course: "MCA",
+      };
+
+      console.log(data);
+      console.log(data.name);
+      console.log(data.course);
+
+      function fetchDb() {
+        let result;
+        fetch("https://dummyjson.com/products/1")
+          .then((res) => res.json())
+          .then((res) => {
+            result = res;
+            console.log(result.products);
+            let h1Element = document.createElement("h1");
+            h1Element.textContent = result.title;
+            document.body.appendChild(h1Element);
+            let img = document.createElement("img");
+            img.setAttribute('src', result.images[0]);
+            document.body.appendChild(img);
+            console.log(result.images[0]);
+          });
+      }
+      fetchDb();
+    </script>
+
+    <!-- <script src="./Script.js"></script> -->
+  </body>
+</html>

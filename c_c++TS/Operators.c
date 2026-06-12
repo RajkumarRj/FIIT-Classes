@@ -83,14 +83,31 @@ int main(){
     sum /= 2;
     sum %=2;
 
-    printf("%d ", sum);
+    printf("%d \n ", sum);
 
 
+    // 1 GB => 1024 MB
+    // 1 MB -> 1024 KB  (KILO BYTES)
+    // 1 KB -> 1024 BYTES
+    // 1 BYTE -> 8 BIT 
+    // 1 BIT -> 0 OR 1
 
+    // bitwise => & | ^ >> <<
 
+    int t = 4;
+    int s = 7;
 
+    int ts = t & s;
 
+    ts = t | s;
 
+    ts = t ^ s;
+
+    ts = t>>2;
+
+    ts = t << 2;
+
+    printf("Bitwise : %d \n", ts);
 
     // bitwise
     return 0;
