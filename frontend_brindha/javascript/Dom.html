@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h2>DOM </h2>
+
+    <h3 id="element">GET ELEMENT BY ID</h3>
+
+    <p class="class1"></p>
+    
+    <span class="class1"></span>
+    <div class="class1"></div>
+
+    <p></p>
+    <p></p>
+    <p></p>
+
+    
+
+    <script>
+        const tagName = document.getElementsByTagName('p');
+
+        console.log(tagName);
+
+        console.log(tagName.length);
+
+        for(let i=0; i<tagName.length; i++){
+            tagName[i].textContent = `element ${i}`;
+        }
+        
+
+        const divElement = document.createElement("div");
+        console.log(divElement);
+        
+        
+
+        divElement.textContent ="Dynamic div element";
+
+        document.body.appendChild(divElement);
+
+
+        const classElement = document.getElementsByClassName("class1");
+        console.log(classElement[0]);
+        console.log(classElement[1]);
+        console.log(classElement[2]);
+
+        classElement[0].innerText ="hello";
+        classElement[1].innerText ="span";
+        classElement[2].innerText ="div";
+
+        classElement[0].style.backgroundColor ="blue";
+
+
+
+        const h3Element =document.getElementById("element");
+        console.log(h3Element);
+        console.log(h3Element.innerText);
+
+        h3Element.innerText ="ID";
+        
+        
+
+        document.write("<h1>FIIT</h1>");
+
+        // console.log("Hello there");
+
+        // {
+        //     let data = 10;
+        // }
+
+        // // console.log(data);
+
+        // const name ="FIIT";
+        // const age = 25;
+
+        // console.log( `name is ${name} 
+        // and age is ${age}`);
+
+
+        
+
+        // function greet({namee, agee}){
+        //     // console.log(obj);
+            
+        //     console.log(name, age);
+        // }
+
+        // let object = {
+        //     namee:"Javasciript",
+        //     agee : 55
+        // }
+
+        // greet(object);
+
+        // const {namee } = object;
+
+        // console.log(namee);
+        // // console.log(agee);
+        
+        
+
+        // console.log(object.name);
+        // console.log(object.age);
+        
+
+        // const arr =[1,2,3,5];
+
+        // console.log(arr[0]);
+
+        // const [first , second ] = arr;
+
+        // console.log(first);
+        // console.log(second);
+
+
+        // const arr1 =[1,2,3];
+
+        // const arr2 = [4,5,6];
+
+        // const arr3 = [...arr1, ...arr2];
+
+        // console.log(arr3);
+
+
+        // let obj1 = {
+        //     a:1,
+        //     b:2
+        // }
+        // let obj2= {
+        //     c:3,
+        //     d:4
+        // }
+
+        // let obj3 = {...obj1, ...obj2};
+
+        // console.log(obj3);
+
+
+
+        // function display(...args){
+        //     console.log(...args);
+        //     // console.log(a, b); 
+        // }
+
+        // display(1,2 ,3, 4, 5,6 ,7,8);
+        
+   
+
+        // DOM => document object model 
+
+        
+        </script>
+        <!-- <script src="./App.js" ></script> -->
+
+
+</body>
+</html>
