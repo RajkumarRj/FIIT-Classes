@@ -8,7 +8,6 @@ void display(int *b){
 }
 
 void swap(int *a, int *b){
-
     int temp = *a;
     *a = *b; // 30
     *b = temp; // 10
