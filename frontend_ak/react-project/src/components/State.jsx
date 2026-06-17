@@ -6,6 +6,8 @@ const State = () => {
   const [count, setCount] = useState(200);
 
   console.log(data);
+  console.log(count);
+  
 
   return (
     <div>

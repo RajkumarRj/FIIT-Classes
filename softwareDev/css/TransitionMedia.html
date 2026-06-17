@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      h1 {
+        color: aqua;
+        /* transition-property: color, background-color; */
+        /* transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s; */
+
+        /* transform: translateX(100px); */
+        /* transform: translateY(300px); */
+        /* transform: translate(300px, 200px); */
+
+        /* transform: rotate(45deg); */
+      }
+
+      h1:hover {
+        color: rebeccapurple;
+        background-color: bisque;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        color: white;
+        background-color: #333;
+        /* animation-name: slide; */
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        /* transform: rotate(50deg); */
+        /* transform: scale(1.5); */
+        /* transition: all 2s ease-in; */
+      }
+      div:hover {
+        animation-play-state: paused;
+      }
+
+      /* div:hover{
+            transform:  translateX(300px) scale(5);
+        } */
+      @keyframes slide {
+        /* from{
+                transform: translateX(0);
+                background-color: yellow;
+            }
+
+            to{
+                transform: translateX(300px);
+                background-color: blue;
+            } */
+
+        0% {
+          background-color: yellow;
+          transform: scale(1.5);
+        }
+        25% {
+          background-color: red;
+          transform: translateX(300px);
+        }
+        50% {
+          background-color: blue;
+          transform: translateY(300px);
+        }
+        75% {
+          background-color: violet;
+          transform: rotate(90deg);
+        }
+        100% {
+          background-color: #333;
+          transform: rotate(360deg);
+        }
+      }
+
+      section {
+        height: 50vh;
+        background-color: #333;
+      }
+
+      @media (max-width: 576px) {
+        section {
+          background-color: yellow;
+        }
+      }
+
+      @media (min-width:577px) AND (max-width:900px){
+        section{
+            background-color: red;
+        }
+      }
+
+      @media (min-width:901px){
+        section{
+            background-color: blueviolet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Transition</h1> -->
+
+    <!-- <div>Content</div> -->
+
+    <section></section>
+  </body>
+</html>
