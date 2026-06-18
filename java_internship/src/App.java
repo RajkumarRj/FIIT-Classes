@@ -47,7 +47,7 @@ public class App {
         // ip ranges => 0 to 255
 
         // class A => 0 - 127 
-        // class B => 128  - 191
+        // class B => 128  - 191_
         // class C => 192- 223
         // class D => 224 - 239
         // class E => 240 - 255
