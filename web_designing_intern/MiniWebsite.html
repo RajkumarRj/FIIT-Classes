@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+      }
+
+      #container {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+        padding: 20px;
+      }
+      #logSign a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+      }
+
+      #product-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+      }
+      #product-box{
+
+        border: 2px solid yellow;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        transition: all 1s ease-out;
+      }
+
+      #product-box:hover{
+        background-color: aqua;
+        transform: scale(1.09);
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div id="logo">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/027/127/463/small_2x/javascript-logo-javascript-icon-transparent-free-png.png"
+            alt=""
+            width="70"
+            height="70"
+          />
+        </div>
+
+        <div id="logSign">
+          <a href="#">LogIn</a>
+          <a href="#">SignIn</a>
+        </div>
+      </div>
+    </header>
+
+    <div id="product-container"></div>
+
+    <script>
+      let data = {
+        name: "FIIT",
+        age: 24,
+      };
+
+      console.log(data);
+      console.log(data.name);
+      console.log(data.age);
+
+      console.log(`Hello my name is ${data.name} and age is ${data.age}`);
+
+      function renderProducts() {
+        const container = document.getElementById("product-container");
+
+        
+        fetch("https://dummyjson.com/products")
+        .then((res) => res.json())
+        .then((data) => {
+            const products = data.products;
+            
+            container.innerHTML = " ";
+
+            products.forEach(element => {
+                container.innerHTML += `
+                 <div id="product-box">
+                    <h2>${element.title}</h2>
+                    </div>
+                `;
+            });
+            
+                
+               
+                
+                container.append(innerContainer);
+
+                container.textContent = "dlfjas";
+
+            
+            // console.log(products);
+
+            // console.log(products[0]);
+
+            // console.log(products[0].title);
+          });
+      }
+
+      renderProducts();
+    </script>
+  </body>
+</html>
