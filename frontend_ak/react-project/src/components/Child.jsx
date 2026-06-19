@@ -1,14 +1,7 @@
 import React from 'react'
 
 const Child = ({result , count}) => {
-
-  
-     
   console.log(count);
-
-
-  
-
   return (
     <div>
       <h1>{result}</h1>

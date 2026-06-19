@@ -16,9 +16,7 @@ const List = () => {
     { name: "Arun", college: "Karan", Degree: "BSC" },
   ];
 
-  useEffect(() => {
-    console.log("Useeffect updated");
-  },[]);
+
 
   return (
     <div>
