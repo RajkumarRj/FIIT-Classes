@@ -93,10 +93,10 @@
         .then((data) => {
             const products = data.products;
             
-            container.innerHTML = " ";
+            let containerHTML = " ";
 
             products.forEach(element => {
-                container.innerHTML += `
+                containerHTML += `
                  <div id="product-box">
                     <h2>${element.title}</h2>
                     </div>
@@ -106,9 +106,9 @@
                 
                
                 
-                container.append(innerContainer);
+            container.innerHTML = containerHTML;
 
-                container.textContent = "dlfjas";
+              
 
             
             // console.log(products);
