@@ -46,7 +46,7 @@
 
       #product-box:hover{
         background-color: aqua;
-        transform: scale(1.09);
+        transform: scale(1.1);
       }
 
     </style>
@@ -91,6 +91,8 @@
         fetch("https://dummyjson.com/products")
         .then((res) => res.json())
         .then((data) => {
+          console.log(data.products);
+          
             const products = data.products;
             
             let containerHTML = " ";
@@ -98,6 +100,7 @@
             products.forEach(element => {
                 containerHTML += `
                  <div id="product-box">
+                  <img src="${element.images[0]}"/>
                     <h2>${element.title}</h2>
                     </div>
                 `;

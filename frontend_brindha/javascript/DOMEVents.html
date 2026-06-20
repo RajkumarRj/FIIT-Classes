@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Events</title>
+    <style>
+      .active {
+        background-color: #333;
+        color: aqua;
+      }
+
+      .nonactive {
+        background-color: red;
+        color: white;
+      }
+      #container {
+        width: 100px;
+        height: 100px;
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="h2Element" class="nonactive">DOM</h2>
+
+    <button id="button">Toggle class</button>
+    <div id="container"></div>
+
+    <form id="myForm">
+      <input type="text" id="inp-box" placeholder="Enter name" />
+      <button type="submit">Submit</button>
+    </form>
+    
+
+    <script>
+
+        document.getElementById("myForm").onsubmit = function(e){
+            e.preventDefault();
+            alert("Form submitted");
+        }
+
+        document.getElementById("inp-box").oninput = function(e){
+            console.log("oninput method:",this.value);
+            
+        }
+        document.getElementById("inp-box").onchange = function(e){
+            console.log("onchange method :",this.value);
+            
+        }
+
+        window.onload = ()=>{
+            console.log("Page loaded successfully");
+            
+        }
+        window.onresize = ()=>{
+            console.log("Resize");
+            
+        }
+
+        window.onscroll = ()=>{
+            console.log("Scrolling");
+        }
+    //   let h2Element = document.getElementById("h2Element");
+
+    //   let button = (document.getElementById("button").onclick = () => {
+    //     alert("clicked");
+    //   });
+
+    //   document.getElementById("container").onmouseover = function () {
+    //     this.style.backgroundColor = "Blue";
+    //   };
+
+    //   document.getElementById("container").onmouseout = function () {
+    //     this.style.backgroundColor = "#333";
+    //   };
+
+    //   document.addEventListener("keydown", function (event) {
+    //     if (event.key == "Enter") {
+    //       console.log("User submitted form successfully");
+    //     }
+    //     console.log("Key pressed: ", event.key);
+    //   });
+
+    //   document.addEventListener("keyup", function (event) {
+    //     console.log("Key UP: ", event.key);
+    //   });
+
+      //   button.addEventListener("click", () => {
+      //     h2Element.classList.toggle("nonactive");
+      //   });
+      // h2Element.classList.add("active");
+      // h2Element.classList.remove("nonactive");
+    </script>
+  </body>
+</html>
