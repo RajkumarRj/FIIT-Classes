@@ -45,9 +45,16 @@ public class Ooops {
         Malathi obj = new Malathi(100);
         System.out.println(obj.data);
         obj.display();
+
+
+
         int total = obj.add(a, b); // argument 
+
+        
         System.out.println("add function value :" + total);
         System.out.println(obj.circlePI());
+
+
 
         obj.multiply(30, 40, 10);
         
