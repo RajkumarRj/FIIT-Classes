@@ -32,7 +32,6 @@ class MyRunnable implements Runnable{
 }
 
 
-
 public class Multithreading {
     public static void main(String[] args) throws InterruptedException{
 
