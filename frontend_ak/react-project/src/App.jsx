@@ -7,6 +7,8 @@ import State from "./components/State";
 import List from "./components/List";
 import Hooks from "./components/Hooks";
 import Usehooooks from "./components/Usehooooks";
+import Userefff from "./components/Userefff";
+import UseReducerrr from "./components/UseReducerrr";
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
 
       {/* <List/> */}
       {/* <Hooks /> */}
-      <Usehooooks/>
+      {/* <Usehooooks/> */}
+
+      {/* <Userefff/> */}
+      <UseReducerrr/>
     </div>
   );
 }

@@ -27,7 +27,7 @@ const Usehooooks = () => {
             </div>
         })
       }
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() =>  setCount(count + 1)}>Increment</button>
     </div>
   );
 };
