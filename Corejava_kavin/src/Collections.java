@@ -39,10 +39,5 @@ public class Collections {
         // arraylist 
             // manipulation is slow 
             // accessing element is fast (because index)
-
-
-
-
-
     }
 }

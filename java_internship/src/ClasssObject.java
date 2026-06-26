@@ -22,7 +22,6 @@ class Demo{
     }
 }
 
-
 public class ClasssObject {
     public static void main(String[] args) {
 

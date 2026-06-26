@@ -28,12 +28,5 @@ int main(){
 
     printf("%d \n", arr[3]);
 
-
-
-
-
-
-
-
     return 0;
 }
