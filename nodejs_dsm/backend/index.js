@@ -18,8 +18,8 @@ app.post("/post", (req, res) => {
   user.push(req.body);
 
   return res.json(user);
-});
+});  
 
 app.listen(3000, () => {
   console.log("Server is up and running");
-});
+}); 
