@@ -1,6 +1,6 @@
 class Demo{
 
-    int a  ;   // field 
+    int a;   // field 
 
     Demo(){ // default constructor
         a = 100;

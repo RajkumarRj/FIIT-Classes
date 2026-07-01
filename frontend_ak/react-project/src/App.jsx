@@ -9,6 +9,7 @@ import Hooks from "./components/Hooks";
 import Usehooooks from "./components/Usehooooks";
 import Userefff from "./components/Userefff";
 import UseReducerrr from "./components/UseReducerrr";
+import UseMemoo from "./components/useMemoo";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       {/* <Usehooooks/> */}
 
       {/* <Userefff/> */}
-      <UseReducerrr/>
+      {/* <UseReducerrr/> */}
+      <UseMemoo />
     </div>
   );
 }

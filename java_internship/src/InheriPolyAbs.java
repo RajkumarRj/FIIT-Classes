@@ -1,5 +1,4 @@
 // class Admin{
-
 //     private String secretKey = "123";
 
 //     void getter(){
@@ -70,17 +69,10 @@ public class InheriPolyAbs {
         // run time (method overriding)
 
 
-
-
-
-
         // Child obj = new Child();
 
         // System.out.println(obj.salary);
         // obj.display();
-
-
-
 
         // System.out.println("Inheritance");
 
