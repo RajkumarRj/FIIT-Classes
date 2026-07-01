@@ -21,6 +21,10 @@ int main(){
     double d = 30;
 
     char c = 'F';
+    int r;  // int default = > 0 
+
+    
+    printf("%d \n" , r);
 
     printf("%d \n" , a);
 

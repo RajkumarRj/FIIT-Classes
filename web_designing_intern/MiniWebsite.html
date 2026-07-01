@@ -9,9 +9,15 @@
         margin: 0;
         padding: 0;
       }
+      body {
+        background-color: #333;
+        color: white;
+      }
 
       header {
-        background-color: #333;
+        background-color: pink;
+        position: sticky;
+        top: 0;
       }
 
       #container {
@@ -29,26 +35,64 @@
         margin-left: 20px;
       }
 
-      #product-container{
+      #product-container {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
       }
-      #product-box{
-
+      #product-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         border: 2px solid yellow;
-        padding: 10px;
+        padding: 20px;
         width: 200px;
-        height: 200px;
+        height: 250px;
         transition: all 1s ease-out;
       }
 
-      #product-box:hover{
+
+      #product-box:hover {
         background-color: aqua;
         transform: scale(1.1);
       }
 
+      .imageSize {
+        width: 100px;
+        height: 100px;
+      }
+      .description {
+        font-size: 10px;
+        margin-top: 20px;
+      }
+
+      /* 0 - 567px  */
+      @media (max-width: 567px){
+        header img{
+          width: 100px;
+          height: 100px;
+        }
+        header{
+          background-color: red;
+        }
+        header #logSign{
+          display: none;
+
+        }
+      }
+      @media (min-width:568px) AND (max-width:800px){
+        header{
+          background-color: #333;
+          color: white;
+        }
+      }
+
+
+     
     </style>
   </head>
   <body>
@@ -87,33 +131,27 @@
       function renderProducts() {
         const container = document.getElementById("product-container");
 
-        
         fetch("https://dummyjson.com/products")
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data.products);
-          
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data.products);
+
             const products = data.products;
-            
+
             let containerHTML = " ";
 
-            products.forEach(element => {
-                containerHTML += `
+            products.forEach((element) => {
+              containerHTML += `
                  <div id="product-box">
-                  <img src="${element.images[0]}"/>
+                  <img class="imageSize" src="${element.images[0]}"/>
                     <h2>${element.title}</h2>
+                    <span class="description">${element.description}</span>
                     </div>
                 `;
             });
-            
-                
-               
-                
+
             container.innerHTML = containerHTML;
 
-              
-
-            
             // console.log(products);
 
             // console.log(products[0]);
