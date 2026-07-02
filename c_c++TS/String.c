@@ -37,8 +37,6 @@ int main(){
     // printf("Hello %s \n", dest);
     char str1[20]="Hello";
     char str2[20] ="Hello";
-
-
     // strcat(str1 , str2);
 
     // printf("%s \n", str1);
