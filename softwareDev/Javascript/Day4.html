@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h2 id="heading">Events</h2>
+
+    <button id="button">Click</button>
+
+    <script>
+      function greet() {
+        // function defnition
+        console.log("Greeting");
+      }
+
+      greet(); // calling the function
+
+      function add(a, b) {
+        let sum = a + b;
+        return sum;
+      }
+
+      let result = add(10, 20); // argument
+      let result1 = add(40, 60); // argument
+
+      let result2 = add(50, 70); // argument
+
+      console.log(result);
+      console.log(result1);
+      console.log(result2);
+
+      // es6+
+
+      //function expression
+
+      // let display = function data(){
+      //     console.log("hello display function");
+
+      // }
+
+      let display = () => {
+        // arrow function
+        console.log("hello display function");
+      };
+
+      display();
+
+      // arrays =>
+      let arr = [10, 20, 30, 40, 50, 60, "fiit", true];
+      // index starting from 0
+
+      //   console.log(arr[0]);
+      //   console.log(arr[1]);
+      //   console.log(arr[2]);
+      //   console.log(arr[3]);
+      //   console.log(arr[4]);
+      //   console.log(arr.length);
+
+      arr.push(100); // add at the back
+      arr.unshift(3); // add at front
+
+      arr.pop(100); // remove at end
+      arr.shift(3); // remove at start
+      for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+      }
+
+      //   const heading = document.getElementById("heading");
+
+      //   heading.style.backgroundColor = "blue";
+
+      //   heading.addEventListener("mouseover", function () {
+      //     heading.style.backgroundColor = "red";
+      //   });
+
+      //    heading.addEventListener("mouseout", function () {
+      //     heading.style.backgroundColor = "blue";
+      //   });
+
+      //   document.addEventListener("keypress" , function(event){
+      //     // console.log("key pressed");
+      //     console.log(event.key);
+      //   })
+
+      //   object
+
+      let obj = {
+        name: "FIIT",
+        age: 20,
+        course: "Software developer",
+        address: {
+          street: "thendral nagar",
+        },
+      };
+
+      console.log(obj); 
+      console.log(obj.name);
+      console.log(obj.course);
+      console.log(obj.address.street);
+   
+      
+      
+
+      // key:value pairs
+
+      console.log(typeof obj);
+    </script>
+  </body>
+</html>

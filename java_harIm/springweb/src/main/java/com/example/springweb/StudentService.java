@@ -16,7 +16,6 @@ public class StudentService {
         ls.add(new Student(2, "Java", 40));
     }
 
-
     public List<Student> getAllStudent(){
         return ls;
     }
