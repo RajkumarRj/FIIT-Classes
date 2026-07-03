@@ -55,29 +55,54 @@ int main(){
         // arithmetic => (+, -, /, *, %)
 
         int x = 10;
-        int y = 4;
+        int y = 10;
 
-        int result = x+y;
+        int result = x + y;
         result = x-y;
         result = x*y;
         result = x/y;
 
-        result = 3 % 2;
+        result = 3 % 2 ;
 
 
         printf("%d \n", result);
 
-        // relational
-        
-        // logical
-        // assignment
-        // bitwise
+        // relational => (> , <, >=, <=, ==, !=  )
+
+        // 10 > 4
+        printf("%d \n", x > y);
+        printf("%d \n", x < y);
+
+        printf("%d \n", x >= y);
+
+        printf("%d \n", x <= y);
+
+        printf("%d \n", x == y);
+
+        printf("%d \n", x != y);
+ 
+    // ramyasaravana05@gmail.com
+    // 6385705108
+
+        // logical ( && , ||, !)
+
+        printf(" AND %d \n", true && true);
+
+        printf("OR %d \n", false || true);
+
+        printf("NOT %d \n",  !false);
 
 
 
+        // assignment (+=, -=, /=, *=, %=)
 
+        int mark = 85;
 
+        mark = mark + 5;
 
+        mark += 5;
+
+     // bitwise
 
 
     // const double PI = 3.14;
@@ -89,7 +114,6 @@ int main(){
 
     // printf("%d \n", isEligible);
 
-    
 
     return 0;
 }

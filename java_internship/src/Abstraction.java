@@ -2,6 +2,7 @@
 
 // interface => able to achieve full abstraction 
 
+
 interface exampleDemo{
 
     void display();
@@ -20,6 +21,7 @@ class InterfaceDemo implements exampleDemo{
         System.out.println("Display method from interfaceDemo ");
     }
 }
+
  
 
 abstract class AbstractDemo{
@@ -55,7 +57,7 @@ public class Abstraction {
 
         demo.greet();
         demo.display();
-        
+    
         // System.out.println("Abstraction");
 
         // ChildAbstract obj = new ChildAbstract();
