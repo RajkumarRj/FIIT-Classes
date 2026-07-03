@@ -17,8 +17,6 @@ int main(){
     int result = add(100,20);
     printf("%d \n", result);
 
-
-    
     // char name[] ="Hello world";
     
     // printf("%s \n" , name);
@@ -37,6 +35,7 @@ int main(){
     // printf("Hello %s \n", dest);
     char str1[20]="Hello";
     char str2[20] ="Hello";
+    
     // strcat(str1 , str2);
 
     // printf("%s \n", str1);

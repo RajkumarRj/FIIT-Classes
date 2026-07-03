@@ -1,6 +1,5 @@
 package com.example.springweb;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -8,16 +7,32 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentService {
 
-    private  List<Student> ls = new ArrayList<>(); 
+    private StudentRepository repo;
 
-
-    public StudentService(){
-        ls.add(new Student(1, "FIIT", 23));
-        ls.add(new Student(2, "Java", 40));
+    // DI 
+    public StudentService(StudentRepository repo){
+        this.repo = repo;
     }
 
     public List<Student> getAllStudent(){
-        return ls;
+        return repo.findAll();
     }
 
+    public Student addStudent(Student student){
+
+        return repo.save(student);
+
+    }
+
+    public Student getStudentById(int id){
+        return repo.findById(id);
+    }
+
+    public Student updateStudent(int id , Student student){
+        return repo.update(id, student);
+    }
+
+    public boolean deleteStudent(int id){
+        return repo.delete(id);
+    }
 }
