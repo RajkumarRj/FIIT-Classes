@@ -21,7 +21,7 @@ const student = [
   {
     id: 2,
     name: "REDMI",
-    cours: "JAVA full Stack",
+    course: "JAVA full Stack",
   },
 ];
 
@@ -29,7 +29,6 @@ app.get("/list", (req, res) => {
   //endpoint
   return res.json(student);
 });
-
 
 app.post("/post", (req,res)=>{
     console.log(req.body);
@@ -41,18 +40,35 @@ app.post("/post", (req,res)=>{
 
 app.put("/update/:id", (req,res)=>{
     const studId = parseInt(req.params.id);
+    console.log(req.body);
+    
 
     const index = student.findIndex((e) => e.id === studId);
 
     if(index !== -1){
+
+      student[index] = {...req.body};
+
       return res.json(student[index]); 
     }
-
     return res.send("Datas not found");
     
 })
 
 
+let obj ={
+  name1:"Raj",
+  trainer:"MERN stack"
+}
+
+let obj1 = {
+  name: "Arun",
+  trainer1: "Java full stack",
+};
+
+let FIIT = {...obj , ...obj1};
+
+console.log(FIIT);
 
 
 

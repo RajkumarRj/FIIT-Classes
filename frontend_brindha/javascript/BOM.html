@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOM</title>
+  </head>
+  <body>
+    <h2>Browser Object Model</h2>
+    <!-- <a href="https://www.google.com">Google</a> -->
+
+    <button id="button">Go to google</button>
+
+    <script>
+      // window.alert("Hello welcome to our page");
+
+      document.getElementById("button").onclick = () => {
+        window.open("https://www.google.com");
+      };
+
+      // window.close();
+
+      console.log(window.innerHeight);
+      console.log(window.innerWidth);
+
+      console.log("Screen height", screen.height);
+
+      console.log("screen width", screen.width);
+
+      console.log("availheight", screen.availHeight);
+
+      console.log("availwidth", screen.availWidth);
+
+      console.log(location.href);
+
+      console.log(location.host);
+
+      console.log(location.pathname);
+      console.log(location.protocol);
+
+      // location.assign("https://www.google.com")
+
+      // location.reload();
+
+      setTimeout(() => {
+        console.log("Settimeout");
+      }, 2000);
+
+      const id = setInterval(() => {
+        console.log("Setinterval");
+      }, 1000);
+
+      setTimeout(() => {
+        clearInterval(id);
+      }, 10000);
+
+      // localStorage.setItem("name", "Brindha");
+
+      // const result = localStorage.getItem("name");
+      // console.log(result);
+
+      // localStorage.removeItem("name");
+
+      // localStorage.clear();
+
+      let user = {
+        name: "Brindha",
+        age: 22,
+        degree: "Bsc Maths",
+      };
+
+      localStorage.setItem("users", JSON.stringify(user));
+
+      const result = JSON.parse(localStorage.getItem("users"));
+
+      console.log(result);
+
+    //   sessionStorage.setItem("Sessionuser", "Brindha");
+    sessionStorage.removeItem("Sessionuser");
+
+    sessionStorage.clear();
+
+    document.cookie = "username=Brindha";
+    
+    console.log(document.cookie);
+    
+
+    
+    </script>
+  </body>
+</html>
