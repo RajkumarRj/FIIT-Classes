@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <h2>Form validation</h2>
+
+    <form id="myform">
+      <input type="text" id="inputval" placeholder="Enter your name" />
+      <br />
+      <br />
+      <input type="email" id="emailInput" placeholder="Email" />
+      <br /><br />
+      <input type="password" id="pass" placeholder="password" />
+      <p id="error-mg" style="color: red"></p>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="container"></div>
+
+    <script>
+      const form = document.getElementById("myform");
+      const error = document.getElementById("error-mg");
+
+      form.addEventListener("submit", function (event) {
+        const name = document.getElementById("inputval").value;
+        const email = document.getElementById("emailInput").value;
+        const pass = document.getElementById("pass").value;
+
+        error.textContent = "";
+
+        if (name === "") {
+          error.textContent = "Name is required";
+          event.preventDefault();
+        } else if (email === "") {
+          error.textContent = "Email is required";
+          event.preventDefault();
+        } else if (!passwordValidation(pass)) {
+          error.textContent =
+            "Password need Atleast 1 Capital letter and 1 digit and minimum of 8 characters";
+          event.preventDefault();
+        } else {
+          alert("Form submitted successfully");
+        }
+      });
+
+      function passwordValidation(password) {
+        let pattern = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+        return pattern.test(password);
+      }
+
+    //   function 
+
+     
+    </script>
+  </body>
+</html>

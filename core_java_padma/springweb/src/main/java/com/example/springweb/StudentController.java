@@ -60,17 +60,4 @@ public class StudentController {
         return service.deleteStudent(id) ? "Deleted Successfully":"Data not found";
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

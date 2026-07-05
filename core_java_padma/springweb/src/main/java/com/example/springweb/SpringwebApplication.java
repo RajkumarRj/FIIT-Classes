@@ -9,6 +9,8 @@ public class SpringwebApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringwebApplication.class, args);
 		System.out.println("Application Started");
+		System.out.println("APplicatoin starated with dev tools");
 	}
+	
 
 }
