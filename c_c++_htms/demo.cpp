@@ -74,7 +74,6 @@ class UPI : public Payment{
         void pay(){
             cout<<"Payment paid using UPI"<<endl;
         }
-
 };
 class COD : public Payment{
     public:
@@ -106,16 +105,10 @@ int main(){
     // bank.display();
 
 
-
-
-
     COD cod;
     cod.pay();
     UPI upi;
     upi.pay();
-
-
-
 
 
 
