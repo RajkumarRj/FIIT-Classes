@@ -30,7 +30,7 @@ const Usememoo = () => {
       <h1>Use memo</h1>
       <h2>{count}</h2>
 
-      <button onClick={handClick}>Add</button>
+      <button onClick={handClick}>Addd</button>
 
       <MemoChild content="memooo" buttonClick={display} />
     </div>

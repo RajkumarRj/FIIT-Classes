@@ -49,7 +49,7 @@ int main(){
     count--; // 1
 
 
-    printf("%d \n", count);
+    // printf("%d \n", count);
 
     //binary => need atleast two operand
         // arithmetic => (+, -, /, *, %)
@@ -57,40 +57,46 @@ int main(){
         int x = 10;
         int y = 10;
 
-        int result = x + y;
-        result = x-y;
-        result = x*y;
-        result = x/y;
+        // int result = x + y;
+        // result = x-y;
+        // result = x*y;
+        // result = x/y;
 
-        result = 3 % 2 ;
+        // result = 3 % 2 ;
 
 
-        printf("%d \n", result);
+        // printf("%d \n", result);
 
         // relational => (> , <, >=, <=, ==, !=  )
 
         // 10 > 4
-        printf("%d \n", x > y);
-        printf("%d \n", x < y);
+        // printf("%d \n", x > y);
+        // printf("%d \n", x < y);
 
-        printf("%d \n", x >= y);
+        // printf("%d \n", x >= y);
 
-        printf("%d \n", x <= y);
+        // printf("%d \n", x <= y);
 
-        printf("%d \n", x == y);
+        // printf("%d \n", x == y);
 
-        printf("%d \n", x != y);
+        // printf("%d \n", x != y);
  
     // ramyasaravana05@gmail.com
     // 6385705108
 
         // logical ( && , ||, !)
 
-        printf(" AND %d \n", true && true);
+        // printf(" AND %d \n", true && false);
+        // true true  => true
+        // false true => false
+        // false false => false
 
-        printf("OR %d \n", false || true);
+        // printf("OR %d \n", false || true);
 
-        printf("NOT %d \n",  !false);
+        // flase fasle => false
+        // true false => true 
+
+        // printf("NOT %d \n",  !false);
 
 
 
@@ -98,12 +104,24 @@ int main(){
 
         int mark = 85;
 
-        mark = mark + 5;
+        // mark = mark + 5;
 
         mark += 5;
 
-     // bitwise
+     // bitwise (bit => 0 or 1)
+     // & | ^ >> << 
 
+     int a = 5;
+     int b = 6;
+
+    //  printf("%d \n", a & b);
+    //   printf("%d \n", a | b);
+    //   printf("%d \n", a ^ b);
+
+    // >> => right shift operator 
+      printf("Right shift : %d \n", a >> 1);
+
+      printf("Left shift : %d \n", a << 1);
 
     // const double PI = 3.14;
     // PI = 3.22;

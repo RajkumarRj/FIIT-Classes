@@ -4,6 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Usememoo from './Usememoo'
+import ConsumeContext from './context/ConsumeContext'
+import { Uerprovider } from './context/Usercontext'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +13,14 @@ function App() {
   return (
     <>
       <h2>React</h2>
-      <Usememoo/>
+      {/* <Usememoo/> */}
+
+
+      <ConsumeContext/>
+  
+    
+
+    
     </>
   )
 }
