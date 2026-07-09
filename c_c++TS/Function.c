@@ -47,12 +47,8 @@ int main(){
     // sub(10,5);
 
     // display();
-
     // int multiply = multi(10,20); // 200
-
     // printf("%d \n", multiply);
-
-
     // double result = add(); // 10
 
     // printf("%Lf \n", result);

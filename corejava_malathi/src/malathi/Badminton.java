@@ -6,7 +6,9 @@ public class Badminton {
         
         Interest obj = new Interest();
 
-        System.out.println(obj.sport);
+        System.out.println(obj.roll_no);
+        System.out.println(obj.section);
+        System.out.println(obj.marks); // same package
     }
     
 }

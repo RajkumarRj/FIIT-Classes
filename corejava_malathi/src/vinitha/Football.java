@@ -2,14 +2,18 @@ package vinitha;
 
 import malathi.Interest;
 
-public class Football {
+public class Football extends Interest {
 
     public static void main(String[] args) {
         
-        Interest ins = new Interest();
+        Football obj = new Football();
 
+        System.out.println(obj.marks);
+        // Interest ins = new Interest();
 
-        System.out.println(ins.sport);
+        // System.out.println(ins.roll_no);
+        // System.out.println(ins.section);
+        // System.out.println(ins.marks);
     }
     
 }
