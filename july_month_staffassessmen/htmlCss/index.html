@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+      }
+      header img {
+        width: 300px;
+        padding: 10px;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        height: 60vh;
+      }
+      section form input {
+        height: 25px;
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+      section form {
+        border-radius: 20px;
+        box-shadow: 0 0 10px #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      section form > div {
+        padding: 20px;
+      }
+      form button {
+        padding: 10px 30px;
+        color: white;
+        background-color: blue;
+        border: none;
+      }
+
+      form button:hover {
+        background-color: rgb(56, 56, 158);
+        font-weight: bold;
+      }
+      form label {
+        font-size: 18px;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+      @media (min-width: 767px) {
+        form {
+          width: 60%;
+        }
+      }
+      input::placeholder{
+        padding-left: 5px;
+      }
+      input:focus{
+        outline: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://fiit.co.in/wp-content/uploads/2024/10/fiit-logo.png"
+        alt="FIIT logo"
+      />
+    </header>
+
+    <section>
+      <h1>Login form</h1>
+      <form action="">
+        <div>
+          <label for=""> Email:</label>
+          <input type="email" placeholder="Enter your email.." />
+        </div>
+        <div>
+          <label for="">Password:</label>
+          <input type="password" placeholder="Enter your email.." />
+        </div>
+        <div>
+          Remember me <input type="checkbox" />
+          <!-- <br> -->
+          <a href="#forgot">Forget Password</a>
+        </div>
+
+        <div>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

@@ -18,7 +18,7 @@ class Baby implements Grace {
     int age;
 
     Baby(int age){
-        age = age;
+        this.age = age;
         System.out.println("Construcotr is called");
     }
 

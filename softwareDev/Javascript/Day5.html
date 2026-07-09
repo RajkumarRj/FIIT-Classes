@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <input id="inp" type="text" placeholder="Enter todo..." />
+    <button id="button">Add</button>
+
+    <script>
+      const buttons = document.getElementById("button");
+
+      buttons.addEventListener("click", function () {
+        let inpEle = document.getElementById("inp").value;
+
+        console.log(inpEle);
+
+        const newElement = document.createElement("p");
+        newElement.innerText = inpEle;
+
+        document.body.appendChild(newElement);
+
+        document.getElementById("inp").value = "";
+      });
+
+      let obj = {
+        name: "FIIT",
+        age: 20,
+      };
+
+      console.log(obj.name);
+      console.log(obj.age);
+
+      const { name, age } = obj;
+
+      console.log(name);
+      console.log(age);
+
+      console.log(`Hello ${name} you are ${age} year older`);
+      
+
+      localStorage.setItem("academy", JSON.stringify(obj));
+      console.log(JSON.parse( localStorage.getItem("academy")) );
+
+      // destructing
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      #container div{
+        text-align: center;
+
+        box-shadow: 0 0 10px rgb(209, 198, 198);
+      }
+      #container div img{
+        width: 200px;
+        height: 300px;
+        margin-top: 10px;
+        transition: all 0.75s ;
+
+      }
+
+      div img:hover{
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ1c3WeSt_2_dtxZmcoEzBr8bl-Pu7JLCrLFaLGA8BVxWKON_AHsUgiBo&s=10"
+          alt=""
+        />
+        <p>Parrot</p>
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ1c3WeSt_2_dtxZmcoEzBr8bl-Pu7JLCrLFaLGA8BVxWKON_AHsUgiBo&s=10"
+          alt=""
+        />
+        <p>Parrot</p>
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ1c3WeSt_2_dtxZmcoEzBr8bl-Pu7JLCrLFaLGA8BVxWKON_AHsUgiBo&s=10"
+          alt=""
+        />
+        <p>Parrot</p>
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ1c3WeSt_2_dtxZmcoEzBr8bl-Pu7JLCrLFaLGA8BVxWKON_AHsUgiBo&s=10"
+          alt=""
+        />
+        <p>Parrot</p>
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ1c3WeSt_2_dtxZmcoEzBr8bl-Pu7JLCrLFaLGA8BVxWKON_AHsUgiBo&s=10"
+          alt=""
+        />
+        <p>Parrot</p>
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ1c3WeSt_2_dtxZmcoEzBr8bl-Pu7JLCrLFaLGA8BVxWKON_AHsUgiBo&s=10"
+          alt=""
+        />
+        <p>Parrot</p>
+      </div>
+    </div>
+
+    <script src="Palindrome.js"></script>
+  </body>
+</html>
