@@ -6,6 +6,9 @@ import './App.css'
 import Usememoo from './Usememoo'
 import ConsumeContext from './context/ConsumeContext'
 import { Uerprovider } from './context/Usercontext'
+import CustomHook from './CustomHook'
+import ControlledComponent from './ControlledComponent'
+import AxiosComponent from './axios/AxiosComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +19,11 @@ function App() {
       {/* <Usememoo/> */}
 
 
-      <ConsumeContext/>
+      {/* <ConsumeContext/> */}
+      {/* <CustomHook/> */}
+      {/* <ControlledComponent/> */}
+
+      <AxiosComponent/>
   
     
 
