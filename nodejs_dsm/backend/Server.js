@@ -55,10 +55,9 @@ app.put("/update/:id", (req,res)=>{
     
 })
 
-
 let obj ={
   name1:"Raj",
-  trainer:"MERN stack"
+  trainer:"MERN stack" 
 }
 
 let obj1 = {
@@ -69,11 +68,6 @@ let obj1 = {
 let FIIT = {...obj , ...obj1};
 
 console.log(FIIT);
-
-
-
-
-
 
 app.listen(10000, () => {
   console.log("Server is up and running");

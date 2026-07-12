@@ -12,24 +12,19 @@ public class StudentsModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private String name;
     private int age;
     private String course;
-    
-    public void setId(int id) {
+    public StudentsModel(Integer id, String name, int age, String course) {
         this.id = id;
-    }
-    public void setName(String name) {
         this.name = name;
-    }
-    public void setAge(int age) {
         this.age = age;
-    }
-    public void setCourse(String course) {
         this.course = course;
     }
-    public int getId() {
+    public StudentsModel() {
+    }
+    public Integer getId() {
         return id;
     }
     public String getName() {
@@ -41,12 +36,18 @@ public class StudentsModel {
     public String getCourse() {
         return course;
     }
-    public StudentsModel(int id, String name, int age, String course) {
+    public void setId(Integer id) {
         this.id = id;
+    }
+    public void setName(String name) {
         this.name = name;
+    }
+    public void setAge(int age) {
         this.age = age;
+    }
+    public void setCourse(String course) {
         this.course = course;
     }
-    public StudentsModel() {
-    }
+    
+    
 }

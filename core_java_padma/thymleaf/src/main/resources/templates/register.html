@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <form  th:object="${user}" th:action="@{/submit}" method="post">
+      Name : <input type="text" th:field="*{name}" /> Email :
+      <input type="text" th:field="*{email}" />
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
