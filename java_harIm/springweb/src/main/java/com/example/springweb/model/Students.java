@@ -9,7 +9,6 @@ import jakarta.persistence.Table;
 
 // workbench + server 
 
-
 @Entity
 @Table(name = "student")
 public class Students {

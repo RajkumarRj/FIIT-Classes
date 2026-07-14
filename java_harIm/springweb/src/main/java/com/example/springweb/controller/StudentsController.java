@@ -1,8 +1,11 @@
 package com.example.springweb.controller;
 
 import java.util.List;
+import java.util.Optional;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,12 +30,21 @@ public class StudentsController {
         return service.getAllStudent();
     }
 
+    @GetMapping("/list/{id}")
+    public ResponseEntity<Students> getStudentByid(@PathVariable int id){
+        return ResponseEntity.status(200).body(service.getStudentById(id));
+    }
+    // 201 => created 
+    // 200 => response success
+    // 404 => not found 
+    // 403 => unauthorized 
+
     @PostMapping("/add")
-    public Students addStudent(@RequestBody Students student){
+    public ResponseEntity<Students> addStudent(@RequestBody Students student){
         System.out.println(student.getName());
         System.out.println(student.getAge());
         System.out.println(student.getCourse());
-        return service.addStudentBy(student);
+        return ResponseEntity.status(201).body(service.addStudentBy(student));
     }
 
 }
