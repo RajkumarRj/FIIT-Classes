@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { api } from "./api";
+import { Button } from "react-bootstrap";
+
 
 const AxiosComponent = () => {
   const [data, setData] = useState([]);
@@ -49,6 +51,7 @@ const AxiosComponent = () => {
 
   return (
     <div>
+      <Button>Bootstrap button</Button>
       <h2>Axios</h2>
       <button onClick={Updateuser}>Update</button>
 
@@ -63,6 +66,7 @@ const AxiosComponent = () => {
 
         <button type="submit">Add</button>
       </form>
+      
 
       {data.map((ele) => {
         return (

@@ -9,6 +9,8 @@ import { Uerprovider } from './context/Usercontext'
 import CustomHook from './CustomHook'
 import ControlledComponent from './ControlledComponent'
 import AxiosComponent from './axios/AxiosComponent'
+import Conditional from './Conditional'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,17 +19,11 @@ function App() {
     <>
       <h2>React</h2>
       {/* <Usememoo/> */}
-
-
       {/* <ConsumeContext/> */}
       {/* <CustomHook/> */}
       {/* <ControlledComponent/> */}
-
-      <AxiosComponent/>
-  
-    
-
-    
+      {/* <AxiosComponent/> */}
+      <Conditional/>
     </>
   )
 }
