@@ -32,5 +32,11 @@ public class StudentsService {
 
         return repo.findById(id).orElseThrow( ()-> new ResourceNotFoundException("Student NOt found") );
     }
+
+    public List<Students> getCourse(String cname){
+
+        return repo.findByCourse(cname);
+
+    }
 }
 

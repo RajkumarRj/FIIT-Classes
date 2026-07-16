@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.springweb.model.Students;
 import com.example.springweb.service.StudentsService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/jpa")
 public class StudentsController {
@@ -40,11 +42,16 @@ public class StudentsController {
     // 403 => unauthorized 
 
     @PostMapping("/add")
-    public ResponseEntity<Students> addStudent(@RequestBody Students student){
+    public ResponseEntity<Students> addStudent(@Valid @RequestBody Students student){
         System.out.println(student.getName());
         System.out.println(student.getAge());
         System.out.println(student.getCourse());
         return ResponseEntity.status(201).body(service.addStudentBy(student));
+    }
+
+    @GetMapping("/course/{cname}")
+    public List<Students> getCourse(@PathVariable String cname){
+        return service.getCourse(cname);
     }
 
 }

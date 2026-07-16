@@ -5,6 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 
 
 // workbench + server 
@@ -13,22 +15,17 @@ import jakarta.persistence.Table;
 @Table(name = "student")
 public class Students {
 
-     @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
+
+    @NotNull(message = "Name cannot be empty")
     private String name;
+    
+    @Min(value = 18 , message = "User must be at least 18 years")
     private int age;
     private String course;
-    
-    public Students() {
-    }
-    public Students(int id, String name, int age, String course) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.course = course;
-    }
-    public int getId() {
+    public Integer getId() {
         return id;
     }
     public String getName() {
@@ -40,7 +37,7 @@ public class Students {
     public String getCourse() {
         return course;
     }
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
     public void setName(String name) {
@@ -52,10 +49,14 @@ public class Students {
     public void setCourse(String course) {
         this.course = course;
     }
+    public Students(Integer id, @NotNull(message = "Name cannot be empty") String name, int age, String course) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.course = course;
+    }
+    public Students() {
+    }
     
 
-    
-
-
-    
 }

@@ -6,11 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li th:each = "s : ${student}"  th:text = "${s}">Student Name</li>
-    </ul>
-    <h2>Students</h2>
-    
+    <h1 th:if = "${age >= 18}">You are eligible</h1>
+
+    <h1 th:unless = "${age >= 18}">You are not eligible</h1>
     
 </body>
 </html>

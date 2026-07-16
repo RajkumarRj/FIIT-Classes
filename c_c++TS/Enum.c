@@ -33,7 +33,6 @@ int main(){
 
     fclose(file1);
     
-
     FILE *file3;
 
     file3 = fopen("example.txt", "a");
@@ -43,22 +42,11 @@ int main(){
 
     fclose(file3);
 
-
-
-    
-
-    
-
-
-
     // int a ;
 
     // enum Direction fiit  = South;
 
     // printf("%d \n", fiit );
-
-
-
 
     return 0;
 }
