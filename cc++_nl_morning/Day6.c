@@ -18,9 +18,7 @@ void multiply(int a , int b, int c){
 double PI(){
     double pi = 3.14;
     return pi;
-}
-
-
+} 
 struct Student{
     int roll_no;
     char name[50];
