@@ -7,7 +7,6 @@ class Demo{
     }
 }
 
-
 public class App {
     public static void main(String[] args) throws Exception {
         
@@ -28,7 +27,7 @@ public class App {
         System.out.println(d);
         System.out.println(b);
 
-
+        
 
         System.out.println("Java application");
     }
