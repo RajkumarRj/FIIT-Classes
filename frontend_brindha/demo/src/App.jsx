@@ -1,33 +1,27 @@
-
-import { useState } from 'react';
-import './App.css'
-import Component from './Component'
+import { useState } from "react";
+import "./App.css";
+import Component from "./Component";
 
 function App() {
+  const [count, setCount] = useState(10);
 
-  const[count, setCount] = useState(10);
-
-  const handleClick = ()=>{
-
+  const handleClick = () => {
     setCount(count + 1);
     // count+1;
-  }
+  };
 
   return (
     <>
-    <h1> {count} </h1>
-    <button onClick={handleClick}>Count++</button>
-    <h2>Hello there</h2>
+      {/* jsx  */}
+      <h1> {count} </h1>
+      <button onClick={handleClick}>Count++</button>
+      <h2>Hello there</h2>
 
-      {/* <Component />
-      <Component />
-      <Component />
-      <Component />
-      <Component /> */}
+      <Component name="FIIT" age = "20" />
 
       {/* jsx  */}
     </>
   );
 }
 
-export default App
+export default App;
