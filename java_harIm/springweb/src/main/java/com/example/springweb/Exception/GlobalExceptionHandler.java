@@ -25,7 +25,6 @@ public class GlobalExceptionHandler {
 
     }
 
-
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public  ResponseEntity<Map<String, String>> handleValidationException(MethodArgumentNotValidException ex){
                 Map<String, String>  error = new HashMap<>();
