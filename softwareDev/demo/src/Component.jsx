@@ -11,6 +11,7 @@ const Component = ({ name, age, countVar }) => {
   return (
     <div>
       <h2>Component </h2>
+      <h1>Component</h1>
       {/* <h1>{props.name}</h1> */}
       {/* <h1>{props.age}</h1> */}
       <h1>{name}</h1>
