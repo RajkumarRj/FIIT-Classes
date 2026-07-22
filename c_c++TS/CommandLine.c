@@ -16,6 +16,5 @@ int main(int argc, int *argv[]){
         printf("Argument %d: %s\n", i, argv[i]);
     }
 
-    
     return 0;
 }

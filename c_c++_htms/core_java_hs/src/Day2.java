@@ -82,7 +82,6 @@ public class Day2 {
         int jagged[][] = { {1,2,3}, {4,4}, {7,8,9,4, 8, 9} };
 
 
-
          for(int i=0; i<jagged.length; i++){
 
             // column 
