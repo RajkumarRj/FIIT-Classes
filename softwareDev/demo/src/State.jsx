@@ -54,7 +54,7 @@ const State = () => {
 
   useEffect(() => {
     console.log(data);
-  }, [data]);
+  },[data]);
 
   //   empty dependency => runs on every renders
   // empty array => runs on mount phase
@@ -82,7 +82,7 @@ const State = () => {
 
       <h1>{data}</h1>
 
-      <button onClick={() => setData(true)}>Login</button>
+      <button onClick={() => setData(true)}>fdfas</button>
       <button onClick={() => setData(false)}>Logout</button>
       {data ? <Component /> : <h2>Logout</h2>}
     </div>
