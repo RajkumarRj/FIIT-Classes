@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Component, { Component1 } from "./Component";
 import State from "./State";
+import BackendFetch from "./BackendFetch";
 
 function App() {
   // react hoooks
@@ -20,7 +21,8 @@ function App() {
 
       <Component1 /> */}
 
-      <State />
+      {/* <State /> */}
+      <BackendFetch/>
      
     </div>
   );
