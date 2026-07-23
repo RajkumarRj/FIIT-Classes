@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <h2>Operators</h2>
+
+
+
+    <script>
+        console.log("Operators");
+        
+        // operators is a special symbol that's tell 
+        // compiler to do  specific task 
+
+        // unary, binary, ternary 
+
+        // unary => need only one ooperand 
+        // (++, --)
+
+        let a = 10;
+
+        a++; //11
+        a++; //12
+        a++; // 13
+        a--; // 12
+        a-- // 11
+        console.log(a);
+
+        // binary operators => need atleast two operand 
+        // arithmetic (+, -, /, *, %)
+
+        let x = 10;
+        let y = "10";
+
+        console.log(x + y);
+        console.log(x - y);
+        console.log(x * y);
+        console.log(y / x);
+        console.log(y % x);  // reminder
+
+
+        
+        // relational (> , < , >=, <=, ==, != , ===, !==)
+
+        console.log(x > y); // false
+
+        console.log(x < y); // true
+
+        console.log(x >= y);
+
+        console.log(x <= y);
+
+        console.log(x == y); // true
+
+        console.log( x != y);
+
+        console.log(x === y); // check value + type
+
+        console.log(x !== y);
+    
+        // logical (&& , ||, !)
+
+        // AND => true true => true    
+        //        false true => false
+        //        false false => false
+
+        console.log(true && true);
+
+        // || => true => true 
+                // false , false => false 
+        console.log(true || false);
+
+        console.log(!true);
+        console.log(!false);
+
+        
+        
+        // assignment(+=, -=, *=, /=, %=)
+        let marks = 90;
+        marks += 5;
+        marks-=5;
+        marks *=5;
+        marks /= 5;
+
+        
+
+        // bitwise (& | >> << ^)
+
+        console.log(3 & 2);
+
+        console.log(3 | 2);
+
+        console.log( 4 >> 2);
+
+        console.log(3 << 1);
+
+        // xor =>  same => false
+        //         different => true
+
+        //         true true => false
+        //         true false => true
+        
+        // console.log(3 ^ 5);
+    
+
+        
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
