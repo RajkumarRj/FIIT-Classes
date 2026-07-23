@@ -8,12 +8,20 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+
+import com.example.springsecurity.jwt.Jwtutil;
 import com.example.springsecurity.model.User;
 
 import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 public class Usercontroller {
+
+    private Jwtutil jwt;
+
+    public Usercontroller(Jwtutil jwt){
+        this.jwt = jwt;
+    }
 
     @GetMapping("/")
     public String sayHell(){
@@ -26,7 +34,10 @@ public class Usercontroller {
         System.out.println(user.getId());
         System.out.println(user.getEmail());
         System.out.println(user.getPassword());
-        return "user added successfully";
+
+        return jwt.generateToken(user.getName());
+
+        // return "user added successfully";
     }
 
     @GetMapping("/csrf")
