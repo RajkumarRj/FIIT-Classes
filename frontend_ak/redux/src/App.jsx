@@ -6,6 +6,7 @@ import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment, reset } from "./store/counterSlice";
 import { login } from "./store/userSlice";
+import Tailwind from "./Tailwind";
 
 function App() {
   const count = useSelector((state) => state.counter.data);
@@ -17,7 +18,7 @@ function App() {
   // zustand
   return (
     <>
-      {count}
+      {/* {count}
       <h2 className="text-3xl  p-6 m-6 border-3 border-sky-300 text-yellow-600  ">Redux</h2>
       <h1>{name}</h1>
 
@@ -34,7 +35,11 @@ function App() {
       <button onClick={() => dispatch(decrement())}>decrement</button>
       <button onClick={() => dispatch(reset())}>Reset</button>
 
-      <button></button>
+      <button>dfg</button> */}
+
+      {/* <h2>Tailwind CSS</h2> */}
+
+      <Tailwind/>
     </>
   );
 }
