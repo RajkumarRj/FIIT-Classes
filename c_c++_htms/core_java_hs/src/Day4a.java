@@ -44,11 +44,7 @@ public class Day4a {
     public static void main(String[] args) {
 
     PT obj = new PT();
-
-        
-
-
-
-        System.out.println("Abstraction");
+    
+    System.out.println("Abstraction");
     }
 }
