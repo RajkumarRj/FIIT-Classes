@@ -3,6 +3,10 @@ import "./App.css";
 import Component from "./Component";
 import Hooks from "./Hooks";
 import Memo from "./Memo";
+import UseReducer from "./UseReducer";
+import UseContext, { UserProvider } from "./UseContext";
+import Consumer from "./Consumer";
+import Controlled from "./Controlled";
 
 function App() {
   const [count, setCount] = useState(10);
@@ -18,12 +22,18 @@ function App() {
       {/* <h1> {count} </h1>
       <button onClick={handleClick}>Count++</button>
       <h2>Hello there</h2> */}
-
       {/* <Component name="FIIT" age = "20" /> */}
-
       {/* <Hooks/> */}
-      <Memo/>
+      {/* <Memo/> */}
+      {/* <UseReducer/> */}
+      {/* <Consumer /> */}
 
+      <Controlled/>
+    
+      {/* <UseContext /> */}
+
+
+   
       {/* jsx  */}
     </>
   );

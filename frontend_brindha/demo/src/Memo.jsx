@@ -5,6 +5,7 @@ const Memo = () => {
   const [count, setCount] = useState(0);
   const [number, setNumber] = useState(10);
 
+  
   console.log("Memo component rendered");
   const handleClick = useCallback(() => {}, []);
 
