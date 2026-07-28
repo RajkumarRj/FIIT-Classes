@@ -35,7 +35,7 @@ class Hybrid extends WoH implements Student{
 
 
 
-final class FinalKeyword{
+ final class FinalKeyword{
 
     final int data = 10; // field 
 
