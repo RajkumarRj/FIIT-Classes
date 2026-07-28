@@ -30,7 +30,6 @@ int main(){
 
     // free(ptr);
 
-
     // FILE *file;
 
     // file = fopen("example.txt", "a");
@@ -55,13 +54,10 @@ int main(){
     //     printf("%s\n", data);
     // }
    
-
     // printf("Union \n");
 
     // union Student s1;
 
-    
-    
     // s1.marks = 98;
     // strcpy(s1.name , "Harish");
     // s1.roll_no = 21;
@@ -70,8 +66,6 @@ int main(){
     // printf("%s \n", s1.name);
 
     // printf("%f \n", s1.marks);
-
-
 
     return 0;
 }
