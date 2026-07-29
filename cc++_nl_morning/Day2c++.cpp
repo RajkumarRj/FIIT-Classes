@@ -37,9 +37,6 @@ int main(){
     // Student obj1;
 
     // obj1.display();
-
-    
-
     cout<<"C++ String"<<endl;
 
     string name = "Tharunraman";
