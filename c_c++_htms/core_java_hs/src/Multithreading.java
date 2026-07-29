@@ -38,23 +38,12 @@ public class Multithreading {
         // obj1.start();
 
         System.out.println("Start");
-
-
         Mythread obj = new Mythread();
         obj.display();
-
         obj.start(); // it createe thread 
-
-       
         obj.join();
-            
-    
               // two way => Thread class, Runnable Interface 
-
-
         System.out.println("End");
-
-
     }
     
 }
