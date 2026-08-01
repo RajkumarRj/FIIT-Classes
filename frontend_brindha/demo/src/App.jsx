@@ -7,7 +7,9 @@ import UseReducer from "./UseReducer";
 import UseContext, { UserProvider } from "./UseContext";
 import Consumer from "./Consumer";
 import Controlled from "./Controlled";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import Bootstrap from "./Bootstrap";
+import Axios from "./Axios";
 function App() {
   const [count, setCount] = useState(10);
 
@@ -28,7 +30,9 @@ function App() {
       {/* <UseReducer/> */}
       {/* <Consumer /> */}
 
-      <Controlled/>
+      {/* <Controlled/> */}
+      {/* <Bootstrap/> */}
+      <Axios/>
     
       {/* <UseContext /> */}
 
