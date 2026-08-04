@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="heading">DOM</h1>
+
+    <h2 id="heading2">FIIT</h2>
+
+    <script>
+      const head = document.getElementById("heading");
+
+      head.addEventListener("mouseover", () => {
+        head.style.color = "blue";
+      });
+      // creating new element
+
+      const Pelement = document.createElement("p");
+
+      Pelement.textContent = "Software Developer";
+
+    //   console.log(Pelement);
+
+      document.body.appendChild(Pelement);
+
+      document.getElementById("heading2").textContent = "Academy";
+
+      head.textContent = "Jeevakumaran";
+
+      // Document object model
+
+    //   functions => reusable block of code 
+
+    function add(a,b){ // parameter
+        console.log(a+b);
+        
+    }
+
+    // argument, parameter  
+    add(10,20); // argument
+
+
+
+    // function expression 
+
+    const jeevakumaran = ()=>{
+        console.log("Learning software development");
+    }
+
+
+    // learn();
+    jeevakumaran();
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

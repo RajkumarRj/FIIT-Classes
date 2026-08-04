@@ -69,8 +69,5 @@ int main(){
     // Parent obj;
     // cout<<obj.salary<<endl;
     // obj.display();
-
-    
-
     return 0;
 }
