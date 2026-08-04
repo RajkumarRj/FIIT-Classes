@@ -1,5 +1,6 @@
 package com.example.springsecurity;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,8 +12,17 @@ import jakarta.servlet.http.HttpServletRequest;
 @RestController
 public class UserController {
 
+    
+    Jwtutil util;
+    public UserController(Jwtutil util){
+        this.util = util;
+    }
 
-    @GetMapping("/")
+
+    
+
+
+    @GetMapping("/home")
     public String sayHello(){
         return "Hello Spring securdfsadfsdfaity";
     }
@@ -27,8 +37,12 @@ public class UserController {
     public String addUser(@RequestBody UserModel user){
         System.out.println(user.getName());
         System.out.println(user.getPassword());
-        return "User added successfully";
+        return  util.generateToken(user.getName());
     }
     
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello jwt";
+    }
     // jwt authentication 
 }
