@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <h1>Array</h1>
+
+    <h1 id="count"></h1>
+
+    <button id="clickButton">Add</button>
+
+    <script>
+      const countVar = document.getElementById("count");
+
+      let count = 0;
+      const increment = document.getElementById("clickButton");
+
+      increment.addEventListener("click", function () {
+        count++;
+        countVar.textContent = count;
+      });
+
+      // dynamically typed language  =>
+
+      // let a = 10;
+      // a = "Jeevakumaran";
+      // a= true;
+
+      // statically typed language
+      // int a = 10;
+      // a = "Jeevakumaran";
+
+      // array -> collection of elements
+
+      const arr = [1, 2, 3, 4, 5];
+
+      arr.push(10);
+      arr.pop(); // remove last element
+
+      arr.unshift(10);
+      arr.shift(); // remove first element
+      // 0-4  => 5
+      // console.log(arr[3]);
+      // console.log(arr[4]);
+      // console.log(arr[0]);
+      for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+        // console.log(i);
+      }
+
+      // object => key-value pairs
+
+      let jeeva = {
+        name: "Jeevakumaran",
+        degree: "Bsc IT",
+        address: {
+          street: "Nethaji nagar",
+          area: "Chennai",
+          location: {
+            state: "Tamilnadu",
+          },
+        },
+      };
+
+      const { name, degree } = jeeva;
+
+      console.log(name, degree);
+
+      console.log(Object.keys(jeeva));
+      console.log(Object.values(jeeva));
+      console.log(Object.entries(jeeva));
+
+      console.log(jeeva.address.location.state);
+
+      console.log(jeeva);
+
+      console.log(jeeva.name);
+      console.log(jeeva.degree);
+
+      console.log(jeeva.address);
+      console.log(jeeva.address.street);
+      console.log(jeeva.address.area);
+    </script>
+  </body>
+</html>
