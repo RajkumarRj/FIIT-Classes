@@ -39,21 +39,6 @@ int main(){
 
 
 
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
     cout<<"Exception Handling"<<endl;
     int a = 10;
     int b = 0;
