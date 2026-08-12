@@ -37,10 +37,6 @@ int main(){
     
 
 
-
-
-
-
     thread t(display);
 
     t.join();
@@ -123,12 +119,7 @@ int main(){
     s.pop();
 
     cout<<s.top()<<endl;
-
-
-
-
-
-
+    
 
 
     cout<<"Exceptional handling"<<endl;
