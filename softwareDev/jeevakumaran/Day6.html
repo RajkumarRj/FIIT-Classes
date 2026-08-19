@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <input id="inputval" type="text" placeholder="Enter your task ....." />
+    <button id="button">Add task</button>
+
+    <div>
+      <ul id="container_list"></ul>
+    </div>
+
+    <script>
+      const inputval = document.getElementById("inputval");
+      const button = document.getElementById("button");
+      const container = document.getElementById("container_list");
+
+      button.addEventListener("click", function () {
+        // create list 
+        const list = document.createElement("li");
+        list.textContent = inputval.value;
+
+        // create button 
+        const delBtn = document.createElement("button");
+        delBtn.textContent = "Delete";
+
+
+        delBtn.addEventListener('click', function(){
+            list.remove();
+        })
+
+        list.appendChild(delBtn);
+
+        container.appendChild(list);
+
+        inputval.value = "";
+
+        console.log(inputval.value);
+      });
+      // iteration
+      // 1 to 10
+
+      // condition
+
+      // do-while
+
+    //   var let const 
+
+    const add = ()=>{
+        console.log("arrow function");
+        
+    }
+
+    let object = {
+        name:"jeevakumaran",
+        age:20,
+        college:"vit"
+    }
+
+    const {name, age, colelge} = object;
+    
+    
+
+    console.log(`${name} is ${age} years old`);
+    
+
+
+    </script>
+  </body>
+</html>
