@@ -19,18 +19,17 @@
       const container = document.getElementById("container_list");
 
       button.addEventListener("click", function () {
-        // create list 
+        // create list
         const list = document.createElement("li");
         list.textContent = inputval.value;
 
-        // create button 
+        // create button
         const delBtn = document.createElement("button");
         delBtn.textContent = "Delete";
 
-
-        delBtn.addEventListener('click', function(){
-            list.remove();
-        })
+        delBtn.addEventListener("click", function () {
+          list.remove();
+        });
 
         list.appendChild(delBtn);
 
@@ -47,27 +46,33 @@
 
       // do-while
 
-    //   var let const 
+      //   var let const
 
-    const add = ()=>{
+      const add = () => {
         console.log("arrow function");
-        
-    }
+      };
 
-    let object = {
-        name:"jeevakumaran",
-        age:20,
-        college:"vit"
-    }
+      let object = {
+        name: "jeevakumaran",
+        age: 20,
+        college: "vit",
+      };
 
-    const {name, age, colelge} = object;
-    
-    
+      const { name, age, colelge } = object;
 
-    console.log(`${name} is ${age} years old`);
-    
+      let students = {};
 
+      console.log(typeof students);
 
+      // template literal , destructing
+
+      console.log(`${name} is ${age} years old`);
+
+      // localstorage => permanent storage 
+      localStorage.setItem("FIIT", "Software developer");
+
+      console.log(localStorage.getItem("FIIT"));
+      
     </script>
   </body>
 </html>
