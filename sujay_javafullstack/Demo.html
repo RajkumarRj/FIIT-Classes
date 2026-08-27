@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+
+    <h2>jeevakumaran</h2>
+    <!-- three ways => internal script  -->
+
+    <script>
+      // console.log("Sujay");
+
+      // variable keyword => var, let, const
+
+      let a = 10;
+
+      a = "Sujay";
+
+      console.log(typeof a);
+
+      // single thread = at a time we should
+      // only do one thing
+
+      // variables , data types
+
+      // let , var , const
+
+      // var => allow redeclaration, reinitiazation
+
+      var b = 10;
+
+      var b = 20;
+      b = 30; // re initialization
+
+      console.log(b);
+
+      //  let => don't allow redeclaration
+      // allow reinitizlation
+      let x = 10;
+
+      x = 100;
+
+      console.log(x);
+
+      //  const  => don't allow redeclaration
+      // also dont' allow reinitialaztion
+      const s = 40;
+
+      // s = 1000;
+
+      console.log(s);
+
+      //   var => global scope , function scope
+      //   let => global scope , block scope
+      //   const => global scope, block scope
+
+    //   var , let , const => global scope, function scope 
+    // let const => blocked scope  
+
+      var z = 10;
+      let z1 = 20;
+      const z2 = 30;
+
+      function greet() {
+        const localScope = 500;
+        console.log(localScope);
+        console.log("Welcome to our page");
+      }
+
+
+    //   console.log(localScope);
+      
+
+      greet();
+
+      console.log(z);
+
+      {
+        console.log(z);
+        console.log(z1);
+        console.log(z2);
+      }
+
+
+      {
+        var x1 = 20;
+        let x2 = 30;
+        const x3 = 40;
+      }
+
+      console.log(x1);
+    //   console.log(x3);
+    //   console.log(x2);
+
+      
+    //   data types   
+    // number , string, boolean, null, object 
+
+    let v1 = 10;
+    console.log(typeof v1);
+
+    let v2 = "fiit";
+    console.log(typeof v2);
+    
+    let v3 = true;
+    console.log(typeof v3);
+    
+    let v4 = {};
+    console.log(typeof v4);
+    
+    let v5 = [];
+    console.log(typeof v5);
+    
+    let v6 = null;
+    console.log(typeof v6);
+      
+
+      //  declaration and initialization
+
+      // javascript -> 1995
+      // Brendan eich
+
+      
+
+      // livescript
+
+      // javascript
+
+
+    //   operators  => it's a special symbol
+    // that tells compiler to do specific task 
+
+    // + & | ^ - * / 
+
+    // unary => it need only one operand 
+    // what is meant by operand => either values or variables 
+    let count = 1;  
+    // ++, -- 
+
+    // count++; // 2
+    // count--;  // 1
+
+    // post increment
+    // pre increment 
+    // console.log(++count);
+
+
+    // console.log(count--); // 0
+    // console.log(count);
+    
+    console.log(--count);
+    
+    
+
+    // binary 
+    // ternary 
+    </script>
+  </body>
+</html>
