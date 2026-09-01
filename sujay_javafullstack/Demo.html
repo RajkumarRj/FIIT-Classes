@@ -8,7 +8,7 @@
   <body>
     <h1>Javascript</h1>
 
-    <h2>jeevakumaran</h2>
+  
     <!-- three ways => internal script  -->
 
     <script>
@@ -16,11 +16,11 @@
 
       // variable keyword => var, let, const
 
-      let a = 10;
+      // let a = 10;
 
-      a = "Sujay";
+      // a = "Sujay";
 
-      console.log(typeof a);
+      // console.log(typeof a);
 
       // single thread = at a time we should
       // only do one thing
@@ -31,28 +31,28 @@
 
       // var => allow redeclaration, reinitiazation
 
-      var b = 10;
+      // var b = 10;
 
-      var b = 20;
-      b = 30; // re initialization
+      // var b = 20;
+      // b = 30; // re initialization
 
-      console.log(b);
+      // console.log(b);
 
       //  let => don't allow redeclaration
       // allow reinitizlation
-      let x = 10;
+      // let x = 10;
 
-      x = 100;
+      // x = 100;
 
-      console.log(x);
+      // console.log(x);
 
       //  const  => don't allow redeclaration
       // also dont' allow reinitialaztion
-      const s = 40;
+      // const s = 40;
 
       // s = 1000;
 
-      console.log(s);
+      // console.log(s);
 
       //   var => global scope , function scope
       //   let => global scope , block scope
@@ -61,38 +61,38 @@
     //   var , let , const => global scope, function scope 
     // let const => blocked scope  
 
-      var z = 10;
-      let z1 = 20;
-      const z2 = 30;
+      // var z = 10;
+      // let z1 = 20;
+      // const z2 = 30;
 
-      function greet() {
-        const localScope = 500;
-        console.log(localScope);
-        console.log("Welcome to our page");
-      }
+      // function greet() {
+      //   const localScope = 500;
+      //   console.log(localScope);
+      //   console.log("Welcome to our page");
+      // }
 
 
     //   console.log(localScope);
       
 
-      greet();
+      // greet();
 
-      console.log(z);
+      // console.log(z);
 
-      {
-        console.log(z);
-        console.log(z1);
-        console.log(z2);
-      }
+      // {
+      //   console.log(z);
+      //   console.log(z1);
+      //   console.log(z2);
+      // }
 
 
-      {
-        var x1 = 20;
-        let x2 = 30;
-        const x3 = 40;
-      }
+      // {
+      //   var x1 = 20;
+      //   let x2 = 30;
+      //   const x3 = 40;
+      // }
 
-      console.log(x1);
+      // console.log(x1);
     //   console.log(x3);
     //   console.log(x2);
 
@@ -152,12 +152,101 @@
     // console.log(count--); // 0
     // console.log(count);
     
-    console.log(--count);
+    // console.log(--count);
+
+    // dynamically typed language 
+
+    // variables don't have any fixed type  
     
     
 
-    // binary 
-    // ternary 
+    // binary => we need atleast 2 operand 
+    // arithemtic = > +, -, /, *, %
+
+    // console.log(10 + 10);
+    // console.log(10 - 2);
+    // console.log(10 * 2);
+    // console.log(10 / 2);
+    // console.log( 7 % 3);
+    
+    // // relational => >, >=, <, <=, ==, ===, != , !==
+    // console.log(10 > 5);
+
+    // console.log(10 > 10 );
+
+    // console.log(10 >= 10);
+
+    // console.log(10 < 10);
+    // console.log(10 <= 10);
+
+
+    // console.log(10 == 10);
+    // console.log( 10 != 10);
+
+    // === , !== 
+    // console.log(10 == "10");
+
+    // console.log(10 === "10");
+
+    // console.log(10 !== "10");
+
+    
+    
+    // logical => && , ||, !
+
+    console.log(true && true);
+
+    console.log(true && false);
+
+    console.log(true || false);
+
+    console.log(false || false);
+
+    console.log(!false);
+    
+  
+
+    // assignment => +=  , -=, /=, *=, %=
+
+    let marks  = 90;
+
+    marks += 5;
+
+
+
+    // bitwise  => &  | ^ >> <<
+
+    console.log(3 & 4 );
+    console.log(3 | 4 );
+
+
+    console.log( 4 ^ 7);
+
+    let s =  4;
+
+    console.log(s >> 2);
+
+    console.log(s << 1);
+    
+    
+    
+
+
+
+    // ternary  => we need three operand 
+    // ? : 
+
+    let results = (marks >= 96)  ? "A GRADE" : "Fail";
+
+    console.log(results);
+
+
+    // control structures 
+    // conditional statements 
+    // loops 
+    
+
+
     </script>
   </body>
 </html>
