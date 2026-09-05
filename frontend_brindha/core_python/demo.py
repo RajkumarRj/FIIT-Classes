@@ -172,6 +172,8 @@ print(students)
 
 # tuple unpacking 
 
+
+
 javacoure, merncourse, pythoncourse = courses
 
 print(javacoure)
@@ -187,7 +189,7 @@ print(department)
 name = {"Niha fathima", "Brindha"}
 
 
-print(name | department)
+print(name | department) 
 print(name & department)
 
 print(department - name)
