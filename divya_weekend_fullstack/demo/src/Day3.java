@@ -129,8 +129,6 @@ public class Day3 {
         cod.pay();
 
 
-
-
         Arithmetic arith = new Arithmetic();
         arith.add(10,10);
         arith.add(10,10,10);
@@ -145,48 +143,12 @@ public class Day3 {
         bank.getMobile();
         // System.out.println(bank.mobile);
 
-        
-
-
-
-
+    
 
         Child child = new Child();
 
         System.out.println(child.salary);
         child.greet();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -4,6 +4,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import "./App.css";
 import Jeeva from "./Jeeva";
+import Condition from "./Condition";
 
 function App() {
   const [res, setRes] = useState(0);
@@ -12,7 +13,9 @@ function App() {
     <div>
       {/* props */}
 
-      <h1>{res}</h1>
+      <Condition/>
+
+      {/* <h1>{res}</h1>
 
       <button onClick={() => setRes(res + 1)}>Increment</button>
       <br />
@@ -24,7 +27,7 @@ function App() {
       <Jeeva name="Fiit" age="20" />
       <Jeeva name="Mohan" age={40} />
       <Jeeva name="naren" age={90} />
-      <Jeeva name="Harish" age={25} />
+      <Jeeva name="Harish" age={25} /> */}
     </div>
   );
 }

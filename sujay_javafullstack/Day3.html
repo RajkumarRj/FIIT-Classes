@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Loops</h1>
+
+    <script>
+      // we have for , while, do-while
+
+      // intialization
+      // condition
+      // increment/decrement
+
+      //   for (let i = 1; i <= 10; i++) {
+      //     console.log(i);
+      //   }
+      //   print something from 1 to 100
+
+      //   1- 10
+      //   10 -1
+
+      //   j should not be less than 0
+      //   let j = 10;
+      //   while (j > 0) {
+      //     console.log(j);
+      //     j--;
+      //   }
+
+      //   do-while loop
+
+      // let k=1;
+
+      // do{
+      //     console.log(k);
+
+      //     k++;
+
+      // }while(k <= 10);
+
+      // jump statement => break, continue
+
+      // for(let i=1; i<=10; i++){
+
+      //     if(i==5){
+      //         // break; // stops the loop completely
+      //         continue;  //skip the current iteration
+      //     }
+
+      //     console.log(i);
+      // }
+
+      // what is array
+
+      // let marks = 90 ;
+
+      let marks = [90, 10, 20, 30, 40, 50];
+
+      console.log(marks.length);
+
+      // marks[0] = 700;
+      // array methods
+      marks.push(80);
+      marks.pop();
+
+      marks.unshift(90);
+      marks.shift();
+
+      console.log(marks.includes(10));
+      console.log(marks.indexOf(10));
+
+      // it will convert array to string
+      console.log(marks.join(","));
+
+      console.log(marks.reverse());
+
+      marks.sort();
+
+      console.log(marks.slice(1, 4));
+
+      // functioon declaration
+      function greet() {
+        console.log("Welcome to our website");
+      }
+
+      greet(); // function calling
+      greet();
+      greet();
+
+      function add(x, y) {
+        // parameters
+        let sum = x + y;
+        return sum;
+      }
+
+      let result = add(10, 20); // arguments
+      console.log(result);
+
+      console.log(add(100, 454));
+
+      // parameter, argument
+
+      // for(let i=0; i<marks.length; i++ ){
+      //     console.log(marks[i]);
+      // }
+
+      // console.log(marks[0]);
+      // console.log(marks[1]);
+      // console.log(marks[2]);
+      // console.log(marks[3]);
+      // console.log(marks[4]);
+    </script>
+  </body>
+</html>

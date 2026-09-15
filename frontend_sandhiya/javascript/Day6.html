@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1>Function</h1>
+
+    <script>
+      function greet() {
+        console.log("Welcome to our page");
+        console.log("Javascript");
+      }
+
+      greet();
+
+      function add(a, b) {
+        // parameter
+
+        // console.log(a+b);
+        let result = a + b;
+        return result;
+      }
+
+      let res = add(10, 20); //argument
+      console.log(res);
+
+      console.log(add(20, 50));
+
+      // argument and parameter and return
+
+      // function expression
+
+      const red = function display() {
+        console.log("Hello there");
+      };
+
+      red();
+
+      const arrow = (a, b) => {
+        console.log("Arrow function", a + b);
+      };
+
+      arrow(10, 20);
+
+      // object => collection of key-value pairs
+
+      let student = {
+        name: "Padma",
+        address: {
+          city: "chennai",
+          pincode: 600001,
+          area: {
+            street: "1st street",
+          },
+        },
+        age: 20,
+        course: "Javascript",
+        "college name": "TJS",
+      };
+
+      student.name = "Sandhiya";
+
+      console.log(student.address.area.street);
+
+      console.log(student.name);
+      console.log(student.course);
+
+      console.log(student["name"]);
+
+      console.log(student["college name"]);
+
+      delete student["college name"];
+
+      console.log(student);
+
+      //   object methods
+
+      console.log(Object.keys(student));
+      console.log(Object.values(student));
+
+      console.log(Object.entries(student));
+
+      // object destructing
+
+      const { age, name } = student;
+
+      console.log(age, name);
+
+      // spread operator
+
+      let student1 = { ...student };
+
+      console.log(student1);
+
+      // callback function
+
+      function process(a) {
+        console.log("processinggg...");
+        a();
+      }
+
+      process(function () {
+        console.log("Completed");
+      });
+
+      //   map
+
+      let number = [1, 2, 3, 4, 5];
+
+      let transform = number.map((ele) => ele * 3);
+
+      console.log(transform);
+
+      let filterArr = number.filter((ele) => ele % 2 == 0);
+
+      console.log(filterArr);
+
+      let total = number.reduce((sum, num) => sum + num, 0);
+
+      console.log(total);
+    </script>
+  </body>
+</html>
