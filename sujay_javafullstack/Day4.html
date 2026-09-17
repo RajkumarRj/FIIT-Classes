@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions</h1>
+
+    <script>
+        var greeting = undefined;
+        // let username => tdz (Temporal dead zone )
+        // sayhello()
+
+
+        
+
+        // alert("SUJAY")
+
+        // const result =confirm("ENter the choices");
+
+        // alert(result);
+
+        // we can get user input from the prompt method 
+
+        // const age =Number(prompt("Enter your age"));
+
+        // alert(age + 10)
+
+
+        // function greet(){
+        //     console.log("Welcome to our page");
+            
+        // }
+
+
+        // greet();
+
+        // function expression 
+
+        const display = function greet(){
+            console.log("Welcome to our page");  
+        }
+
+        display()
+
+
+        // arrow function 
+
+        const display1 = ()=>{
+            console.log("Greeting"); 
+        }
+
+        display1();
+
+
+        function academy(name , callback){
+            console.log(`Hello, ${name}`);
+            callback();
+        }
+
+
+        function callback(){
+            console.log("i am the callback function");
+            
+        }
+
+        academy("FIIT" , callback)
+
+
+        // closure 
+
+        function createCounter(){
+            let count = 0;
+
+            return function(){
+                count ++;
+                console.log(count);
+                
+            }
+        }
+
+
+        const counter = createCounter();
+        counter();
+        counter();
+        counter();
+
+
+        // var , let , const , functions 
+        console.log(greeting);
+        var greeting = "Hello world";
+        
+        // console.log(username);
+        
+        let username = "Sujay";
+        
+
+        sayHello();
+
+        function sayHello(){
+            console.log("Hello");
+            
+        }
+        
+
+    </script>
+    
+</body>
+</html>
