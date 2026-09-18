@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+
+    <script>
+      // map, filter, reduce
+
+      let numbers = [10, 20, 30, 11, 20, 10];
+
+      // map method creates new array by
+      // applying a function to every element
+
+      //   let result = numbers.map((num) => num * 2);
+
+      //   console.log(result);
+
+      //   let evenNumbers = numbers.filter((num) => num % 2 == 0);
+
+      //   console.log(evenNumbers);
+
+      //   reduce => it processes all array elements
+      //   and returns a single value
+
+      //   let total = numbers.reduce((sum, num) => sum + num, 10);
+
+      //   console.log(total);
+
+      //   console.log(numbers.every((mark) => mark >= 10));
+
+      //   console.log(numbers.some((mark)=> mark >=30));
+
+      //   numbers = [[1,2], [3,4]]
+
+      //   console.log(numbers.flat());
+
+      //   objects
+
+      // an object is a collection of key-value pairs
+
+      let student = {
+        name: "Sujay",
+        age: 24,
+        course: "Javascript",
+        "college event": "Gravitas ",
+        address: {
+          street: "123",
+        },
+      };
+
+
+      const {name, age, course}  = student;
+      console.log(age);
+      console.log(student.age);
+      
+      
+
+
+      console.log(student.address.street);
+      
+
+      console.log(student["college event"]);
+
+      student.name = "FIIT";
+
+      // student.college = "SRM"
+
+      // delete student.college
+
+      console.log(student.name);
+
+      console.log(student.course);
+
+      console.log(student);
+
+    //   object methods 
+
+    console.log(Object.keys(student));
+    console.log(Object.values(student));
+
+    console.log(Object.entries(student));
+
+    // spread , rest operators 
+
+    // spread
+
+    let arr1 = [10,20,40]
+    let arr2 = [...arr1, 30]
+
+    console.log(arr2);
+
+    let student1 = {
+        name :"Sujay"
+    }
+
+    let student2 = {
+        ...student1
+    }
+
+    console.log(student2);
+    
+
+    // rest 
+    let [a , ...b] = [10,20,30,40]
+
+    console.log(a);
+    console.log(b);
+
+
+    // strings  => sequence of characters
+    // mutable vs immutable 
+    let language = "Javascript fiit academy"
+
+    
+    
+    console.log(language.length);
+    
+    console.log(language);
+    console.log(language.toUpperCase());
+    console.log(language.toLowerCase());
+
+    console.log(language.trim());
+
+
+    console.log(language.includes("i"));
+
+    console.log(language.startsWith("Javat"));
+
+    console.log(language.endsWith("pt"));
+
+    console.log(language.replace("Java", "Python"));
+    
+    console.log(language.split(' '));
+
+    console.log(language.substring(0, 7));
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <style>
+      /* universal selector   comments  */
+      /* *{
+            background-color: red;
+        } */
+
+      /* element selector  */
+
+      /* h1{
+            color: red;
+        } */
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      /* id selector  */
+      #singing {
+        color: red;
+      }
+
+      #dancing {
+        color: pink;
+      }
+
+      /* class selector  */
+      .group {
+        color: blueviolet;
+      }
+
+      /* group selector  */
+      /* p,span, li{
+            color: yellow;
+        } */
+
+      /* descendant selector  */
+
+      /* .grand-parent p {
+        color: blue;
+      } */
+
+      /* child selector  */
+      .grand-parent > p {
+        color: orangered;
+      }
+
+      /* adjacent sibling selector  */
+
+      /* h1+p{
+        background-color: green;
+      } */
+
+      /* general sibling selector  */
+      /* h1 ~  p {
+        background-color: blue;
+      } */
+
+      #text {
+        /* text-align: center; */
+        /* text-transform: capitalize; */
+        /* text-decoration: underline wavy; */
+        /* text-indent: 60px; */
+        /* word-spacing:20px ; */
+        /* letter-spacing:10px ; */
+        line-height:1.5 ;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <p id="text">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur optio
+      vero magnam ipsum similique labore praesentium iure provident cum, harum
+      tempora repellat dolorum architecto, reiciendis saepe vitae tempore
+      nesciunt velit.
+    </p>
+
+    <h1>Sibling-sister</h1>
+    <p>Sibling-brother</p>
+
+    <div class="grand-parent">
+      <p>Child element</p>
+      <div class="parent">
+        <p>grand child</p>
+      </div>
+    </div>
+
+    <p>Paragraph</p>
+    <span>Span element</span>
+    <ul>
+      <li>List element</li>
+    </ul>
+
+    <h1 id="singing">Selector</h1>
+
+    <h1 id="dancing">Combinators</h1>
+
+    <h2 class="group">Selector</h2>
+    <h3 class="group">Selector</h3>
+    <h4 class="group">Selector</h4>
+
+    <img src="./photo.jpg" alt="dancing" />
+
+    <img src="./photo.jpg" alt="dancing" />
+  </body>
+</html>
