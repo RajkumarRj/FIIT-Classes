@@ -76,6 +76,7 @@ class ElectricCar extends Vehicle implements Engine, Battery{
 class InvalidAgeException extends  Exception{
     InvalidAgeException(String message){
         super(message);  // it calls parent constructor 
+       
     }
 }
 
@@ -148,6 +149,11 @@ public class Day4 {
 
 
         // throws 
+
+        // packages => collection or related classes, interfaces,
+
+        // built-in packages 
+        
     }
     
 }

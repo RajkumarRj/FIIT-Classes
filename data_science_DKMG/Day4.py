@@ -148,6 +148,4 @@ def countdown(n):
 
 countdown(5)
 
-
-
 data = [10,20, 40]
