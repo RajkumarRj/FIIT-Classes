@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Personal details</legend>
+
+      <form action="./demo.html">
+        <label for="username">Name:</label>
+        <input
+          id="username"
+          type="text"
+          required
+          placeholder="Enter your name.."
+        />
+
+        <br /><br />
+
+        <label for="useremail">Email</label>
+        <input type="email" id="useremail" placeholder="Enter your  password" />
+
+        <br /><br />
+
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter your password..." />
+
+        <br /><br />
+
+        Male <input type="radio" name="gen" /> Female
+        <input type="radio" name="gen" /> others
+        <input type="radio" name="gen" />
+
+        <br /><br />
+
+        Java <input type="checkbox" /> HTML <input type="checkbox" />
+
+        <br /><br />
+
+        <input type="color" />
+        <br /><br />
+
+        <input type="date" />
+
+        <br />
+        <br />
+
+        <input type="number" min="10" max="20" />
+
+        <br /><br />
+
+        <input type="file" />
+
+        <br /><br />
+
+        <input type="datetime-local" />
+
+        <br /><br />
+
+        <input type="range" min="1" max="5" />
+
+        <input type="week" />
+        <br /><br />
+
+        <select>
+          <optgroup label="Backend">
+            <option value="">Java</option>
+            <option value="">Spring boot</option>
+            <option value="">Mysql</option>
+          </optgroup>
+
+          <optgroup label="Fronted">
+            <option value="">Java</option>
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">Javascript</option>
+            <option value="">Reactjs</option>
+          </optgroup>
+        </select>
+
+        <br /><br />
+
+        <textarea name="" id="" rows="10" cols="50"> </textarea>
+
+        <br /><br />
+
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Educational details</legend>
+
+        <form action="">
+
+            <input type="text">
+        </form>
+    </fieldset>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <!-- void element  -->
+
+    <figure>
+      <a
+        href="https://i.pinimg.com/236x/c0/42/88/c04288054c518c01fa16f85b1dbee51f.jpg?nii=t"
+        target="_blank"
+        ><img
+          width="500"
+          height="500"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5l1GtEBjDEOxSAYWazsb1eBbtWVb5406KfV5SbA0Uig&s=10"
+          alt="Fish"
+      /></a>
+
+      <figcaption>Fish paiting</figcaption>
+    </figure>
+
+    <img src="../photo.jpg" alt="Painting" />
+
+    <h1>Table</h1>
+
+    <table border>
+      <tr>
+        <td rowspan="2">A</td>
+        <td>B</td>
+        <td rowspan="3">D</td>
+        <td colspan="2">E</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td rowspan="2">G</td>
+        <td rowspan="2">H</td>
+        <td rowspan="2">l</td>
+      </tr>
+      <tr>
+        <td colspan="2">J</td>
+      </tr>
+      <tr>
+        <td colspan="3">K</td>
+        <td>L</td>
+        <td colspan="2">M</td>
+      </tr>
+    </table>
+
+    <table border>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Ajay</td>
+        <td rowspan="2">24</td>
+      </tr>
+      <tr>
+        <td>Priya</td>
+      </tr>
+    </table>
+
+    <table border>
+      <tr>
+        <th>Name</th>
+        <th>Mark</th>
+      </tr>
+      <tr>
+        <td>Bavyasri</td>
+        <td>99</td>
+      </tr>
+      <tr>
+        <td>Janani</td>
+        <td>92</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">total</td>
+      </tr>
+    </table>
+
+    <!-- colspan , rowspan  -->
+    <table border>
+      <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>College</th>
+        <th>Department</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Bavyasri</td>
+        <td>Muthurangam</td>
+        <td>Computer science</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Janani</td>
+        <td>DKM</td>
+        <td>Zoology</td>
+      </tr>
+    </table>
+  </body>
+</html>
