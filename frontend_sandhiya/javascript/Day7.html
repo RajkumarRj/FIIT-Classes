@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops</title>
+</head>
+<body>
+
+    <h1>Template Literal</h1>
+
+
+    <script>
+        // let name = "Sandhiya"
+        // let age = 30
+        // grace accent = ``
+        // template literal 
+        // console.log(`Welcome to our website ${name} ${age}`);
+
+
+        // oops 
+        // class, object 
+
+        // constructor -> to initialize object 
+    
+        class Student{
+            // default constructor 
+            // parameterized constructor 
+            constructor(color){
+                this.color = color     
+            }
+
+            hall(){
+                console.log(`${this.color} color`);
+            }
+
+            room1(){
+                console.log("Room1");
+                
+            }
+        }
+
+        const s1 = new Student("Blue")
+
+        s1.hall()
+        s1.room1()
+
+
+        const s2 = new Student("Violet")
+
+        s2.hall()
+        s2.room1()
+
+
+
+
+
+
+
+        class Parent{
+            salary = 50000
+
+            work(){
+                console.log("Working");
+                
+            }
+        }
+
+        class Child extends Parent{
+            
+        }
+
+        let child = new Child()
+
+        console.log(child.salary);
+
+        child.work()
+        
+
+
+
+        // Encapsulation -> binding of data with method 
+
+        class Bank{
+            // private field 
+            #pin = "1234"
+
+            // getter, setter 
+            getPin(){
+                console.log(this.#pin);    
+            }
+            setPin(pin){
+                this.#pin = pin
+                
+            }
+        }
+
+
+        let bank = new Bank()
+
+        bank.setPin("4543")
+
+        bank.getPin()
+
+        // console.log(bank.#pin);
+
+
+
+        // polymorphism => many forms 
+
+        // method overriding 
+        class Payment{
+            pay(){
+                console.log("user paid successfully");
+                
+            }
+        }
+
+        class COD extends Payment{
+
+            pay(){
+                console.log("paid using cash on delivery"); 
+            }
+
+        }
+
+        class UPI extends Payment{
+
+            pay(){
+                console.log("payment paid using UPI");
+                
+            }
+
+        }
+
+        let cod  = new COD()
+
+        cod.pay()
+
+        let upi = new UPI()
+
+        upi.pay()
+        
+
+
+
+        
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class & object</title>
+  </head>
+  <body>
+    <h1>Class and objects</h1>
+
+    <script>
+    //   let name = "SUjay";
+
+    //   let age = 20;
+
+    //   console.log(`Welcome ${name} ${age}`);
+
+    //   console.log("Template literals");
+
+    //   class Student {
+    
+    //     constructor(name, age){
+    //        this.name = name ;
+    //        this.age = age;
+            
+    //     }
+    //     // this -> refers to the current object 
+
+    //     display() {
+    //       console.log(`Welcome to our webiste ${this.name} , ${this.age}`);
+    //     }
+    //   }
+
+
+    //   const s1 = new Student("sujay" , 22)
+
+      
+    //   s1.display()
+
+
+    //   const s2 = new Student("Padma", 19)
+
+    //   s2.display()
+
+
+    //  inheritance child class can acces properties 
+    // of their parent class  (using extends )
+    //   class Person{
+
+    //     name = "FIIT"
+    //     walk(){
+    //         console.log("Walkinggggg");
+            
+    //     }
+    //   }
+
+
+    //   class Student extends Person{
+    //     study(){
+    //         console.log("Studying");
+    //     }
+
+    //   }
+
+    //   const s = new Student()
+
+    //   s.study()
+    //   s.walk()
+    //   console.log(s.name);
+      
+
+    //   Encapsulation -> is a process of hiding internal 
+    //   data or  binding of data (variable) with method(function) 
+
+
+    class Bank{
+
+        #balance = 10000
+        constructor(name){
+            this.name  = name
+
+        }
+
+        getBalance(){
+            console.log(this.#balance);
+            
+        }
+    }
+
+    const bank = new Bank("Sujay");
+
+    console.log(bank.name);
+    bank.getBalance()
+
+
+
+    </script>
+  </body>
+</html>
