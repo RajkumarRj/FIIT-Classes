@@ -19,7 +19,6 @@ public class Multithreading {
     public static void main(String[] args) throws  InterruptedException {
 
 
-        
 
         Thread tobj = new Thread( new MyRunnable());
         tobj.setName("First thread");
