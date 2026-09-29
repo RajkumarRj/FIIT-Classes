@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+
+    <script>
+      // progrmming -> set of instructions
+
+      // scripting
+
+      console.log("Javascript");
+
+      // inbuilt -> browser (Javascript engine)
+
+      // chrome -> V8 javascript engine
+      // firefox = > spidermonkey
+
+      // dynamically typed language
+
+      // variable keyword let, const, var
+
+      // var marks = 10;
+
+      // marks = "Elin shiny"
+
+      // console.log(marks);
+
+      // declaration, intilization
+      // var pet  = "Demi";
+
+      // redeclaration, re-initiazliation
+
+      // var pet;
+      // pet = "danny";
+
+      // console.log(pet);
+
+      // var -> allows redeclaration & re-initialization
+
+      // let pet = "Demi";
+
+      //  pet = "Danny";
+
+      //  let -> allows re-initizalation, but not redeclaration
+
+    //   const pet = "Demi";
+
+      // const -> doesn't allow re-initialization, redeclaration
+
+
+      function display (){
+            var pet = "Demi"
+
+            console.log(pet);    
+      }
+
+
+
+    //   display()
+
+
+    //   {
+    //     var pet = "Demi"  // doesn't obey blocked scope
+    //     let marks = 90
+    //     const college = "Veltech"
+    //   }
+
+
+    //   console.log(pet);
+    //   console.log(marks);
+    //   console.log(college);
+
+    //   dialogue boxes
+    // alert, confirm, prompt
+    
+    
+
+    // let age = 18;
+
+    // if(age >=18){
+    //     // console.log("you are eligible to vote");
+    //     // alert("You are eligible to vote ")
+    // }
+
+
+    // let result = confirm("Do you want to delete this file")
+
+    // if(result){
+    //     alert("File deleted successfully")
+    // }else{
+    //     alert("File is not deleted")
+    // }
+    // console.log(result);
+
+    // let age = parseInt(prompt("Enter your age"))
+    // console.log(typeof age);
+
+
+    // console.log(age  +  10 );
+    
+    // if(age>=18){
+    //     alert("You are eligible to vote")
+    // }
+
+
+
+    // default parameter 
+    function display(name , age = 25){ // parameter
+        // template literal 
+        console.log(`Welcome to our page ${name} , ${age}`);
+    }
+
+    display("Elin shiny" ) // argument 
+    display("Angelina" , 18)
+    display("Gandhimadhi", 19)
+    // parameter , argument 
+
+    // array 
+
+    let marks = [10,20,30,40,50,60];
+
+    
+    const transform = marks.map(  (ele)=> ele * 3 )
+
+    console.log(transform);
+    
+
+    
+    
+
+    marks.push(70)
+    marks.unshift(5) // add first
+
+
+    marks.pop()
+    marks.shift() // remove first
+
+    console.log(marks);
+
+
+    
+
+
+    // console.log(marks[3]);
+    // console.log(marks[2]);
+    // console.log(marks[1]);
+    // console.log(marks[4]);
+    // console.log(marks[5]);
+
+    for(let i=0; i<marks.length; i++){
+        console.log(marks[i])
+    }
+
+   
+
+    const names = ["elin", "gandhi", "angelina"]
+
+
+    console.log(names.includes("elinn"))
+
+
+    // function expression 
+
+    const greeet =  (name,pet) =>  {
+        console.log("Greeting",name ); 
+
+        pet();
+        
+    }
+
+    const pet = ()=>{
+        console.log("Demi");
+    }
+
+    greeet("Elin", pet)
+
+
+
+
+     
+
+
+
+    
+
+
+      
+      
+      
+
+
+
+    </script>
+  </body>
+</html>
