@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <style>
+        .active{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border: 20px solid green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="title"  >Class & Objects</h1>
+    
+    <p class="language">CSS</p>
+    <p class="language">HTML</p>
+    <p class="language">Javascript</p>
+
+
+    <button onclick="changeColor()">Change color</button>
+
+
+    <script>
+        const query = document.querySelector("#title")
+        function changeColor(){
+
+            query.classList.toggle("active")
+            // query.classList.add("active")
+            // query.classList.remove("active")
+
+        }
+
+
+
+
+        // queryselector 
+
+        // returns the first matching element 
+
+
+        // query.classList.add("active")
+        // query.classList.remove("active")
+
+        // query.style.color = "Red";
+        // query.style.backgroundColor = "black"
+        // query.style.fontSize = "30px"
+
+        console.log(query);
+        
+
+
+
+
+
+
+
+        const tagName = document.getElementsByTagName("p");
+
+        console.log(tagName[0].innerText);
+        
+
+        const items = document.getElementsByClassName("language");
+
+        console.log(items[0].innerText);
+        console.log(items[1].innerText);
+        console.log(items[2].innerText);
+
+        for(item of items){
+            console.log(item.innerText); 
+        }
+
+        
+
+
+
+        const titleElement = document.getElementById("title")
+
+        titleElement.innerText = "Sandhiya"
+        console.log(titleElement.innerText);
+        
+
+        // class Student{
+    
+        //     constructor(name){
+        //         this.name = name
+        //     }
+        // }
+
+        
+        // const s1 = new Student("Sandhiya");
+        // console.log(s1.name);
+
+        // const s2 = new Student("Elin");
+
+        // console.log(s2.name);
+
+
+        // What is DOM 
+        // DOM => Document Object model 
+
+        // javascript communicates with
+        // the webpage through the DOM
+
+
+        
+        
+
+
+        
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

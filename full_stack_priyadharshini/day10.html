@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        /* width: 60%;
+        margin: 0 auto; */
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      header img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      header a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+
+      main {
+        background-color: #747171;
+        padding: 40px;
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+        height: 80vh;
+     
+   
+
+      }
+
+      #left img {
+        width: 400px;
+        height: 400px;
+        border-radius: 50px;
+      }
+
+      #right{
+        width: 30%;
+      }
+
+      #right h1{
+        color: aqua;
+        font-weight: bolder;
+        font-size: 60px;
+      }
+
+      #right p{
+        color: rgb(168, 196, 196);
+        
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./photo.jpg" alt="Dance image" />
+      </div>
+
+      <div>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Project</a>
+        <a href="">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <div id="left">
+        <img src="./photo.jpg" alt="dancing" />
+      </div>
+
+      <div id="right">
+        <h1>Priyadharshini</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          dolore sed reprehenderit necessitatibus, aliquid iste debitis
+          explicabo totam. Iusto in minus reprehenderit fuga qui ipsa eius
+          nobis. Perferendis, sunt itaque?
+        </p>
+      </div>
+    </main>
+    
+  </body>
+</html>
