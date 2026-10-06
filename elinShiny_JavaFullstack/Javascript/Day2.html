@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Arrays</h1>
+
+    <script>
+    //   console.log("Array methods");
+
+    //   // compiled, intrepreter
+
+    //   // map, filter, reduce
+
+    //   // higher order function
+
+    //   const Marks = [70, 90, 80, 75, 69];
+
+    //   const SquareMarks = Marks.map((mark) => mark * 2);
+
+    //   console.log(SquareMarks);
+
+    // //   filter 
+
+    // const EvenNumber = Marks.filter((ele) => ele % 2 == 0 )
+
+    // console.log(EvenNumber);
+
+
+    // // reduce 
+
+    // const TotalMarks = Marks.reduce((sum, ele)=> sum + ele ,10 )
+
+    // console.log(TotalMarks);
+
+
+
+
+    // // Strings 
+    // // sequence of characters 
+    // // Elin 
+
+    // // mutable vs immutable 
+    // let name = "Veltech,Engineering,College";
+
+    // // template literal 
+    // // ``
+    // console.log(`Hello there my name is ${name}`);
+
+
+    // console.log(name.length);
+    
+    // console.log(name.toUpperCase());
+    // console.log(name.toLowerCase());
+    // console.log(name.trim());
+
+    // console.log(name.includes("Veltech"));
+    // console.log(name.startsWith("elin"));
+    // console.log(name.endsWith("College"));
+
+    // console.log(name.replace("Veltech", "Elin"));
+
+    // console.log(name.split(","));
+    
+    // console.log(name.substring(8,15));
+     
+
+    // v - 0
+    // e - 1
+    // l - 2
+    // t - 3
+    // e - 4
+    // c - 5
+
+    // in javascript object is a collection of key-value pairs 
+
+    let student = {
+        marks: [90,80],
+        name : "Elin",
+        college :"Veltech",
+        Department : "CSE IT",
+        "Semester Result" : "Pass",
+        address : {
+            area : "Chennai",
+            Native :"Trichy",
+            nAddress : {
+                street :"Vijayaragavapuram 3rd street"
+            }
+        }
+    }
+
+    // object destructuring 
+    const {name, college,Department}  = student
+
+    console.log(name);
+    console.log(college);
+    console.log(Department);
+
+
+    let sports = {
+        sname : "Badminton"
+    }
+
+    // spread operator  ...
+
+    let merged = {...sports,...student }
+    console.log(merged);
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+    console.log(Object.keys(student));
+    console.log(Object.values(student));
+
+    console.log(Object.entries(student));
+
+    Object.freeze(student)
+
+
+    student.name = "FIIT"
+
+    console.log(student);
+    
+    
+    
+    
+
+    // console.log(student.marks[1]);
+    
+
+    // console.log(student.address.nAddress.street);
+    
+
+    // console.log(student.address.area);
+    
+
+
+    student.language = "English"
+
+    delete student.language
+    // console.log(student.language);
+    console.log( student);
+    
+    
+    // console.log(student["Semester Result"]);
+    
+    
+    // console.log(student.name);
+    // console.log(student.Department);
+
+
+
+    
+
+    
+
+
+   
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+      
+    </script>
+  </body>
+</html>
