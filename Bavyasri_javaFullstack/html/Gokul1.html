@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <a href="#colsrows">Go to Bottom table</a>
+
+    <marquee behavior="alternate" direction="right">Gokul</marquee>
+    <audio controls>
+        <source src="./audio.wav" type="">
+        <source src="./audio.ogg" type="">
+        <source src="./audio.mp3" type="">
+    </audio>
+
+
+    <video src="./video.mp4" controls>
+
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UcUqXLNdsZI?si=4Uu-ygnOR-MQWF7W&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="700" height="500" src="https://www.flipkart.com" frameborder="0"></iframe>
+
+
+    <iframe width="560" height="315" src="./day3.html" frameborder="0"></iframe>
+
+
+    <h1>Forms</h1>
+
+    <h1>&copy;</h1>
+
+    <h1>&gt;</h1>
+    <h1>&lt;</h1>
+
+    <h1>&nbsp;</h1>
+
+    <h1>&amp;</h1>
+    <h1>&#128525;</h1>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione cumque,
+      fuga quas quam sed odio! Quaerat, sit rerum reiciendis aut deleniti
+      inventore fuga ullam similique voluptatum dignissimos corporis laborum
+      iure.
+    </p>
+
+    <fieldset>
+      <legend>Educational details</legend>
+
+      <form action="">
+        <input type="text" />
+      </form>
+    </fieldset>
+    <!-- block vs inline  -->
+
+    <fieldset>
+      <legend>Personal details</legend>
+      <form action="./demo.html">
+        <label for="username">Name: </label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Enter your name..."
+          required
+        />
+
+        <br /><br />
+
+        <input type="email" placeholder="Enter your email.." />
+
+        <br /><br />
+
+        <input type="password" placeholder="Enter password" />
+
+        <br /><br />
+
+        <input type="date" />
+
+        <br /><br />
+
+        <input type="color" />
+        <br /><br />
+
+        <input type="number" min="10" max="20" />
+
+        <br /><br />
+
+        <input type="file" />
+
+        <br /><br />
+
+        <input type="week" />
+
+        <br /><br />
+
+        <input type="month" />
+
+        <br /><br />
+
+        <input type="datetime-local" />
+
+        <br /><br />
+
+        <input type="time" />
+
+        <br /><br />
+
+        <!-- radio buttons  -->
+
+        <input type="radio" name="course" /> Java full stack
+        <input type="radio" name="course" /> Python full stack
+        <input type="radio" name="course" /> Mern full stack
+
+        <br /><br />
+        <input type="checkbox" /> Java <input type="checkbox" />Python
+        <br /><br />
+        <!-- select values -> drop down  -->
+
+        <select>
+          <option disabled selected>Select a value</option>
+
+          <optgroup label="Programming">
+            <option value="">Java</option>
+            <option value="">Python</option>
+          </optgroup>
+
+          <optgroup label="Web developement">
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+          </optgroup>
+        </select>
+
+        <br /><br />
+
+        <textarea rows="5" cols="40"> </textarea>
+
+        <br /><br />
+
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </fieldset>
+
+    <br /><br />
+
+    <!-- void element  -->
+
+    <!-- <img width="200" height="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJ4IZbkwwyJD4dq7MObC7x1gpYN0xVkTOV_X9T9ZCMQ&s=10" alt="Parrot">
+
+    <img src="../images.jpg" alt="Parrot"> -->
+
+    <!-- table  -->
+
+    <table border="2">
+      <tr>
+        <th>Name</th>
+        <th>College</th>
+        <th>Degree</th>
+        <th>Marks</th>
+      </tr>
+
+      <tr>
+        <td>Gokul</td>
+        <td>Muthurangam</td>
+        <td>BSc</td>
+        <td>450</td>
+      </tr>
+
+      <tr>
+        <td>Bavya sri</td>
+        <td>Muthurangam</td>
+        <td>Bca</td>
+        <td>450</td>
+      </tr>
+    </table>
+
+    <table border="2">
+      <tr>
+        <th>Name</th>
+        <th>Expense</th>
+        <th>age</th>
+      </tr>
+      <tr>
+        <td>Arun</td>
+        <td>10</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Priya</td>
+        <td>8</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td colspan="3">Sum : 18</td>
+      </tr>
+    </table>
+
+    <table border="2">
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th rowspan="3">MVM School</th>
+      </tr>
+      <tr>
+        <td>Adam</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Adam</td>
+        <td>10</td>
+      </tr>
+    </table>
+
+    <table id="colsrows" border="2">
+      <tr>
+        <th colspan="2">Header</th>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+      </tr>
+
+      <tr>
+        <td rowspan="5" colspan="2">span rows</td>
+        <td colspan="3">span columns</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">span columns</td>
+        <td rowspan="4">Span both</td>
+      </tr>
+
+      <tr>
+        <td rowspan="3">span rows</td>
+        <td>span columns</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">span both</td>
+      </tr>
+      <tr></tr>
+    </table>
+  </body>
+</html>

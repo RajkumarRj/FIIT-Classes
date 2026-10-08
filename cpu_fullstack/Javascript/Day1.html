@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Javascript - Functions</h1>
+
+    <script>
+      console.log("Funtions");
+
+      // what is functions
+
+      // function is a reusable  block of code
+
+      function display() {
+        console.log("Hello there");
+      }
+
+      display();
+      
+
+    //   parameters and arguments 
+
+
+
+    function add(a,b){ // parameter
+        return a+b;  
+    }
+      
+
+    const result = add(10,20)  // argument
+
+    console.log(result);
+
+
+    console.log(add(500,20))
+
+
+
+    // function expression 
+    // assign function to an variable 
+
+    // const fiit = function greet(){
+    //     console.log("Welcome to our webiste");
+    // }
+
+
+    // // greet()
+    // fiit()
+
+    // arrow function 
+
+    const fiit =  (name) => {
+        // template literal 
+        console.log(`Welcome to our webiste ${name}`);
+    }
+
+    fiit("Naren")
+
+    fiit("Giri")
+
+    fiit("Ganesh")
+
+
+    // callback function 
+
+    // function receives another function as parameter 
+
+
+
+    function greet(name, callbk){
+        console.log("Greet function", name);
+
+        callbk()
+        
+    }
+
+    function disGreet(){
+        alert("Welcome to our page");
+    }
+
+    // greet("FIIT" , disGreet)
+
+    // callback hell 
+
+    // dynamically typed language 
+
+    // let age = 10
+
+    // // age = "FIIT"
+
+    // console.log(age);
+    
+
+    // default parameter 
+
+
+    function createGoogleProfile(name="Guest"){
+        console.log(name);
+    }
+
+
+    createGoogleProfile("FIIT")
+
+    createGoogleProfile()
+
+
+    // rest parameter 
+
+
+    function multiply(...multi){
+        console.log(multi);
+    }
+
+
+
+    multiply(1,2,3,4,5,6,7,8,9,10,11)
+
+
+    // IIFE -> Immediately invoked function expression 
+
+
+    
+
+
+//     (function (){
+//   console.log("Hello there");
+// }  )()
+
+
+    // map, filter, reduce 
+
+
+    // object -> collection of key-value pairs
+
+
+    let obj = {
+        name : "FIIT",
+        course :"Java full stack",
+        "college name" : "Veltech",
+    }
+
+
+    console.log(obj["college name"]);
+    
+    console.log(obj.course);
+    
+    console.log(obj);
+    
+
+
+    
+
+
+
+
+
+
+
+      // compiled , intrepreter
+
+      // browser -> javascript engine
+      // chrome -> v8
+      // firefox -> spidermonkey
+    </script>
+  </body>
+</html>

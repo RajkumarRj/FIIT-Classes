@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+
+    <h1>Javascript</h1>
+
+    <script>
+
+
+        // object -> collection of key-value pairs 
+
+
+        // object oriented programming
+
+        // classes , objects 
+
+        // class -> blueprint for object 
+
+        class Student{
+            // variables, methods -> properties
+
+            // name = "Guest"
+        
+
+            // constructor -> used to initiazlie an object 
+
+            constructor(name, course){
+                this.name = name;
+                this.course = course;
+                console.log("Constructor called");
+            }
+
+            welcome(){
+                console.log(`Welcome ${this.name} - ${this.course}`);
+            }
+        }
+
+
+        const s1 = new Student("Elin" ,"javascript");
+
+        s1.welcome()
+
+        const s2 = new Student("Gandhimadhi", "Python");
+
+        s2.welcome()
+
+
+
+        // inheritance =>
+
+
+        class Parent{
+            salary = 90000
+            display(){
+                console.log("hello parent");
+                
+            }
+        }
+
+        class Child extends Parent{
+            
+        }
+
+
+        const elin = new Child()
+
+
+        console.log(elin.salary);
+        elin.display()
+        
+
+        // super keyword -> parent methods or constructor
+        
+        
+        class Person{
+
+            constructor(name){
+                this.name = name
+            }
+
+            greet(){
+                console.log("Greet method from parent");
+                
+            }
+        }
+
+
+        class Students extends Person{
+            constructor(name){
+                super(name);
+            }
+
+            display(){
+                super.greet();
+            }
+        }
+
+
+        const ss1 = new Students("Elin");
+        ss1.display()
+
+        // const p1 = new Person("Elin")
+
+        // console.log(p1.name);
+
+
+        // encapsulation -> data hiding
+        // process of binding data with methods 
+
+
+
+        class Employee{
+            #salary = 90000
+
+            show(){
+                console.log(this.#salary);
+            }
+            get(salary){
+                
+                this.#salary = salary
+            }
+        }
+
+
+
+        const emp = new Employee();
+
+        // console.log(emp.#salary);
+        emp.get(100000)
+        emp.show()
+        
+
+
+        
+
+        // procedural language 
+
+        // variable, function 
+
+
+    </script>
+    
+</body>
+</html>
