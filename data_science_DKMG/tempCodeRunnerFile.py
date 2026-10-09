@@ -1,1 +1,1 @@
-def total(**num):
+:

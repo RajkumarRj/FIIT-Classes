@@ -1,5 +1,5 @@
 
-
+from abc import ABC , abstractmethod
 # inheritance 
 # single, multilevel, multiple, hybrid, hierarchical
 
@@ -35,6 +35,9 @@ print(bank.getAccountNo())
 # method overriding -> same method in parent and subclass 
 
 
+
+print(10/0)
+
 class Payment:
     def pay(self):
         print("Payment paid successfully")
@@ -60,3 +63,65 @@ upi.pay()
 cod = COD()
 
 cod.pay()
+
+
+
+
+# Abstraction -> hiding internal implementation details 
+
+
+class BrewingMachine(ABC):
+   
+    def milk(self):
+        pass
+
+    @abstractmethod
+    def sugar(self):
+        pass
+
+    @abstractmethod
+    def water(self):
+        pass
+
+    @abstractmethod
+    def coffeePowder(self):
+        pass
+
+
+class Blackcoffee(BrewingMachine):
+
+    def sugar(self):
+        print("Sugar added")
+
+    def water(self):
+        print("Water addedd")
+
+    def coffeePowder(self):
+        print("Coffee powder added")
+
+
+
+blackcoffee  = Blackcoffee()
+
+
+
+class Coffee(BrewingMachine):
+
+    def milk(self):
+        print("Milk added")
+
+   
+    def sugar(self):
+        print("Sugar added")
+    
+    def water(self):
+        print("Water addedd")
+    
+    def coffeePowder(self):
+        print("Coffee powder added")
+
+
+coff = Coffee()
+
+
+
