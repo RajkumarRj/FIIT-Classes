@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymorphism</title>
+</head>
+<body>
+
+    <h1 id="first">OOPS</h1>
+
+    <h2 class="second"></h2>
+
+    <h3 class="second"></h3>
+    <h2 class="second"></h2>
+
+    <h3 class="second"></h3>
+    <h2 class="second"></h2>
+
+    <h3 class="second"></h3>
+    <h2 class="second"></h2>
+
+    <h3 class="second"></h3>
+
+
+
+
+    <script>
+        const querySel = document.querySelector(".second")
+
+        console.log(querySel);
+        
+        const secondElement = document.getElementsByClassName("second")
+
+        for(let i=0; i<secondElement.length; i++){
+            secondElement[i].innerText = i +1
+
+        }
+        console.log(secondElement[1]);
+        
+        
+        const firstElement = document.getElementById("first")
+
+        firstElement.innerText = "Sujay"
+        firstElement.style.color = "blue"
+        firstElement.style.backgroundColor = "red"
+        console.log(firstElement.innerText);
+
+       
+        
+        // DOM -> Document Object Model 
+
+        // selecting dom element 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // javascript is scripting language 
+
+
+
+    //     console.log("Polymorphism");
+
+    //     class Bank{
+
+    //         #balance = 5000
+
+    //         display(){
+    //             console.log("Greeting");
+    //             console.log(this.#balance);
+    //         }
+    //     }
+
+    //     const bank = new Bank()
+
+    //     bank.display()
+    //     // console.log(bank.#balance);
+
+
+    //     // polymorphism -> many forms 
+    //     // poly -> many
+    //     // morphism -> forms 
+
+    //     // method overriding -> same method name, but differnet implemention 
+
+
+    //     class Payment{
+    //         pay(){
+    //             console.log("payment paid successfully");
+    //         }
+    //     }
+
+
+    //     class UPI extends Payment{
+
+    //         pay(){
+    //             console.log("payment paid using UPI");
+    //         }
+    //     }
+
+
+    //    const upi =  new UPI()
+
+    //    upi.pay()
+
+
+
+
+        
+
+
+        
+    </script>
+    
+</body>
+</html>

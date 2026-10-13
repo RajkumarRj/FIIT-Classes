@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops</title>
+</head>
+<body>
+
+    <h1 id="boots">Polymorphism</h1>
+
+    <p>FIIT</p>
+
+
+    <script>
+
+        // getElementById()
+        // id attribute 
+
+        const footwear = document.getElementById("boots")
+
+        footwear.innerText  = "Elin"
+
+        console.log(footwear.innerText);
+        
+
+
+
+
+
+        console.log("Encapsulation");
+
+
+        // class Bank{
+
+        //     #balance = 0
+        //     constructor(balance){
+        //         this.#balance = balance
+        //     }
+        //     getBalance(){
+        //         console.log(this.#balance);
+                
+        //     }
+        // }
+
+    //  object is a instance of class 
+
+        // const bank  = new Bank(800000);
+        // bank.getBalance()
+
+
+
+        // polymorphism poly -many , morphism -forms
+
+        // method overiding -> runtime polymorphism
+
+        // same method name but different implementation 
+        class Payment{
+
+            pay(){
+                console.log("User paid successfully");
+            }
+        }
+
+
+        class UPI extends Payment{
+
+            pay(){
+                console.log("Payment paid using UPI");
+            }
+
+        }
+
+        class COD extends Payment{
+            pay(){
+                console.log("ordered placed");   
+            }
+        }
+
+
+        const upi = new UPI()
+
+        upi.pay()
+
+
+        // DOM -> Document Object Model 
+
+        // is a programming interface  
+
+
+
+
+        
+
+
+        
+        
+
+
+        
+    </script>
+    
+</body>
+</html>
