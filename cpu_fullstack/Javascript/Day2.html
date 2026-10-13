@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+
+    <h1>Object</h1>
+
+    <script>
+
+        // nested loops, nested if 
+        let student = {
+            name :"FIIT",
+            marks:[70,80,30],
+            age : 20,
+            address : {
+                street : "4th",
+                landmark :"near collector office",
+                area :{
+                    Region : "Rural"
+
+                }
+            }
+        }
+
+        // spread operator ...
+        let sports = {
+            sname : "Badminton",
+            // ...student
+        }
+
+        let merged = {...student, ...sports}
+
+        console.log(merged);
+        
+
+        // destructing object 
+
+        const {name , age} = student
+
+
+        console.log(name ,age);
+        
+
+
+
+        // Object.freeze(student)
+
+        // student.email = "fiit@gmail.com"
+
+        // console.log(student);
+        
+
+
+
+        // console.log(Object.entries(student));
+        
+
+        // console.log(Object.values(student))
+
+        // const result = Object.keys(student)
+
+        // console.log(result);
+        
+
+        // console.log(student.marks[1]);
+        
+
+        // console.log(student.address.area.Region);
+        
+
+
+        // console.log(student.name);
+
+        // console.log(student.address.landmark);
+
+
+
+        
+        // const marks = [80,90,100]
+
+        // const totalmarks = [...marks , 75,65]
+
+        // console.log(totalmarks);
+
+
+        // String -> sequence of character 
+        // enclosed with double quotes
+
+
+        // strings are immutable 
+
+        let language = "MERN stack dev";
+
+        let backend = `nodej`
+
+        // template literal 
+
+        console.log(`I'm learning ${language}`);
+
+
+        console.log(language.length);
+
+        console.log(language.toUpperCase());
+
+        console.log(language.toLowerCase());
+
+        console.log(language.trim());
+
+        console.log(language.includes("N"));
+
+
+        console.log(language.startsWith("MERN"));
+
+        console.log(language.endsWith("k"));
+
+        console.log(language.replace("MERN", "React"));
+        
+        console.log(language.split(" "));
+
+
+        console.log(language.substring(5,10));
+
+
+        
+        // object oriented programming 
+        
+        // class , object  
+        // class is a blueprint for object 
+
+        //constructor -> used to initialize an object 
+        class Student{
+            // variable, methods => properties 
+
+            name = "Guest"
+
+            constructor(name){
+                this.name = name 
+            }
+
+            greet(){
+                console.log("Welcome to our page" , this.name);
+                
+            }
+        }
+
+
+        let s1 = new Student("Rahul");
+
+        s1.greet()
+
+
+        let s2 = new Student("Swedha")
+
+        s2.greet()
+
+
+        
+        
+        
+
+
+        
+        
+        
+
+
+        
+        
+
+
+
+    </script>
+    
+</body>
+</html>
