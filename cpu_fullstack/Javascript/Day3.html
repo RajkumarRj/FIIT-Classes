@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops</title>
+</head>
+<body>
+
+    <h1>Object oriented programming</h1>
+
+
+    <script>
+
+        // class Bank{
+
+        //     constructor(name){
+        //         this.name = name 
+                
+        //     }
+
+
+        //     greet(){
+        //         console.log("Welcome to our page");
+                
+        //     }
+        // }
+        
+        
+        
+        // let bank = new Bank("SBI");
+
+        // bank.greet()
+
+        // console.log(bank.name);
+
+
+        // let bank1 = new Bank("Indian")
+
+        // console.log(bank1.name);
+
+
+
+        // inheritance 
+
+        // class Parent{
+        //     salary = 90000
+
+        //     work(){
+        //         console.log("Working as software engineer");
+                
+        //     }
+        // }
+
+        // class Child extends Parent{
+            
+        // }
+
+        // let c1 = new Child()
+        // c1.work()
+
+        // console.log(c1.salary);
+
+
+        class Person{
+            constructor(name){
+                this.name = name
+            }
+            greet(){
+                console.log('hello there');
+                
+            }
+        }
+
+        class Student extends Person{
+            constructor(name){
+                super(name)
+                // super.greet()
+            }
+        }
+
+
+
+        const s = new Student("Jagath")
+
+
+        console.log(s.name);
+
+
+        class Calculator{
+            static value = 10;
+
+            static add(a,b){
+                console.log(a+b);   
+            }
+
+        }
+
+
+        Calculator.add(10,20);
+        console.log(Calculator.value);
+
+
+
+
+        // encapsulation -> data hiding 
+        // process of binding data with method
+
+
+
+
+        class Bank{
+
+            #balance = 1000
+
+            getBalance(){
+                console.log(this.#balance);   
+            }
+            setBalance(amt){
+                this.#balance += amt
+            }
+        }
+
+
+        let fiit = new Bank();
+
+        fiit.setBalance(5000)
+
+        fiit.getBalance()
+
+        
+
+        // console.log(fiit.#balance);
+
+        // polymorphism -> method overriding (runtime polymorphism)
+
+        // poly - > many 
+        // morphism -> forms 
+        // method overriding -> same method name , but in different classes 
+
+
+        class Payment{
+            pay(){
+                console.log("User paid successfully"); 
+            }
+        }
+        
+        class UPI extends Payment{
+
+            pay(){
+                console.log("Paid paid using UPI");
+                
+            }
+
+        }
+
+        class COD extends Payment{
+
+            pay(){
+                console.log("Payment will be paid using Cash");  
+            }
+
+        }
+
+
+        const upi = new UPI()
+        upi.pay()
+
+        const cod = new COD()
+
+        cod.pay()
+
+
+        // DOM -> Document Object Model 
+
+        // programming interface 
+        
+        
+        
+    </script>
+    
+</body>
+</html>
