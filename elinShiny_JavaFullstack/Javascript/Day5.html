@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .para{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="first">DOM -> Document Object model</h1>
+    <h1>DOM</h1>
+
+    <p class="para">Elin</p>
+    <p class="para">FIIT</p>
+    <p class="para">Javascript</p>
+  
+    <p>Fourth</p>
+
+    <script>
+        const firstElement = document.getElementById("first")
+
+
+        firstElement.innerText = "Elin"
+        // console.log(firstElement.innerText);
+
+
+        const groupElement = document.getElementsByClassName('para')
+
+        console.log(groupElement[0].innerText);
+        console.log(groupElement[1].innerText);
+        console.log(groupElement[2].innerText);
+
+
+        const tagElement  = document.getElementsByTagName("p")
+        console.log(tagElement);
+
+        // queryselector -> select first matching element 
+
+
+        const query = document.querySelectorAll(".para")
+
+        query.forEach(ele => {
+            console.log(ele.innerText);     
+        })
+
+        console.log(query);
+        
+
+
+
+        
+
+        
+
+
+    </script>
+    
+</body>
+</html>

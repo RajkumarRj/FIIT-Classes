@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+
+        .para{
+            color: red;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1 id="first" >Document Object model</h1>
+
+    <p class="para">item1</p>
+    <p class="para">item2</p>
+    <p>item 3</p>
+
+    <button id="btn">Click</button>
+
+
+    <script>
+        const button = document.getElementById("btn")
+
+        // button.addEventListener("click" , ()=>{
+        //     alert("first button clicked")
+        // } )
+
+        //  button.addEventListener("dblclick" , ()=>{
+        //     alert("second button clicked")
+        // } )
+
+        button.addEventListener("mouseover" , ()=>{
+           button.style.color = "red"
+           button.style.backgroundColor = "blue"
+        } )
+
+        button.addEventListener("mouseout" , ()=>{
+           button.style.color = ""
+           button.style.backgroundColor = ""
+        } )
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        const fourth = document.querySelector(".para")
+
+        // fourth.remove()
+        console.log(fourth);
+        
+
+
+        const third = document.getElementsByTagName("p")
+
+        console.log(third);
+        
+
+        const second  = document.getElementsByClassName("para");
+
+        console.log(second[0].innerText);
+        console.log(second[1].innerText);
+
+        
+
+        const first = document.getElementById("first")
+
+    
+        // first.style.backgroundColor = "blue"
+
+        first.style.border = "2px solid black"
+        first.style.padding = "10px"
+
+        first.classList.add("para")
+        console.log(first.classList.contains("para"));
+        
+
+        // first.classList.toggle("para")
+
+
+        // first.classList.remove("para")
+
+
+
+        // first.innerHTML  = "<p>hello</p>"
+        // console.log(first.textContent);
+        // it's a programming interface 
+
+        // reading element content 
+
+
+        const heading = document.createElement("h2")
+        heading.textContent = "New heading"
+
+        // document.body.append(heading)
+        // document.body.prepend(heading)
+
+        // Events is an action occurs in the browser
+        
+        
+
+
+        
+
+
+        
+    </script>
+    
+</body>
+</html>

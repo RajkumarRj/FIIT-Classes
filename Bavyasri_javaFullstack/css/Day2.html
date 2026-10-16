@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css</title>
+
+    <style>
+      /* hover  */
+      h1:hover {
+        color: red;
+        background-color: blue;
+      }
+
+      /* link  */
+
+      a:link {
+        color: yellow;
+      }
+
+      /* a:visited{
+            color: green;
+        } */
+
+      a:active {
+        color: black;
+      }
+
+      input:focus {
+        outline: 2px solid red;
+      }
+
+      /* .pseduo li:nth-child(3n)  {
+            color: yellowgreen;
+        } */
+
+      ul:nth-of-type(3) {
+        background-color: aqua;
+      }
+
+      button:not(.disabled) {
+        cursor: pointer;
+      }
+
+      /* pseudo element  */
+      /* ::  */
+
+      ::selection {
+        background-color: orangered;
+        color: white;
+      }
+
+
+      /* p::first-letter{
+        font-size: 30px;
+        color: violet;
+      } */
+
+      /* p::first-line{
+        color: blue;
+      } */
+
+      ul li::marker{
+        /* font-size: 30px; */
+      }
+
+      ul li::after{
+        content: "😀";
+      }
+
+
+      ::placeholder{
+        color: brown;
+        background-color: burlywood;
+      }
+
+      *{
+        box-sizing: border-box;
+      }
+
+      html{
+        font-size: 20px;
+      }
+      p{
+        /* width: 50vw; */
+        /* height: 100vh; */
+        /* border-width: 5px;
+        border-style: solid;
+        border-color: red; */
+
+        /* shorthand property  */
+        /* border: 5px solid red;
+
+        padding: 20px 10px 15px 5px ;
+        margin: 0 auto; */
+      }
+
+      /* units -> absolute , relative  */
+
+      /* absolute -> fixed -> px */
+      /* relative -> inherit from parent -> rem , em , %, vh, vw  */
+
+
+      div{
+        font-size: 32px;
+        border: 2px solid red;
+      }
+      div p{
+        font-size: 2rem;
+        border: 2em solid blue;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <div>
+        <p>default - 16px</p>
+      
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit temporibus
+      similique dolorum odio architecto, ut sed. Harum sit laborum sequi eveniet
+      inventore, eaque corrupti fuga rem odio ab voluptates nihil?
+    </p>
+
+    <button>Save</button>
+    <button class="disabled" disabled>Delete</button>
+
+    <ul class="pseduo">
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>Javascript</li>
+    </ul>
+
+    <input type="text" placeholder="enter your name"/>
+
+    <a href="#">Google</a>
+
+    <h1>Pseduo-class</h1>
+
+    <ul>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ul>
+
+    <ul>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ul>
+  </body>
+</html>
