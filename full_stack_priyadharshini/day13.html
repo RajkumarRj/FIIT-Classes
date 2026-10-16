@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo class</title>
+    <style>
+      h1:hover {
+        color: red;
+      }
+
+      /* #js{
+            color: red;
+        } */
+
+      /* ul li:nth-child(2)   {
+            color: yellow;
+            background-color: red;
+        } */
+
+      ul li:last-child {
+        color: yellow;
+        background-color: red;
+      }
+
+      table tr:nth-child(even) {
+        background-color: lightcoral;
+        color: white;
+      }
+
+      ::selection {
+        background-color: orangered;
+        color: white;
+      }
+
+      p::first-letter{
+        font-size: 30px;
+        color: green;
+      }
+
+      p::first-line{
+        color: blueviolet;
+      }
+
+      ul li::before{
+        content: "😎";
+      }
+
+    </style>
+  </head>
+  <body>
+
+    
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ex facilis
+      debitis ratione libero, quasi accusantium commodi sapiente sit incidunt?
+      Mollitia molestias repellendus sapiente, autem vero sed nostrum quisquam
+      voluptas.
+    </p>
+
+    <table border="1">
+      <tr>
+        <td>java</td>
+        <td>spring boot</td>
+      </tr>
+      <tr>
+        <td>python</td>
+        <td>django</td>
+      </tr>
+      <tr>
+        <td>javascript</td>
+        <td>nodejs</td>
+      </tr>
+      <tr>
+        <td>java</td>
+        <td>spring boot</td>
+      </tr>
+      <tr>
+        <td>python</td>
+        <td>django</td>
+      </tr>
+      <tr>
+        <td>javascript</td>
+        <td>nodejs</td>
+      </tr>
+    </table>
+
+    <ul>
+      <li>Java</li>
+      <li>Css</li>
+      <li>Javascript</li>
+      <li>HTML</li>
+    </ul>
+
+    <h1>Pseudo class</h1>
+  </body>
+</html>
