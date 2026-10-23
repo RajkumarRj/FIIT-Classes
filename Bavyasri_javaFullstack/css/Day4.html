@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            display:none;
+            /* visibility: hidden; */
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            font-size: 1rem;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            /* flex-direction:column; */
+
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* align-content: flex-end; */
+
+            /* justify-content: space-evenly;
+            align-items: center; */
+
+            border: 5px solid red;
+            height: 90vh;
+
+        }
+
+        .container div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            text-align: center;
+            
+        }
+        /* .container div:nth-child(4){
+            font-size: 100px;
+            align-self: flex-start;
+        } */
+
+        ul li:nth-child(3n+1){
+            color: red;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+        }
+        .logo , .nav-link{
+            padding: 20px;
+        }
+        .logo{
+            font-size: 30px;
+        }
+        .nav-link a{
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .nav-link a:hover{
+            color: orangered;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyBrand</div>
+        <div class="nav-link">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Service</a>
+            <a href="">Contact</a>
+        </div>
+    </header>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+
+    <div class="container" >
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div >4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div >4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div >4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div >4</div>
+
+        
+
+        
+    </div>
+
+    <!-- <h1>Display</h1>
+
+    <span>inline</span>
+    <span>inline</span> -->
+
+
+</body>
+</html>

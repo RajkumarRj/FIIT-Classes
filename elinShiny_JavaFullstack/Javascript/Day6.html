@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+
+    <h1>DOM events</h1>
+
+    <input type="text" id="name">
+    <button id="btn">Click</button>
+    <br><br>
+
+
+    <script>
+
+        const btn = document.getElementById("btn")
+
+        btn.addEventListener("dblclick", ()=>{
+            alert("button clicked")
+        });
+
+        btn.addEventListener("mouseover", ()=>{
+            btn.style.backgroundColor = "blue"
+            btn.style.color = "white"
+        } )
+
+        btn.addEventListener("mouseout", ()=>{
+            btn.style.backgroundColor = ""
+            btn.style.color = ""
+        } )
+
+        // btn.addEventListener("mousemove", ()=>{
+        //     btn.style.backgroundColor = "yellow"
+        //     console.log("mouse moving");
+            
+        // } )
+
+        // keyboard events 
+
+        // document.addEventListener("keydown",(e)=>{
+        //     console.log(e.key , "keydown");
+            
+        // })
+
+        // document.addEventListener("keyup",(e)=>{
+        //     if(e.key === "Enter") {
+        //         alert("Form submittted")
+        //     }
+        //     console.log(e.key, "keyup");
+            
+        // })
+
+
+        // document.getElementById("name")
+        // .addEventListener("input", function(){
+        //     console.log(this.value);
+            
+        // })
+
+        document.getElementById("name")
+        .addEventListener("change", function(){
+            console.log(this.value);
+            
+        })
+
+
+
+
+
+
+
+        // event is an action that occurs in the browser 
+    </script>
+    
+</body>
+</html>
