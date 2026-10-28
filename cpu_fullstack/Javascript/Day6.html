@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .body{
+            background-color: black;
+        }
+        #parent{
+            border: 2px solid black;
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <h1>DOM</h1> -->
+
+    <div id="parent">
+        <h1>DOM</h1>
+        <button id="child">Dark Mode</button>
+    </div>
+
+    <!-- instead of adding event listeners to every child -->
+    <!-- add one listener to the parent  -->
+    <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>React</li>
+    </ul>
+
+
+    <script>
+        // event delegation
+        document.getElementById("list").addEventListener("click" , function(event){
+            if(event.target.tagName === "LI"){
+                console.log(event.target.textContent);
+                
+            }
+        })
+
+
+
+        // child to parent 
+        // Event bubbling  vs event capturing
+        // parent to child 
+        const btn = document.getElementById("child");
+        const parent = document.getElementById("parent")
+
+        parent.addEventListener("click", ()=>{
+            console.log("parent");
+            
+        }, true)
+
+        btn.addEventListener("click", ()=>{
+           
+            // document.body.classList.toggle("body")
+            console.log("Child");
+            
+        } )
+
+      
+
+
+
+        
+
+
+
+        console.log("DOM");
+
+        // browser - Javascript engine 
+        // chrome - v8
+        // firefox - spidermonkey
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO</title>
+    <style>
+        .low{
+            color: yellow;
+        }
+        .medium{
+            color: blue;
+        }
+
+        .high{
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>TODO</h1>
+
+    <div class="container">
+      <h2>Task manager</h2>
+
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Add a new task..." />
+        <br /> <br>
+        <select id="priority">
+          <option value="" selected disabled>Select a priority</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <br /><br>
+        <button id="addBtn">Add</button>
+      </div>
+    </div>
+
+    <ul id="tasklist">
+
+    </ul>
+
+    <script>
+      const taskList = document.getElementById("tasklist")
+      const taskInput = document.getElementById("taskInput");
+      const addBtn = document.getElementById("addBtn");
+      const priority = document.getElementById("priority");
+
+      addBtn.addEventListener("click", () => {
+
+        const li = document.createElement("li")
+        li.textContent = taskInput.value
+        li.classList.add(priority.value)
+
+        taskList.appendChild(li)
+        taskInput.value = ""
+        priority.value = ""
+
+
+
+        console.log(li);
+
+        // location.href = "https://www.google.com";
+    
+      });
+
+    //   BOM -> Browser object model 
+    // window object 
+    // alert("Hello there")
+
+    // let result = confirm("can i delete this ")
+    // console.log(result);
+
+    // const res =Number(prompt("Enter your name"))
+    // console.log(typeof res);
+
+    // location object 
+    console.log(location.href);
+
+    // location.reload()
+
+    // history object 
+
+    // history.back()
+
+    // history.forward()
+
+    // browser storages 
+    // local stroage 
+    // session storage 
+    // cookies 
+    
+    
+    
+    </script>
+  </body>
+</html>
