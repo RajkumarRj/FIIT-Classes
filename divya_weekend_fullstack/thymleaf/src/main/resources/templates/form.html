@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1 th:text = "${title}"></h1>
+
+    <form th:action = "@{/save}" method="post" th:object = "${student}">
+
+
+        Name: <input type="text" th:field = "*{name}" required>
+
+        <br><br>
+
+        Course : <input type="text" th:field = "*{course}" required>
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
