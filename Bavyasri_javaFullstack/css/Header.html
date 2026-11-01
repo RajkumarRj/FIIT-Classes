@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header{
+            background-color: #333;
+            height: 60px;
+            color: #fff;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links{
+            list-style: none;
+           display: flex;
+           gap: 5px;
+        }
+
+        .nav-links a:hover{
+            color: orange;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: #fff;
+            padding: 20px 15px;
+        }
+        .dropdown{
+            position: relative;
+
+        }
+
+        .dropdown-menu{
+            list-style: none;
+    
+            position: absolute;
+            top: 100%;
+            padding: 10px;
+          
+            background-color: #333;
+        }
+
+        
+
+        .dropdown-menu li{
+            padding: 10px;
+        }
+        .dropdown-menu{
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <header class="header">
+
+        <div class="logo">MY LOGO</div>
+
+        <nav >
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li class="dropdown">
+                    <a href="">About</a>
+
+                     <ul class="dropdown-menu">
+                        <li><a >DSA</a></li>
+                        <li><a href="">Python</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">Nodejs</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="">Service</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="./Day1.html" target="_blank">Java</a></li>
+                        <li><a href="">Python</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">Nodejs</a></li>
+                    </ul>
+                </li>
+
+
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+</body>
+</html>

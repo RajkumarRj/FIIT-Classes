@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+
+    <style>
+      p {
+        background-color: palevioletred;
+        padding: 10px;
+        color: white;
+        font-weight: bolder;
+      }
+
+      .relative {
+        position: relative;
+        background-color: palevioletred;
+        /* top: 100px;
+            left: 100px; */
+      }
+
+      .abs {
+        background-color: palegoldenrod;
+        
+        /* position: absolute; */
+        /* top: 100px; */
+      }
+
+      .sticky {
+        position: sticky;
+        top: 0px;
+        background-color: palegreen;
+      }
+
+      .fixed {
+        position: fixed;
+        z-index: -10;
+        /* top: 200px; */
+        background-color: paleturquoise;
+      }
+    </style>
+  </head>
+  <body>
+      <p class="fixed">Fixed</p>
+    <p class="abs">Absolute</p>
+    <p class="sticky">Sticky</p>
+    <p class="relative">Relative</p>
+
+    
+  </body>
+</html>
