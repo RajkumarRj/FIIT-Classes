@@ -1,43 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Todo</h1>
 
-    <input id="todo-inp" type="text" placeholder="Enter your todo..">
+    <input id="todo-inp" type="text" placeholder="Enter your todo.." />
 
     <button id="todo-btn">Add task</button>
 
-    <ul id="todo-list">
-        
-    </ul>
+    <ul id="todo-list"></ul>
 
     <script>
+      const todoInp = document.getElementById("todo-inp");
+      const todoBtn = document.getElementById("todo-btn");
+      const todoList = document.getElementById("todo-list");
 
-        const todoInp = document.getElementById("todo-inp")
-        const todoBtn = document.getElementById("todo-btn")
-        const todoList = document.getElementById("todo-list")
+      function createList() {
 
+        if(todoInp.value === "") {
+            alert("Enter some value")
+            return;
+        }
+        const li = document.createElement("li");
+        li.textContent = todoInp.value;
 
-        todoBtn.addEventListener("click", ()=>{
-            
+        todoList.appendChild(li);
 
-            const li = document.createElement("li")
-            li.textContent = todoInp.value
-            
-        
-            todoList.appendChild(li)
+        todoInp.value = "";
+      }
 
-            todoInp.value = ""
-        })
+      todoBtn.addEventListener("click", createList);
+      todoInp.addEventListener("keypress", (event) => {
+        if (event.key === "Enter") createList();
+      });
 
 
     </script>
-
-
-</body>
+  </body>
 </html>

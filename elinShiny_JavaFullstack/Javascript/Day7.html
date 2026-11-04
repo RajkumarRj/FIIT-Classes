@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #parent{
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <button id="child">Click</button>
+    </div>
+
+    <a href="https://google.com" id="link">Google</a>
+
+
+    <script>
+
+        // event bubbling -> child to parent 
+        // event capturing -> parent to child 
+
+        const parent = document.getElementById("parent")
+        const child = document.getElementById("child")
+
+        parent.addEventListener("click", ()=>{
+            console.log("Parent");
+            
+        },true)
+
+
+        child.addEventListener("click", (e)=>{
+            // e.stopPropagation()
+            console.log("Child ");
+            
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // const button = document.getElementById("btn");
+        
+        // button.addEventListener("click", function(event){
+        //     console.log(event.type);
+        //     console.log(event.target);
+        //     console.log(event.key);
+            
+        // })
+
+
+
+        
+        document.getElementById("link").addEventListener("click", function(event){
+
+            event.preventDefault();
+        })
+
+
+        </script>
+</body>
+</html>
