@@ -91,3 +91,28 @@ print(  name.replace("J", "Python")  )
 
 
 print(   name.count("a")  )
+
+
+
+
+print(name.startswith("Jat"))
+
+print(name.endswith("r"))
+
+
+
+print("123".isalpha())
+
+print("asdfa".isalnum())
+
+
+print("123".isdigit())
+
+
+print("JAGATH".swapcase())
+
+
+# formatting string 
+ageee = 20
+
+print(  f"My name is {name} and my age is {ageee}")
