@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Async</h1>
+
+    <!-- javscript  -->
+    <!-- syncrhonous vs asynchronous -->
+
+    <!-- javscript is a single threaded language  -->
+
+
+    <!-- stack  -->
+
+
+    <script>
+
+        // BOM -> Browser object model 
+        
+        // window => confirm, alert, prompt
+        // navigator 
+        // screen 
+        // history 
+        // location => 
+
+
+        // console.log(navigator.userAgent);
+
+        console.log(screen.width);
+        console.log(screen.height);
+
+        console.log(window.innerHeight);
+        console.log(window.innerWidth);
+
+        // history.back()
+        // history.forward()
+
+        // browser storage 
+
+        // localStorage, session storage 
+
+        // localStorage.setItem("namee", "fiit")
+
+
+        // localStorage.removeItem("name")
+
+        // sessionStorage.setItem("name", "Javscript")
+
+        
+
+        
+
+        
+        
+        
+        
+
+        
+        
+        console.log(window);
+
+
+        console.log(location.href);
+        console.log(location.port);
+
+        // location.href = "https://www.google.com"
+
+
+        // location.reload()
+        
+        
+
+        
+        
+
+
+
+        
+        // let count = 1
+        // const timer = setInterval(() => {
+        //     console.log(count++);
+            
+        // }, 1000);
+
+
+        
+        // setTimeout(()=>{
+           
+            
+        //     clearInterval(timer)
+        // }, 10000)    
+
+
+        function downloadFile(fiit){
+           console.log("Downloading......");
+
+           setTimeout(() => {
+            fiit()
+           }, 5000);
+           
+        }
+
+
+        downloadFile( ()=>{
+            console.log("Download completed");
+            
+        })
+
+
+        // callback hell 
+
+       
+
+
+        // for (let i=0; i<1000000000; i++){
+           
+            
+        // }
+
+
+        // asynchronous programming 
+
+        console.log("Second");
+
+        console.log("Third");
+
+        // web apis 
+
+       
+
+
+        
+        
+        
+
+
+    </script>
+    
+</body>
+</html>
