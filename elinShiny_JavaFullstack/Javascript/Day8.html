@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BOM - Browser object model </h1>
+
+
+    <script>
+
+
+        // Browser storage 
+        // localStorage -> permanent 
+        // session storage -> temporary 
+
+        const student = {
+            name :"Elin",
+            course :"javascript"
+        }
+
+        
+
+        localStorage.setItem("student", JSON.stringify(student))
+
+
+        console.log(JSON.parse(localStorage.getItem('student')));
+        
+
+    
+        // if(confirm("are you sure you want to clear local and session ")){
+        //     sessionStorage.clear();
+        //     localStorage.clear();
+        // }
+
+
+        // console.log(localStorage.getItem("name"));
+        
+
+
+        // sessionStorage.setItem("name", "Elin shiny")
+
+
+        console.log(sessionStorage.getItem('name'));
+        
+
+        // localStorage.removeItem("name")
+
+        
+
+     
+        
+
+
+        // collection of key-value pair 
+
+        // window 
+        // console.log(window);
+
+        // console.log(window.innerHeight);
+        // console.log(window.innerWidth);
+
+
+        // location object 
+
+        // console.log(location.href);
+
+        // console.log(location.host);
+
+
+        // navigator object 
+
+        // console.log(navigator);
+
+
+        // console.log(navigator.onLine);
+
+        // navigator.clipboard.writeText("Hello dsfadfa")
+        // console.log(navigator.clipboard.readText());
+
+
+        // screen object 
+
+        // console.log(screen.width , screen.height);
+        
+
+        // history object 
+
+        // console.log(history);
+
+        // history.forward()
+
+        // history.back()
+        
+
+        
+        
+        
+
+
+
+    
+        // console.log(location);
+
+
+        
+        
+        
+
+        // alert 
+        // alert("Welcome to our webiste")
+        // prompt
+
+        // const result = prompt("Enter your name")
+
+        // alert(result)
+
+        // confirm 
+
+        // const result = confirm("Are you sure you want to delete that file")
+
+
+        // if(result) {
+        //     alert("File deelete succesfully")
+        //     // location.reload()
+
+        //     // location.href = "https://www.google.com"
+        // }else{
+        //     alert("Your file is safe ")
+        // }
+
+        // console.log(result);
+
+
+
+        
+
+        
+
+    </script>
+
+
+
+</body>
+</html>
