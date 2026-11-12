@@ -1,4 +1,12 @@
 # collections 
+import Day8
+
+
+res =  Day8.add(10,20)
+
+print(res)
+
+
 
 # list 
 # tuple 
@@ -33,6 +41,7 @@ names.insert(0,"Redmi")
 names.reverse()
 
 names.clear()
+
 
 print(names)
 
