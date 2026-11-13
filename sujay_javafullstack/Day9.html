@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom events</title>
+    <style>
+      #parent {
+        border: 2px solid yellow;
+        height: 200px;
+      }
+
+      #grandparent{
+        border: 5px solid orange;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dom events</h1>
+
+    <input id="sujay" type="text" placeholder="Enter your text" />
+
+    <div id="grandparent">
+
+      <div id="parent">
+        <button id="btn">Click</button>
+      </div>
+
+    </div>
+
+    <a href="https://www.google.com" id="link">Google</a>
+
+    <script>
+      // event bubbing -> child  -> parent
+
+      //event capturing -> parent - child
+      const grand = document.getElementById("grandparent");
+      const parent = document.getElementById("parent");
+      let sujay = document.getElementById("btn");
+
+      grand.addEventListener("click", function(event){
+        event.stopPropagation()
+        console.log("Grandparent clicked");
+        
+      }, true)
+
+       parent.addEventListener("click", function (event) {
+        event.stopPropagation()
+        console.log("Parent clicked");
+      },true);
+
+      sujay.addEventListener("click", function (event) {
+      
+        console.log("Button clicked");
+      });
+
+     
+
+      document
+        .getElementById("link")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+
+          console.log("User clicked");
+        });
+
+      //   sujay.addEventListener("click", (event) => {
+      //     console.log(event.type);
+      //     console.log(event.target);
+      //   });
+
+      //   console.log(sujay);
+
+      const inputElement = document.getElementById("sujay");
+
+      inputElement.addEventListener("input", function () {
+        console.log("input", this.value);
+      });
+
+      inputElement.addEventListener("change", function () {
+        console.log("change", this.value);
+      });
+
+      window.addEventListener("scroll", function () {
+        console.log("Scrolling");
+      });
+
+      // window.addEventListener("load", function(){
+      //     console.log("Page loaded");
+      //     alert("Welcome to the page")
+      // })
+
+      // input event
+
+      console.log("Dom events");
+    </script>
+  </body>
+</html>
