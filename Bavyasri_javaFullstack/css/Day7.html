@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+
+        h1{
+            color: burlywood;
+
+            margin-top: 200px;
+            margin-left: 100px;
+
+            
+
+            /* transform:rotate(360deg); */
+
+            /* transform: translate(100px , 100px); */
+
+            /* transform: scale(1.5); */
+
+        
+            /* transition-property:all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 10s; */
+
+            transition: all 1s;
+
+            
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 0   10px #333;
+
+            /* animation-name: rotate-element; */
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+    
+
+        }
+
+        h1:hover{
+            animation-play-state: paused;
+        }
+        /* 
+        h1:hover{
+
+            color: blue;
+            transform: scale(1.2)  rotate(45deg) ;
+        
+        } */
+
+        @media (max-width:576px){
+            h1{
+                /* background-color: yellow; */
+            }
+        }
+      
+        @media (min-width:577px) and (max-width:1000px){
+            h1{
+                background-color:green;
+            }
+        }
+
+        @media (min-width:1001px){
+            h1{
+                background-color: red;
+            }
+        }
+
+        @keyframes rotate-element{
+
+            from{
+                transform:  translateY(0);
+                background-color: skyblue;
+            }
+
+            to{
+                transform: translateY(-150px);
+                background-color: brown;
+            }
+        }
+
+        @keyframes fade-in{
+            /* from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            } */
+
+            0%{
+                background-color: green;
+            }
+            25%{
+                background-color: brown;
+                /* font-size: 50px; */
+            }
+            50%{
+                background-color: aqua;
+                /* transform: scale(1.5); */
+            }
+            75%{
+                background-color: yellow;
+            }
+            100%{
+                background-color: blueviolet;
+            }
+        }
+        p{
+            font-size: 30px;
+            color: palegreen;
+            animation: fade-in 10s infinite ease-out;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <p>FIIT</p>
+    <h1>Transition</h1>
+
+
+</body>
+</html>
