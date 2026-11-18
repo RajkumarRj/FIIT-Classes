@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event loop</h1>
+
+    <script>
+
+        // javascript is single threaded language 
+
+        // javascript handles async task with help of event loop, and web api 
+
+        // callback function 
+       
+
+        // web api 
+
+        console.log("first");
+        
+
+        setTimeout(()=>{
+            console.log("Second");
+            
+        },5000)
+
+        console.log("Third");
+
+        let count = 1;
+
+        const timer = setInterval(()=>{
+            console.log(count++);
+    
+        }, 1000)
+
+        setTimeout(()=>{
+            clearInterval(timer)
+        }, 20000)
+
+        
+    </script>
+
+</body>
+</html>
