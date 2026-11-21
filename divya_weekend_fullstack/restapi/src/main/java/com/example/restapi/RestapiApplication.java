@@ -13,6 +13,11 @@ public class RestapiApplication {
 
 }
 
+// create table students(
+// 	id integer,
+// 	name , varchar(100)
+// )
+
 
 // spring boot 
 // controller

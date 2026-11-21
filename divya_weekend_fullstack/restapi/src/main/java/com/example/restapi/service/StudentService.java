@@ -23,19 +23,33 @@ public class StudentService {
 
     public List<Student> getAllStudents(){
 
-        return repo.findAall();
+        return repo.findAll();
     }
 
-    public Student getStudentById(int id){
-        return repo.findById(id);
+    public Student getStudentById(long id){
+        return repo.findById(id).orElse(null);
     }
 
     public Student addStudent(Student student){
         return repo.save(student);
     }
 
-    public boolean deleteStudent(int id){
-        return repo.deleteById(id);
+    public boolean deleteStudent(long id){
+        repo.deleteById(id);
+
+        return true;
+    }
+
+    public Student updateStudent(long id, Student student){
+
+       Student existingStudent =  repo.findById(id).orElse(null);
+
+       existingStudent.setName(student.getName());
+       existingStudent.setCourse(student.getCourse());
+       existingStudent.setFees(student.getFees());
+
+       return repo.save(existingStudent);
+
     }
 
     
