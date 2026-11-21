@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1 id="title">Promise</h1>
+
+    <script>
+      const titleHeader = document.getElementById("title");
+
+      async function fetchData() {
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/posts/1",
+        );
+
+        const data = await response.json();
+
+        console.log(data);
+      }
+
+      fetchData();
+
+      //   fetch("https://jsonplaceholder.typicode.com/posts/1")
+      //     .then((res) => {
+      //       console.log(res);
+      //       return res.json();
+      //     })
+      //     .then((data) => {
+
+      //         titleHeader.textContent  = data.title
+
+      //       console.log(data);
+      //     })
+      //     .catch((res) => {
+      //       console.log(res.message);
+      //     });
+
+      // promise
+
+      // javascript single threaded programming langauge
+
+      //   const promise = new Promise((resolve, reject) => {
+      //     let success = false;
+
+      //     setTimeout(() => {
+      //       if (success) {
+      //         resolve("Login sucessfully");
+      //       } else {
+      //         reject("Login failed");
+      //       }
+      //     }, 10000);
+      //   });
+
+      //   fulfilled,pending, rejected
+
+      // consuming a promise
+
+      //   promise
+      //     .then((res) => console.log(res))
+      //     .catch((res) => console.log(res))
+      //     .finally(() => {
+      //       console.log("Finally block");
+      //     });
+
+      // http -> hyper text transfer protocol
+      // api -> application programming interface
+    </script>
+  </body>
+</html>
