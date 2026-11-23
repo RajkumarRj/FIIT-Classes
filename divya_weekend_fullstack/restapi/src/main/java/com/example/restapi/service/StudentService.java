@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.example.restapi.exception.StudentNotFoundException;
 import com.example.restapi.model.Student;
 import com.example.restapi.repository.StudentRepository;
 
@@ -27,7 +28,8 @@ public class StudentService {
     }
 
     public Student getStudentById(long id){
-        return repo.findById(id).orElse(null);
+        return repo.findById(id)
+        .orElseThrow( ()-> new StudentNotFoundException("Student not found") );
     }
 
     public Student addStudent(Student student){
@@ -42,7 +44,7 @@ public class StudentService {
 
     public Student updateStudent(long id, Student student){
 
-       Student existingStudent =  repo.findById(id).orElse(null);
+       Student existingStudent =  repo.findById(id).orElse( null);
 
        existingStudent.setName(student.getName());
        existingStudent.setCourse(student.getCourse());

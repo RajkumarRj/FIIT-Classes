@@ -4,7 +4,9 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.restapi.model.Student;
 import com.example.restapi.service.StudentService;
 
+import jakarta.validation.Valid;
+
 @RestController 
 @RequestMapping("/api/v1")
 public class StudentController {
@@ -25,6 +29,7 @@ public class StudentController {
     public StudentController(StudentService service){
         this.service = service;
     }
+
 
 
     @GetMapping("/students")
@@ -41,7 +46,7 @@ public class StudentController {
 
 
     @PostMapping("/students")
-    public ResponseEntity<Student>  addStudent(@RequestBody Student student){
+    public ResponseEntity<Student>  addStudent(@Valid @RequestBody Student student){
 
         Student  savedStudent = service.addStudent(student);
 
@@ -58,7 +63,7 @@ public class StudentController {
     }
 
     @PutMapping("/students/{id}")
-    public Student updateStudent(@PathVariable int id, @RequestBody Student student ){
+    public Student updateStudent(@Valid  @PathVariable int id, @RequestBody Student student ){
 
         Student updatedStudent = service.updateStudent(id,student);
 
